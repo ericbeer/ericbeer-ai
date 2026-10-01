@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "your-ai-team",
+    "title": "Your AI Team: set up AI agents that run your outcomes",
+    "short": "Your AI Team",
+    "blurb": "The 7-step setup I use: outcomes, an AI manager for each, agents with one job, and decisions that come to you.",
+    "keyword": "TEAM",
+    "topics": ["agents", "getting-started"],
+    "tool": "Any AI",
+    "pdf": "/assets/guides/Your-AI-Team-Guide.pdf",
+    "cover": "/assets/guides/team-cover-1.png",
+    "inside": [
+      "Turn your business into outcomes, not tasks",
+      "Give each outcome an AI manager (copy-paste prompt)",
+      "The one-job agent card, and how agents hand off work",
+      "Your business brain: what every agent needs to know",
+      "Decision rules: what the team decides, what comes to you",
+      "How they reach you on Slack, Telegram or a call",
+      "Start with one team, then add the next"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ai-system-starter-kit",
+    "title": "The AI System Starter Kit: 3 prompts that turn AI into a system",
+    "short": "AI System Starter Kit",
+    "blurb": "Stop using AI like Google. Three copy-paste prompts to find the problem worth solving and get a step-by-step plan.",
+    "keyword": "SYSTEM",
+    "topics": ["prompts", "getting-started"],
+    "tool": "ChatGPT / Claude",
+    "pdf": "/assets/guides/AI-System-Starter-Kit.pdf",
+    "cover": "/assets/guides/kit-cover-1.png",
+    "inside": [
+      "Prompt 1: find the problem worth solving",
+      "Prompt 2: make the AI ask you the right questions",
+      "Prompt 3: get the step-by-step blueprint",
+      "What to type when you get stuck"
+    ],
+    "featured": true
+  }
+]
