@@ -25,8 +25,11 @@
         return fetch(WEBHOOK, { method: "POST", mode: "no-cors", body: body });
       });
   }
-  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
-  function validPhone(v) { return v.replace(/\D/g, "").length >= 10; }
+  var JUNK = /@(mailinator|guerrillamail|10minutemail|tempmail|temp-mail|yopmail|trashmail|sharklasers|getnada|dispostable|throwawaymail|fakeinbox|maildrop)\./i;
+  var TYPO = { "gmial.com": "gmail.com", "gmai.com": "gmail.com", "gmail.co": "gmail.com", "gamil.com": "gmail.com", "hotmial.com": "hotmail.com", "yaho.com": "yahoo.com", "outlok.com": "outlook.com", "icloud.co": "icloud.com" };
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(v) && !JUNK.test(v) && !/^(test|fake|asdf|none|no)@/i.test(v); }
+  function emailTypo(v) { var d = (v.split("@")[1] || "").toLowerCase(); return TYPO[d] ? v.split("@")[0] + "@" + TYPO[d] : ""; }
+  function validPhone(v) { var d = v.replace(/\D/g, ""); if (d.length === 11 && d[0] === "1") d = d.slice(1); return d.length >= 10 && d.length <= 15 && !/^(\d)\1+$/.test(d) && !/^(1234567890|0123456789)$/.test(d) && !/^\d{3}555\d{4}$/.test(d); }
 
   function unlock(guide) {
     document.querySelectorAll(".unlocked").forEach(function (el) { el.classList.add("show"); });
@@ -46,8 +49,10 @@
       var msg = form.querySelector(".msg"), btn = form.querySelector("button[type=submit]");
       var d = {}; new FormData(form).forEach(function (v, k) { d[k] = String(v).trim(); });
       var err = "";
-      if (!d.first_name) err = "Please add your first name.";
-      else if (!validEmail(d.email || "")) err = "That email doesn't look right. Mind checking it?";
+      var typo = emailTypo(d.email || "");
+      if (!d.first_name || !/[a-z]/i.test(d.first_name)) err = "Please add your first name.";
+      else if (typo) err = "Did you mean " + typo + "?";
+      else if (!validEmail(d.email || "")) err = "Please use a real email you check. Your guide link goes there.";
       else if (form.dataset.form === "lead" && !validPhone(d.phone || "")) err = "Please add a phone number with area code.";
       if (err) { msg.className = "msg err"; msg.textContent = err; return; }
       d.type = form.dataset.form; d.guide = form.dataset.guide || ""; d.sms_consent = d.sms_consent ? "yes" : "no";
@@ -55,7 +60,7 @@
       send(d).then(function () {
         store(false, { first_name: d.first_name, email: d.email, phone: d.phone || (known && known.phone) || "" });
         msg.className = "msg ok";
-        msg.textContent = form.dataset.form === "waitlist" ? "You're on the list, " + d.first_name + ". Watch your inbox for your founding-member price." : "You're in. Your guide is below, and a copy is on its way to your inbox.";
+        msg.textContent = form.dataset.form === "waitlist" ? "You're on the list, " + d.first_name + ". Watch your inbox for your founding-member price." : "Done. Check your inbox for your private link.";
         if (form.dataset.form === "lead") { unlock(d.guide); var m = form.closest(".modal"); if (m) { m.classList.remove("open"); var tgt = document.querySelector(form.dataset.next || ""); if (tgt) location.href = tgt.getAttribute("href"); } }
       }).catch(function () {
         msg.className = "msg err"; msg.textContent = "Something went wrong on our side. Please try again in a minute.";
@@ -82,6 +87,27 @@
     m.addEventListener("click", function (e) { if (e.target === m || e.target.classList.contains("x")) m.classList.remove("open"); });
   });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") document.querySelectorAll(".modal.open").forEach(function (m) { m.classList.remove("open"); }); });
+
+  // "Send it again": show the form again
+  document.querySelectorAll("[data-reset]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      document.querySelectorAll(".unlocked").forEach(function (el) { el.classList.remove("show"); });
+      document.querySelectorAll(".lock-only").forEach(function (el) { el.style.display = ""; });
+    });
+  });
+
+  // Copy buttons on every prompt in a guide
+  document.querySelectorAll(".guide-read .prompt").forEach(function (box) {
+    var b = document.createElement("button"); b.type = "button"; b.className = "copy"; b.textContent = "Copy";
+    b.addEventListener("click", function () {
+      var clone = box.cloneNode(true); clone.querySelectorAll(".tag,.copy").forEach(function (x) { x.remove(); });
+      var text = clone.innerText.trim();
+      (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(function () {
+        b.textContent = "Copied"; b.classList.add("done"); setTimeout(function () { b.textContent = "Copy"; b.classList.remove("done"); }, 1800);
+      }).catch(function () { b.textContent = "Select and copy"; });
+    });
+    box.appendChild(b);
+  });
 
   // Library filters
   var bar = document.querySelector(".filters");

@@ -82,7 +82,7 @@ def lead_form(guide, fid, cta="Send me the guide"):
 {CONSENT}
 <button class="btn btn-primary" type="submit">{cta}</button>
 <div class="msg" role="status" aria-live="polite"></div>
-<p class="note">You'll also get my short daily email with what I'm building with AI. Unsubscribe anytime.</p>
+<p class="note">By signing up you'll join my newsletter: one short email a day with what I'm building with AI. Unsubscribe anytime.</p>
 </form>"""
 
 
@@ -174,8 +174,45 @@ lib = head("Free AI guides | Eric Beer", "Every free AI guide, prompt pack and a
 write("/guides/", lib)
 
 # ---------- guide pages ----------
+# Public page = teaser + sign-up. The free part lives on a private page that is only sent by email
+# (or in a DM to someone ManyChat already captured). The locked part is never in any page's HTML.
+SKOOL_URL = os.environ.get("EB_SKOOL_URL", "/#waitlist")
+SKOOL_LIVE = SKOOL_URL.startswith("http")
+SKOOL_CTA = "Start my 7-day free trial" if SKOOL_LIVE else "Join the waitlist"
+
+
+def content(slug):
+    return json.load(open(os.path.join(ROOT, "content", f"{slug}.json")))
+
+
+def full_access_card(g):
+    line = ("Get the full guide, every other guide, the AI agents I use and live calls inside my community. "
+            "Free for 7 days, then $97/month. Cancel anytime." if SKOOL_LIVE else
+            "The full guide, every other guide, the AI agents I use and live calls are going inside my community. "
+            "Join the waitlist for the founding-member price.")
+    return f"""<div class="full-card"><h2>Want the complete guide?</h2><p>{line}</p>
+<a class="btn btn-gold" href="{SKOOL_URL}">{SKOOL_CTA} &rarr;</a></div>"""
+
+
+def unlock_block(g, c):
+    locked = "".join(f"<li>{e(x)}</li>" for x in c["locked"])
+    bars = "".join('<span class="bar" style="width:%d%%"></span>' % w for w in (96, 88, 92, 70, 95, 84, 60, 90, 78))
+    price = ('7 days free, then <b>$97/month</b>. Cancel anytime.' if SKOOL_LIVE else
+             'Founding members: <b>$47 first month</b>, then $97/month.')
+    return f"""<section class="locked"><div class="fade" aria-hidden="true">{bars}</div>
+<div class="lockbox">
+<div class="script">the rest of this guide is inside the community</div>
+<h2>Unlock the full guide</h2>
+<ul class="lock-list">{locked}</ul>
+<p>Get this guide in full, every other guide, the AI agents I use, and live calls, inside my community.</p>
+<div class="price">{price}</div>
+<a class="btn btn-gold" href="{SKOOL_URL}">{SKOOL_CTA}</a>
+</div></section>"""
+
+
 for g in G:
-    inside = "".join(f"<li>{e(x)}</li>" for x in g["inside"])
+    c = content(g["slug"])
+    inside = "".join(f"<li>{e(s['title'])}</li>" for s in c["free"]) + "".join(f'<li class="lk">{e(x)}</li>' for x in c["locked"])
     page = head(f"{g['short']} | free guide by Eric Beer", g["blurb"], f"/guides/{g['slug']}/") + f"""
 <body data-guide="{g['slug']}">
 {nav('/guides/')}
@@ -185,19 +222,18 @@ for g in G:
 <div class="script">free guide</div>
 <h1>{e(g['title'])}</h1>
 <p class="lead">{e(g['blurb'])}</p>
-<div class="inside"><h2>What's inside</h2><ol>{inside}</ol></div>
+<div class="inside"><h2>What's inside</h2><ol>{inside}</ol><p class="note" style="text-align:left;margin-top:10px">The first {len(c['free'])} parts are free. The rest is inside the community.</p></div>
 </div>
 <div>
 <div class="panel lock-only" id="get">
 <h3 style="text-align:center">Get the free guide</h3>
-<p class="note" style="margin:0 0 14px">Tell me where to send it. You'll get it right here and in your inbox.</p>
+<p class="note" style="margin:0 0 14px">I'll email you a private link to the guide, so use an email you check.</p>
 {lead_form(g['slug'], 'g')}
 </div>
 <div class="unlocked unlock-box">
-<h3>Here you go<span data-first-name></span>.</h3>
-<p>Your guide is ready. A copy is on its way to your inbox, and you're on my short daily email.</p>
-<p><a class="btn btn-gold" href="{g['pdf']}" target="_blank" rel="noopener">Open the guide</a></p>
-<p style="font-size:14px;color:#C9C2B3;margin:14px 0 0">Want the agents handed to you? <a href="/#waitlist" style="color:#F2C14E">Join the waitlist</a> for founding-member pricing.</p>
+<h3>Check your inbox<span data-first-name></span>.</h3>
+<p>I just emailed you a private link to the guide. Open it to start reading. Don't see it in a few minutes? Check promotions or spam.</p>
+<p style="font-size:14px;color:#C9C2B3;margin:14px 0 0">Wrong email? <a href="#get" data-reset style="color:#F2C14E">Send it again</a></p>
 </div>
 <figure class="cover" style="margin:28px 0 0"><img src="{g['cover']}" alt="Cover of {e(g['short'])}"></figure>
 </div>
@@ -212,6 +248,22 @@ for g in G:
 {FOOT}
 </body></html>"""
     write(f"/guides/{g['slug']}/", page)
+
+    free = "".join(f'<section class="gsec"><div class="gnum">{i + 1}</div><h2>{e(s["title"])}</h2>{s["body"]}</section>' for i, s in enumerate(c["free"]))
+    private = head(f"{g['short']} | Eric Beer", g["blurb"], f"/g/{g['slug']}-{c['key']}/", '<meta name="robots" content="noindex, nofollow">') + f"""
+<body class="reading">
+{nav('/guides/')}
+<main><article class="guide-read wrap">
+{full_access_card(g)}
+<div class="script">your free guide</div>
+<h1>{e(g['title'])}</h1>
+<div class="gintro">{c['intro']}</div>
+{free}
+{unlock_block(g, c)}
+</article></main>
+{FOOT}
+</body></html>"""
+    write(f"/g/{g['slug']}-{c['key']}/", private)
 
 # ---------- contact ----------
 contact = head("Contact | Eric Beer", "Partnerships, speaking and collaborations with Eric Beer.", "/contact/") + f"""

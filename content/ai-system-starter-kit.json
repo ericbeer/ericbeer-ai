@@ -1,0 +1,20 @@
+{
+  "key": "0bd77ed1a3",
+  "intro": "<p>Most people use AI like Google. Ask a question, get an answer, close the tab. The value is when AI helps you build systems that do real work in your business, every day, without starting from zero each time.</p><p>You don't need to be techy. Use these in ChatGPT, Claude, or whatever AI you like, in order.</p>",
+  "free": [
+    {
+      "title": "Prompt 1: Find the problem worth solving",
+      "body": "<p>Don't start with the tool. Start with the outcome.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>I own a business that helps <span class=\"fill\">[who you help]</span> with <span class=\"fill\">[what you help them do]</span>.\n\nAsk me questions, one at a time, about what my team and I do every week: getting leads, following up, creating content, answering emails, proposals, onboarding, reporting, customer service, and anything else that takes time.\n\nWhen you're done asking, give me a list of the 5 tasks AI could take over or speed up the most, ranked by how much time and money they'd save me. For each one, tell me why.</div><p>Pick the top one. That's your first system.</p>"
+    },
+    {
+      "title": "Prompt 2: Make the AI ask you the right questions",
+      "body": "<p>Most bad AI answers come from vague prompts. Flip it. Let the AI figure out what it needs to know.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>I have a business that helps <span class=\"fill\">[who]</span> solve <span class=\"fill\">[problem]</span>.\n\nI want to use AI to automate and solve this specific problem: <span class=\"fill\">[the task from Prompt 1]</span>, so that <span class=\"fill\">[the result you want]</span>.\n\nBefore you tell me how to do it, tell me what questions I should answer so you can give me the best possible plan. Ask them one at a time.</div><p>Answer every question. Short answers are fine.</p>"
+    }
+  ],
+  "locked": [
+    "Prompt 3: Get the step-by-step blueprint (the one that builds the plan)",
+    "How I run the project with the AI, one step at a time",
+    "The prompt to type when you get stuck",
+    "Bonus: how I turn the blueprint into an AI agent that runs it for me"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "key": "9aea95b89c",
+  "intro": "<p>Most people try to learn AI one tool at a time. That's why it feels like drinking from a fire hose.</p><p>You don't need to become technical. You need a team that knows the result you want and keeps working until it gets there. Here's the shape of it: <b>outcomes</b> at the top, an <b>AI manager</b> for each outcome, and <b>agents</b> underneath that each do one job and hand the work to the next. When they need a decision, they come to you.</p>",
+  "free": [
+    {
+      "title": "Step 1: Write down your outcomes, not your tasks",
+      "body": "<p>Don't start with \"I need help with emails.\" Start with the results your business runs on. Most businesses land on 5 to 8, for example:</p><ul><li>Get seen (content and presence)</li><li>Get leads</li><li>Follow up with leads</li><li>Turn leads into customers</li><li>Deliver what you sold</li><li>Get reviews and referrals</li><li>Bring customers back</li></ul><p>Pick the <b>one</b> that's costing you the most time or money right now. You'll build that team first.</p>"
+    },
+    {
+      "title": "Step 2: Give the outcome a manager",
+      "body": "<p>The manager is one AI agent whose only job is the result. It doesn't do the work. It hands out the work, checks it, and reports to you.</p><div class=\"prompt\"><span class=\"tag\">Copy this in to create your manager</span>You are the manager for this outcome in my business: <span class=\"fill\">[the outcome]</span>.\nMy business helps <span class=\"fill\">[who]</span> with <span class=\"fill\">[what]</span>.\nDone looks like: <span class=\"fill\">[a number or result, e.g. 20 booked calls a month]</span>.\nBreak this outcome into the smallest steps, one job per step, in the order they happen. For each step, tell me what goes in, what comes out, and how we know it's done. Then tell me which decisions you'd need from me.</div>"
+    },
+    {
+      "title": "Step 3: Give every agent one job",
+      "body": "<p>Take the steps your manager wrote and turn each one into an agent. One agent, one job. When an agent tries to do five things, it does all five badly.</p><p>Line them up so each agent's output is the next agent's input. That chain is your team. The exact job card I give every agent, and how I wire the hand-offs, is in the full guide below.</p>"
+    }
+  ],
+  "locked": [
+    "The one-job agent card I use for every agent (copy-paste)",
+    "Step 4: Your business brain, what every agent needs to know about you",
+    "Step 5: Decision rules, what the team decides and what comes to you",
+    "Step 6: How your manager reaches you on Slack, Telegram or a phone call",
+    "Step 7: Run one team for a week, then add the next",
+    "The prompt to use when you get stuck"
+  ]
+}
