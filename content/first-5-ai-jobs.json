@@ -1,0 +1,25 @@
+{
+  "key": "3addc010df",
+  "intro": "<p>Most business owners use AI like a smarter Google. Ask a question, copy the answer, then still do the next five steps yourself.</p><p>The shift is to give AI a <b>job</b>: a repeating piece of work it owns from start to finish, and only comes to you when a human is needed. Here's how to find your first five.</p>",
+  "free": [
+    {
+      "title": "Step 1: Write down your real week",
+      "body": "<p>For one week, jot down every task you or your team repeats. Don't filter. Follow-ups, emails, proposals, posts, reports, scheduling, data entry. Or skip the writing and let AI interview you:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>I run a business that helps <span class=\"fill\">[who]</span> with <span class=\"fill\">[what]</span>. Interview me, one question at a time, about everything my team and I repeat every week. When you're done, list every repeating task with how often it happens and roughly how long it takes.</div>"
+    },
+    {
+      "title": "Step 2: Score each task with 4 questions",
+      "body": "<p>A task is a great AI job when you can answer yes to most of these:</p><ul><li><b>Does it repeat?</b> Weekly or more is ideal.</li><li><b>Are the steps mostly the same each time?</b></li><li><b>Is the information already somewhere?</b> An email, a call recording, your CRM, a form.</li><li><b>Is a mistake cheap to fix?</b> Start where a slip costs a minute, not a client.</li></ul>"
+    },
+    {
+      "title": "Step 3: The 5 jobs most businesses start with",
+      "body": "<ol><li><b>Lead follow-up:</b> knows who the lead is and what happened on the call, writes the follow-up, updates the CRM, and flags you only when a human is needed.</li><li><b>Inbox sorting and reply drafts:</b> sorts what matters and drafts replies in your voice for your OK.</li><li><b>Meeting prep and recap:</b> a one-page brief before each call, action items after.</li><li><b>Content repurposing:</b> one video or post turned into captions, emails and short posts.</li><li><b>Weekly numbers report:</b> the numbers you check every week, in one short summary.</li></ol>"
+    }
+  ],
+  "locked": [
+    "The AI job description template (the exact brief I give every AI job)",
+    "How to start with one job and add the next without breaking anything",
+    "The copy-paste prompt that turns a job description into a setup plan",
+    "The safety rule: what AI jobs decide, and what always comes to you",
+    "Bonus: the 5 jobs, set up as ready-made AI agents"
+  ]
+}
