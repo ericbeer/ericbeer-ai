@@ -1,11 +1,36 @@
 [
   {
+    "slug": "first-5-ai-jobs",
+    "title": "Your First 5 AI Jobs: stop doing the work AI should be doing",
+    "short": "Your First 5 AI Jobs",
+    "blurb": "How to find the jobs AI should own inside your business, score them, and start with the one that saves you the most time.",
+    "keyword": "JOBS",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Any AI",
+    "pdf": "/assets/guides/First-5-AI-Jobs-Guide.pdf",
+    "cover": "/assets/guides/jobs-cover-1.png",
+    "inside": [
+      "Write down your real week",
+      "Score each task with 4 questions",
+      "The 5 jobs most businesses start with",
+      "Give each job a job description",
+      "Start with one job, then add the next"
+    ],
+    "featured": true
+  },
+  {
     "slug": "your-ai-team",
     "title": "Your AI Team: set up AI agents that run your outcomes",
     "short": "Your AI Team",
     "blurb": "The 7-step setup I use: outcomes, an AI manager for each, agents with one job, and decisions that come to you.",
     "keyword": "TEAM",
-    "topics": ["agents", "getting-started"],
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
     "tool": "Any AI",
     "pdf": "/assets/guides/Your-AI-Team-Guide.pdf",
     "cover": "/assets/guides/team-cover-1.png",
@@ -26,7 +51,10 @@
     "short": "AI System Starter Kit",
     "blurb": "Stop using AI like Google. Three copy-paste prompts to find the problem worth solving and get a step-by-step plan.",
     "keyword": "SYSTEM",
-    "topics": ["prompts", "getting-started"],
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
     "tool": "ChatGPT / Claude",
     "pdf": "/assets/guides/AI-System-Starter-Kit.pdf",
     "cover": "/assets/guides/kit-cover-1.png",
