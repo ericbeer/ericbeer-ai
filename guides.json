@@ -1,5 +1,26 @@
 [
   {
+    "slug": "five-minute-follow-up",
+    "title": "The 5-Minute Follow-Up Kit: AI prompts so no lead goes cold",
+    "short": "5-Minute Follow-Up Kit",
+    "blurb": "The prompts I use to answer every new lead instantly, follow up for 7 days, and wake up the leads you already paid for.",
+    "keyword": "LEADS",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Any AI + your CRM",
+    "cover": "/assets/guides/leads-cover-1.png",
+    "inside": [
+      "Find out how fast you really answer",
+      "Write the first reply before the lead arrives",
+      "Write the next 7 days of follow-up",
+      "Wake up the leads you already paid for",
+      "Make it run without you, in any CRM"
+    ],
+    "featured": true
+  },
+  {
     "slug": "first-5-ai-jobs",
     "title": "Your First 5 AI Jobs: stop doing the work AI should be doing",
     "short": "Your First 5 AI Jobs",
