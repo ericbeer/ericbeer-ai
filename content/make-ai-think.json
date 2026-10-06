@@ -1,0 +1,28 @@
+{
+  "key": "2ab49b120c",
+  "intro": "<p>You don't need to become an AI expert. You don't need courses, and you don't need new tools. You run a business. Let AI do the thinking.</p><p>These are the 3 prompts from the video, word for word, with the blanks filled in so you can paste them straight into ChatGPT, Claude or any AI. Use them in order, in the same chat.</p>",
+  "free": [
+    {
+      "title": "Prompt 1: Tell it what's costing you time",
+      "body": "<p>Start with the problem, not a tool. Be specific about the work that eats your week.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Here's my business: <span class=\"fill\">[what you sell, who you sell it to, and how many people are on your team]</span>. Here's what's taking most of my time: <span class=\"fill\">[the 2 or 3 tasks that eat your week]</span>. Figure out a way to automate this for me.</div><p>Don't take the first answer yet. Go straight to Prompt 2.</p>"
+    },
+    {
+      "title": "Prompt 2: Make it interview you",
+      "body": "<p>This is the one most people skip. Without it, AI guesses. With it, AI understands your business before it gives you a single recommendation.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Before you answer, ask me questions one at a time until you understand my business.</div><p>Answer each question in a sentence or two. When it stops asking, it knows enough to help.</p>"
+    },
+    {
+      "title": "Prompt 3: Ask for the plan",
+      "body": "<p>Now turn what it learned into something your team can actually do.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Give me a step-by-step plan my team can follow, starting with the first thing to do this week.</div><p>Pick the first step and do it this week. Then come back to the same chat and ask for the next one.</p>"
+    },
+    {
+      "title": "When you get stuck",
+      "body": "<ul><li><b>The answer is too generic?</b> Type: \"That could be for any business. Use what you learned about mine and make it specific.\"</li><li><b>The plan is too big?</b> Type: \"Cut this down to the one thing that saves me the most time in the next 7 days.\"</li><li><b>You don't know how to set something up?</b> Type: \"Walk me through it click by click. Assume I'm not technical.\"</li></ul>"
+    }
+  ],
+  "locked": [
+    "The follow-up prompts I use to turn the plan into a working AI system",
+    "How to save your business details so you never re-explain your business to AI",
+    "The 5 jobs most businesses hand to AI first",
+    "Bonus: these 3 prompts set up as a ready-made AI assistant"
+  ]
+}

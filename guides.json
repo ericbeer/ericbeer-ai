@@ -1,5 +1,25 @@
 [
   {
+    "slug": "make-ai-think",
+    "title": "Make AI Do the Thinking: the 3 prompts, word for word",
+    "short": "Make AI Do the Thinking",
+    "blurb": "You don't need to become an AI expert. Three copy-paste prompts: tell it what's costing you time, make it interview you, get the plan.",
+    "keyword": "THINK",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "ChatGPT / Claude",
+    "cover": "/assets/guides/think-cover-1.png",
+    "inside": [
+      "Prompt 1: tell it what's costing you time",
+      "Prompt 2: make it interview you",
+      "Prompt 3: ask for the step-by-step plan",
+      "What to type when you get stuck"
+    ],
+    "featured": true
+  },
+  {
     "slug": "five-minute-follow-up",
     "title": "The 5-Minute Follow-Up Kit: AI prompts so no lead goes cold",
     "short": "5-Minute Follow-Up Kit",
