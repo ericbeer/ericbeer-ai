@@ -63,7 +63,7 @@ def card(g):
 
 
 def waitlist_form():
-    return f"""<form class="form" data-form="waitlist" action="__WEBHOOK__" method="post">
+    return f"""<form class="form" data-form="waitlist" action="https://services.leadconnectorhq.com/hooks/Xq2iuMgGjsWRjh9q58Ii/webhook-trigger/6aa5f268-4cb9-4a6b-a068-58cd4b644894" method="post">
 <input type="hidden" name="type" value="waitlist">
 <div><label for="wl-name">First name</label><input id="wl-name" type="text" name="first_name" autocomplete="given-name" required></div>
 <div><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" autocomplete="email" required></div>
@@ -74,7 +74,7 @@ def waitlist_form():
 
 
 def lead_form(guide, fid, cta="Send me the guide"):
-    return f"""<form class="form" data-form="lead" data-guide="{guide}" action="__WEBHOOK__" method="post">
+    return f"""<form class="form" data-form="lead" data-guide="{guide}" action="https://services.leadconnectorhq.com/hooks/Xq2iuMgGjsWRjh9q58Ii/webhook-trigger/6aa5f268-4cb9-4a6b-a068-58cd4b644894" method="post">
 <input type="hidden" name="type" value="lead"><input type="hidden" name="guide" value="{guide}">
 <div><label for="{fid}-name">First name</label><input id="{fid}-name" type="text" name="first_name" autocomplete="given-name" required></div>
 <div><label for="{fid}-email">Email</label><input id="{fid}-email" type="email" name="email" autocomplete="email" required></div>
@@ -214,7 +214,7 @@ for g in G:
     c = content(g["slug"])
     inside = "".join(f"<li>{e(s['title'])}</li>" for s in c["free"]) + "".join(f'<li class="lk">{e(x)}</li>' for x in c["locked"])
     page = head(f"{g['short']} | free guide by Eric Beer", g["blurb"], f"/guides/{g['slug']}/") + f"""
-<body data-guide="{g['slug']}">
+<body data-guide="{g['slug']}" data-keyword="{g.get('keyword','').lower()}">
 {nav('/guides/')}
 <main>
 <section class="guide-hero"><div class="wrap grid">
@@ -227,13 +227,14 @@ for g in G:
 <div>
 <div class="panel lock-only" id="get">
 <h3 style="text-align:center">Get the free guide</h3>
-<p class="note" style="margin:0 0 14px">I'll email you a private link to the guide, so use an email you check.</p>
+<p class="note" style="margin:0 0 14px">Tell me where to send it and you'll get it right here.</p>
 {lead_form(g['slug'], 'g')}
 </div>
 <div class="unlocked unlock-box">
-<h3>Check your inbox<span data-first-name></span>.</h3>
-<p>I just emailed you a private link to the guide. Open it to start reading. Don't see it in a few minutes? Check promotions or spam.</p>
-<p style="font-size:14px;color:#C9C2B3;margin:14px 0 0">Wrong email? <a href="#get" data-reset style="color:#F2C14E">Send it again</a></p>
+<h3>You're in<span data-first-name></span>.</h3>
+<p>Here's your free guide. Bookmark it so you can come back to it.</p>
+<p><a class="btn btn-gold" href="/g/{g['slug']}-{c['key']}/">Open the guide &rarr;</a></p>
+<p style="font-size:14px;color:#C9C2B3;margin:14px 0 0">You're also on my short daily email with what I'm building with AI. Unsubscribe anytime.</p>
 </div>
 <figure class="cover" style="margin:28px 0 0"><img src="{g['cover']}" alt="Cover of {e(g['short'])}"></figure>
 </div>
@@ -276,7 +277,7 @@ contact = head("Contact | Eric Beer", "Partnerships, speaking and collaborations
 <div class="grid">
 <div class="panel"><h3>I'd love to hear about</h3><p>Partnerships and joint ventures, podcast and stage invites, and anything that helps more business owners actually use AI.</p><p><a class="btn btn-ghost" href="/guides/">Browse free guides</a></p></div>
 <div class="panel">
-<form class="form" data-form="contact" action="__WEBHOOK__" method="post">
+<form class="form" data-form="contact" action="https://services.leadconnectorhq.com/hooks/Xq2iuMgGjsWRjh9q58Ii/webhook-trigger/6aa5f268-4cb9-4a6b-a068-58cd4b644894" method="post">
 <input type="hidden" name="type" value="contact">
 <div><label for="c-name">First name</label><input id="c-name" type="text" name="first_name" required></div>
 <div><label for="c-email">Email</label><input id="c-email" type="email" name="email" required></div>

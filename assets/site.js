@@ -1,6 +1,6 @@
 // EricBeer.ai: lead capture to GoHighLevel (inbound webhook), guide unlock, library filters.
 (function () {
-  var WEBHOOK = "__WEBHOOK__"; // GoHighLevel inbound webhook URL, set at deploy
+  var WEBHOOK = "https://services.leadconnectorhq.com/hooks/Xq2iuMgGjsWRjh9q58Ii/webhook-trigger/6aa5f268-4cb9-4a6b-a068-58cd4b644894"; // GoHighLevel inbound webhook URL, set at deploy
   var KEY = "eb_lead_v1";
 
   function store(get, val) {
@@ -16,6 +16,17 @@
     payload.source = payload.source || q.src || q.utm_source || "ericbeer.ai";
     payload.keyword = payload.keyword || q.kw || "";
     payload.page = location.pathname;
+    payload.account = "site";
+    payload.last_name = payload.last_name || "";
+    payload.instagram_username = "";
+    if (!payload.keyword && document.body.dataset.keyword) payload.keyword = document.body.dataset.keyword;
+    var tg = ["src-ericbeer-ai"];
+    if (payload.type === "waitlist") tg.push("skool-waitlist");
+    if (payload.type === "contact") tg.push("contact-form");
+    if (payload.guide) tg.push("lm-" + payload.guide);
+    if (payload.keyword) tg.push("kw-" + String(payload.keyword).toLowerCase());
+    if (payload.type === "lead" || payload.type === "waitlist") tg.push("daily-list");
+    payload.tags = tg.join(", ");
     payload.submitted_at = new Date().toISOString();
     if (WEBHOOK.indexOf("http") !== 0) return Promise.reject(new Error("not-configured"));
     return fetch(WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
@@ -60,7 +71,7 @@
       send(d).then(function () {
         store(false, { first_name: d.first_name, email: d.email, phone: d.phone || (known && known.phone) || "" });
         msg.className = "msg ok";
-        msg.textContent = form.dataset.form === "waitlist" ? "You're on the list, " + d.first_name + ". Watch your inbox for your founding-member price." : "Done. Check your inbox for your private link.";
+        msg.textContent = form.dataset.form === "waitlist" ? "You're on the list, " + d.first_name + ". Watch your inbox for your founding-member price." : "Done. Your guide is ready below.";
         if (form.dataset.form === "lead") { unlock(d.guide); var m = form.closest(".modal"); if (m) { m.classList.remove("open"); var tgt = document.querySelector(form.dataset.next || ""); if (tgt) location.href = tgt.getAttribute("href"); } }
       }).catch(function () {
         msg.className = "msg err"; msg.textContent = "Something went wrong on our side. Please try again in a minute.";
