@@ -190,3 +190,18 @@ footer a{color:var(--ink)}
 .follow{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
 .follow .h{font-weight:400;opacity:.75;font-size:14px}
 @media (max-width:860px){.vids{grid-template-columns:repeat(2,1fr);gap:12px}.vid h3{font-size:14.5px}.follow .btn{width:100%}}
+
+/* org chart diagram */
+.org{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 14px;margin:14px 0;text-align:center;font-size:14px}
+.org .lvl{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.org .box{border-radius:10px;padding:8px 12px;font-weight:600;line-height:1.25}
+.org .box small{display:block;font-weight:400;font-size:12px;opacity:.8}
+.org .you{background:var(--navy);color:#fff}
+.org .cos{background:var(--blue);color:#fff}
+.org .mgr{background:var(--gold-soft);color:var(--ink);border:1px solid var(--gold)}
+.org .agt{background:#F4F6FB;color:var(--ink);border:1px solid var(--line);font-weight:500;font-size:13px}
+.org .down{color:var(--gold);font-size:20px;line-height:1;margin:6px 0}
+.org .dept{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:4px}
+.org .col{display:flex;flex-direction:column;gap:6px}
+.org .note{margin-top:12px;font-size:13px;color:var(--muted)}
+@media (max-width:860px){.org .dept{grid-template-columns:repeat(2,1fr)}}

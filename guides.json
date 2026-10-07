@@ -1,5 +1,29 @@
 [
   {
+    "slug": "ai-org-chart",
+    "title": "Your AI Org Chart: the diagram, and how to build it for any business",
+    "short": "Your AI Org Chart",
+    "blurb": "The diagram of an AI-run business, plus 7 steps with copy-paste prompts to build your own AI managers and agents.",
+    "keyword": "ORG",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/org-cover-1.png",
+    "inside": [
+      "The diagram: how an AI org chart works",
+      "Write your business brief",
+      "Turn your business into departments",
+      "Hire the manager",
+      "Break the work into one-job agents",
+      "Connect the handoffs and set the decision rules",
+      "Build your first department in Claude",
+      "Add the next department, then put it on autopilot"
+    ],
+    "featured": true
+  },
+  {
     "slug": "make-ai-think",
     "title": "Make AI Do the Thinking: the 3 prompts, word for word",
     "short": "Make AI Do the Thinking",

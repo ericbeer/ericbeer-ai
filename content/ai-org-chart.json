@@ -1,0 +1,45 @@
+{
+  "key": "5251fbf4d0",
+  "intro": "<p>Most business owners are great at ideas, sales and solving problems. The org chart, the delegation and the follow-up are where things get messy. AI changes that. You can now build a real org chart where AI managers and one-job agents do the work, hand it to each other, and only come to you for decisions.</p><p>Here's the diagram, then the exact steps to build it for any business you run. Every prompt works in Claude, ChatGPT or any AI. Use them in order, in the same chat.</p>",
+  "free": [
+    {
+      "title": "The diagram: how an AI org chart works",
+      "body": "<div class=\"org\"><div class=\"lvl\"><div class=\"box you\">YOU<small>set goals, make the big calls</small></div></div><div class=\"down\">&darr;</div><div class=\"lvl\"><div class=\"box cos\">AI Chief of Staff<small>knows the whole business, routes the work, briefs you daily</small></div></div><div class=\"down\">&darr;</div><div class=\"dept\"><div class=\"col\"><div class=\"box mgr\">Marketing Manager</div><div class=\"box agt\">Content writer</div><div class=\"box agt\">Post scheduler</div><div class=\"box agt\">Ad reporter</div></div><div class=\"col\"><div class=\"box mgr\">Sales Manager</div><div class=\"box agt\">Lead responder</div><div class=\"box agt\">Follow-up writer</div><div class=\"box agt\">Call prepper</div></div><div class=\"col\"><div class=\"box mgr\">Delivery Manager</div><div class=\"box agt\">Onboarding guide</div><div class=\"box agt\">Progress updater</div><div class=\"box agt\">Check-in writer</div></div><div class=\"col\"><div class=\"box mgr\">Operations Manager</div><div class=\"box agt\">Inbox sorter</div><div class=\"box agt\">Invoice chaser</div><div class=\"box agt\">Weekly reporter</div></div></div><p class=\"note\">Work flows down and across: one agent's finished work is the next agent's starting point. Decisions flow up: anything outside the rules goes to the manager, then to you.</p></div><p>Three rules make it work:</p><ul><li><b>Managers own an outcome</b>, like \"every new lead gets a reply in 5 minutes.\" Not a task list.</li><li><b>Agents do one job each.</b> One job means clear instructions and work you can check.</li><li><b>Everything has a handoff and a decision rule.</b> Who gets the work next, and when a human has to step in.</li></ul><p>Your departments will look different. The next 7 steps build yours.</p>"
+    },
+    {
+      "title": "Step 1: Write your business brief",
+      "body": "<p>Every manager and agent reads this first, so you never re-explain your business. Ask AI to write it with you.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Help me write a one-page business brief that every AI on my team will read before doing any work. Ask me questions one at a time about: what I sell and the price, who buys it, how a customer finds me and buys, how I deliver, my team, the tools I use, and how I talk to customers. Then write the brief in plain language.</div><p>Save the finished brief as a document. You'll reuse it in every step.</p>"
+    },
+    {
+      "title": "Step 2: Turn your business into departments",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Using my business brief, split my business into 3 to 5 departments. For each one, give me the one outcome it owns, written as a result I can measure (for example: \"every new lead gets a reply within 5 minutes\"). Then tell me which department costs me the most time today.</div><p>Start with the department that costs you the most time. You'll build that one first.</p>"
+    },
+    {
+      "title": "Step 3: Hire the manager",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Write the instructions for an AI manager who owns this outcome: <span class=\"fill\">[the outcome from Step 2]</span>. Include: its job in one sentence, what it checks every day, how it decides which agent does what, what it reports to me and how often, and the decisions it must always bring to me instead of making itself.</div><p>This is your manager's job description. Keep it in the same document as your brief.</p>"
+    },
+    {
+      "title": "Step 4: Break the work into one-job agents",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>List every repeatable task inside this department: <span class=\"fill\">[department name]</span>. Group them into 3 to 6 agents that each do one job. For each agent write: its job in one sentence, what it starts with (the input), what it hands over when it's done (the output), and how I'll know the work is good.</div><p>If an agent's job takes more than one sentence to explain, split it in two.</p>"
+    },
+    {
+      "title": "Step 5: Connect the handoffs and set the decision rules",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Draw the handoffs for this department as a simple list: which agent's output goes to which agent next, and where the work ends. Then write the decision rules: what the agents can do on their own, what the manager approves, and what always comes to me. Anything that sends a message to a customer or spends money comes to me until I say otherwise.</div><p>Starting strict is the safe move. Loosen the rules once you trust the work.</p>"
+    },
+    {
+      "title": "Step 6: Build your first department in Claude",
+      "body": "<p>No code needed. In Claude:</p><ol><li>Go to claude.ai, open <b>Projects</b>, and click <b>New project</b>. Name it after the department, like \"Sales Manager.\"</li><li>In <b>Project instructions</b>, paste the manager instructions from Step 3, the agent list from Step 4 and the rules from Step 5.</li><li>In <b>Project knowledge</b>, add your business brief and any examples of good work (past emails, scripts, reports).</li><li>Start a chat in the project and give it real work: <span class=\"fill\">\"Here are today's new leads. Run the department.\"</span></li></ol><p>ChatGPT works the same way with its Projects feature. Run it by hand for a week. Fix the instructions every time it gets something wrong, so the same mistake never comes back.</p>"
+    },
+    {
+      "title": "Step 7: Add the next department, then put it on autopilot",
+      "body": "<p>When the first department works without you checking every answer, repeat Steps 3 to 6 for the next one. Then add your AI Chief of Staff on top:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>You are my AI Chief of Staff. Here is my business brief and the list of my AI departments with their outcomes. Every morning, tell me: what each department finished, what's stuck, and the 3 decisions only I can make today. Keep it under 10 lines.</div><p>Once you trust a department, automation tools like Zapier, Make or n8n can run its handoffs automatically, so the agents pass work to each other without you copying and pasting.</p>"
+    }
+  ],
+  "locked": [
+    "The org chart I run my own business on, department by department",
+    "Agent-to-agent setups: how the agents pass work to each other automatically",
+    "Ready-to-use instructions for the 12 agents most businesses start with",
+    "How AI managers report to you on Slack, Telegram or text",
+    "Bonus: a fill-in-the-blanks org chart you can copy for any business"
+  ]
+}
