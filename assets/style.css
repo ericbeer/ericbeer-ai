@@ -125,7 +125,7 @@ section.block{padding:72px 0;text-align:center}
 /* footer */
 footer{border-top:1px dashed var(--line);padding:34px 0 46px;text-align:center;font-size:14px;color:var(--muted)}
 footer a{color:var(--ink)}
-.socials{display:flex;gap:10px;justify-content:center;margin:14px 0}
+.socials{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:14px 0}
 .socials a{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:7px 16px;text-decoration:none;font-size:14px}
 
 /* contact */
@@ -175,3 +175,18 @@ footer a{color:var(--ink)}
 .inside li.lk:after{content:" 🔒";font-size:13px}
 @media (max-width:860px){.lockbox{margin-top:-110px;padding:24px 18px}.gsec{padding:20px 16px}.gnum{left:16px;top:18px}.gsec h2{font-size:19px}}
 .guide-read .prompt .tag{border:0;padding:0;margin:0;display:block;font-size:11px;font-family:"Poppins",sans-serif;color:var(--muted);background:none}
+
+/* watch & learn */
+.vids{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:left}
+.vid{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:12px;display:flex;flex-direction:column}
+.vthumb{position:relative;display:block;border-radius:12px;overflow:hidden;aspect-ratio:9/16;background:var(--navy)}
+.vthumb img{width:100%;height:100%;object-fit:cover}
+.vthumb .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:20px;padding-left:4px;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s}
+.vthumb:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+.vid h3{font-family:"Lora",serif;color:var(--ink);font-size:16px;line-height:1.3;margin:12px 4px 10px;flex:1}
+.vlinks{display:flex;flex-wrap:wrap;gap:6px;padding:0 4px 4px}
+.vlinks a{font-size:12.5px;font-weight:600;text-decoration:none;color:var(--blue);border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px}
+.vlinks a:hover{border-color:var(--blue)}
+.follow{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.follow .h{font-weight:400;opacity:.75;font-size:14px}
+@media (max-width:860px){.vids{grid-template-columns:repeat(2,1fr);gap:12px}.vid h3{font-size:14.5px}.follow .btn{width:100%}}

@@ -4,7 +4,10 @@ import json, html, os
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://ericbeer.ai"
 G = json.load(open(os.path.join(ROOT, "guides.json")))
+SOCIAL = json.load(open(os.path.join(ROOT, "social.json")))
 e = html.escape
+import hashlib
+CSS_V = hashlib.md5(open(os.path.join(ROOT, "assets", "style.css"), "rb").read()).hexdigest()[:8]
 
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">'
 
@@ -28,11 +31,11 @@ def head(title, desc, path, extra=""):
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE}{path}">
-<meta property="og:image" content="{SITE}/assets/eric.jpg">
+<meta property="og:image" content="{SITE}/assets/eric-hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1B2D'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-size='30' font-weight='700' text-anchor='middle' fill='%23C8963E'%3EEB%3C/text%3E%3C/svg%3E">
 {FONTS}
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={CSS_V}">
 {extra}
 </head>"""
 
@@ -43,8 +46,8 @@ def nav(active):
     return f'<header class="nav"><div class="wrap"><a class="brand" href="/">Eric Beer<span>.</span></a><nav aria-label="Main"><ul>{lis}</ul></nav></div></header>'
 
 
-FOOT = """<footer><div class="wrap">
-<div class="socials"><a href="https://www.instagram.com/ericbeerofficial/" rel="noopener">Instagram</a><a href="/guides/">Free guides</a><a href="/#waitlist">Waitlist</a></div>
+FOOT = f"""<footer><div class="wrap">
+<div class="socials">{"".join(f'<a href="{p["url"]}" rel="noopener">{p["name"]}</a>' for p in SOCIAL["profiles"])}<a href="/guides/">Free guides</a><a href="/#waitlist">Waitlist</a></div>
 <div>Eric Beer &middot; AI teams for business owners, no tech required</div>
 <div style="margin-top:6px">&copy; 2026 Eric Beer &middot; <a href="/privacy/">Privacy</a></div>
 </div></footer>
@@ -107,6 +110,24 @@ def write(path, content):
     open(full, "w").write(content)
 
 
+def watch_section():
+    if not SOCIAL.get("videos"): return ""
+    vids = "".join(
+        f'<article class="vid"><a class="vthumb" href="{e(next(iter(v["links"].values())))}" rel="noopener" target="_blank">'
+        f'<img src="{v["cover"]}" alt="{e(v["title"])}" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a>'
+        f'<h3>{e(v["title"])}</h3><div class="vlinks">'
+        + "".join(f'<a href="{e(u)}" rel="noopener" target="_blank">{n}</a>' for n, u in v["links"].items())
+        + "</div></article>" for v in SOCIAL["videos"])
+    follow = "".join(f'<a class="btn btn-ghost" href="{p["url"]}" rel="noopener" target="_blank">{p["name"]} <span class="h">{e(p["handle"])}</span></a>' for p in SOCIAL["profiles"])
+    return f"""<section class="block" id="watch"><div class="wrap">
+<div class="script">watch &amp; learn</div>
+<h2>See how I put AI to work</h2>
+<p class="sub">Short videos on how I run my business with an AI team. Watch on whichever app you like.</p>
+<div class="vids">{vids}</div>
+<div class="follow">{follow}</div>
+</div></section>"""
+
+
 # ---------- home ----------
 featured = [g for g in G if g.get("featured")][:3]
 home = head("Eric Beer | AI teams for business owners", "Free guides, prompts and AI agent systems for business owners who want results from AI without learning the tech.", "/") + f"""
@@ -123,7 +144,7 @@ home = head("Eric Beer | AI teams for business owners", "Free guides, prompts an
 <div class="script ps" style="font-size:24px">p.s. the waitlist is open &rarr;</div>
 <div class="pills"><span class="pill"><b>20+ yrs</b> in performance marketing</span><span class="pill">founder of <b>BeChosen</b></span><span class="pill">runs his business with an <b>AI team</b></span></div>
 </div>
-<div><figure class="polaroid"><span class="tape"></span><img src="/assets/eric.jpg" alt="Eric Beer at his desk" width="640" height="800"><span class="sticker">AI obsessed</span><figcaption class="cap">building my AI team</figcaption></figure></div>
+<div><figure class="polaroid"><span class="tape"></span><img src="/assets/eric-hero.jpg" alt="Eric Beer" width="720" height="900"><span class="sticker">AI obsessed</span><figcaption class="cap">building my AI team</figcaption></figure></div>
 </div></section>
 <hr class="divider">
 {CLUB}
@@ -136,8 +157,10 @@ home = head("Eric Beer | AI teams for business owners", "Free guides, prompts an
 <p style="margin-top:28px"><a class="btn btn-ghost" href="/guides/">See all free guides</a></p>
 </div></section>
 <hr class="divider">
+{watch_section()}
+<hr class="divider">
 <section class="block about"><div class="wrap grid">
-<figure class="polaroid"><span class="tape"></span><img src="/assets/eric.jpg" alt="Eric Beer" loading="lazy" width="640" height="800"><figcaption class="cap">hi again</figcaption></figure>
+<figure class="polaroid"><span class="tape"></span><img src="/assets/eric-about.jpg" alt="Eric Beer" loading="lazy" width="720" height="900"><figcaption class="cap">hi again</figcaption></figure>
 <div>
 <div class="script">about me</div>
 <h2>A marketer who handed his busywork to AI</h2>

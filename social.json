@@ -1,0 +1,44 @@
+{
+  "profiles": [
+    {"name": "YouTube", "handle": "@ericbeer", "url": "https://www.youtube.com/@ericbeer"},
+    {"name": "TikTok", "handle": "@ericbeer", "url": "https://www.tiktok.com/@ericbeer"},
+    {"name": "Instagram", "handle": "@ericbeerofficial", "url": "https://www.instagram.com/ericbeerofficial/"}
+  ],
+  "videos": [
+    {
+      "title": "You don't need to be an AI expert: 3 prompts that make AI do the thinking",
+      "cover": "/assets/videos/think.jpg",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/wYr0itobRaY",
+        "TikTok": "https://www.tiktok.com/@ericbeer/video/7693703079182568717",
+        "Instagram": "https://www.instagram.com/reel/DeK3SROg9l2/"
+      }
+    },
+    {
+      "title": "You're using AI, but you're still doing the work",
+      "cover": "/assets/videos/still-doing-the-work.jpg",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/UjpN61_ryg0",
+        "TikTok": "https://www.tiktok.com/@ericbeer/video/7693326632328695053",
+        "Instagram": "https://www.instagram.com/reel/DeIXRrxA9ce/"
+      }
+    },
+    {
+      "title": "What if you didn't have to learn AI at all? Build an AI team instead",
+      "cover": "/assets/videos/ai-team.jpg",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/If37_pIFa7w",
+        "TikTok": "https://www.tiktok.com/@ericbeer/video/7691831306170174734",
+        "Instagram": "https://www.instagram.com/reel/Dd_DzbhA5Vw/"
+      }
+    },
+    {
+      "title": "95% of people who say they use AI are using it wrong",
+      "cover": "/assets/videos/using-ai-wrong.jpg",
+      "links": {
+        "TikTok": "https://www.tiktok.com/@ericbeer/video/7691452362619243790",
+        "Instagram": "https://www.instagram.com/reel/Dd7XSRuDGRR/"
+      }
+    }
+  ]
+}
