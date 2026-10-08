@@ -114,7 +114,7 @@ def watch_section():
     if not SOCIAL.get("videos"): return ""
     vids = "".join(
         f'<article class="vid"><a class="vthumb" href="{e(next(iter(v["links"].values())))}" rel="noopener" target="_blank">'
-        f'<img src="{v["cover"]}" alt="{e(v["title"])}" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a>'
+        f'<img src="{v["cover"]}" alt="{e(v["title"] or "Video by Eric Beer")}" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a>'
         f'<h3>{e(v["title"])}</h3><div class="vlinks">'
         + "".join(f'<a href="{e(u)}" rel="noopener" target="_blank">{n}</a>' for n, u in v["links"].items())
         + "</div></article>" for v in SOCIAL["videos"][:int(SOCIAL.get("feed", {}).get("show", 4))])

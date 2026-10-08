@@ -23,8 +23,11 @@ def get(url):
 
 def clean_title(t):
     t = html.unescape(t)
-    t = re.sub(r"#\w+", "", t)            # hashtags
+    raw = t
+    t = re.sub(r"(?<!\w)#[^\W\d_]\w*", "", t)   # hashtags like #ai (keeps "#1")
     t = re.sub(r"\s+", " ", t).strip(" :-|")
+    if not t:                                   # title was only hashtags: keep the words, drop the # signs
+        t = re.sub(r"\s+", " ", raw.replace("#", " ")).strip(" :-|")
     return t
 
 
@@ -51,6 +54,10 @@ def save_cover(vid, slug):
         im.crop((x, y, x + tw, y + th)).save(path, quality=82, optimize=True)
     except ImportError:
         open(path, "wb").write(raw)
+    except Exception as ex:                      # not a real image: skip this video, keep the rest of the run going
+        print(f"cover for {vid} unusable ({ex}); skipping it this run")
+        if os.path.exists(path): os.remove(path)
+        return None
     return f"/assets/videos/{slug}.jpg"
 
 
@@ -78,6 +85,8 @@ def main():
     known = {yt_id(v): v for v in videos if yt_id(v)}
     added = 0
     for pub, vid, title in entries:
+        if not title:
+            continue
         if vid in known:
             known[vid].setdefault("published", pub)
             continue
