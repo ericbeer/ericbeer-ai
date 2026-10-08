@@ -199,7 +199,7 @@ write("/guides/", lib)
 # ---------- guide pages ----------
 # Public page = teaser + sign-up. The free part lives on a private page that is only sent by email
 # (or in a DM to someone ManyChat already captured). The locked part is never in any page's HTML.
-SKOOL_URL = os.environ.get("EB_SKOOL_URL", "/#waitlist")
+SKOOL_URL = os.environ.get("EB_SKOOL_URL") or "/#waitlist"
 SKOOL_LIVE = SKOOL_URL.startswith("http")
 SKOOL_CTA = "Start my 7-day free trial" if SKOOL_LIVE else "Join the waitlist"
 

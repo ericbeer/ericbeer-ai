@@ -72,4 +72,22 @@ Harness: real `update_videos.py` run with `urllib.request.urlopen` stubbed to se
 - Accept `/embed/` and `/live/` forms in `yt_id`.
 - Add a monthly keepalive (or check `gh run list` in the weekly site check) so the schedule is never auto-disabled.
 
+## Re-check (commit 5b20ec8, 2026-10-08)
+
+Fresh scratch copy of main at 5b20ec8, same harness (stubbed feed and cover bytes, Pillow 11.3). Nothing pushed or committed.
+
+| # | Must-fix | Re-run | Result |
+|---|---|---|---|
+| 1 | Empty title | `#ai #claude #shorts` gives `ai claude shorts` (cover saved, card shown). An empty title in social.json now renders `alt="Video by Eric Beer"`. `if not title: continue` skips any title that is still empty. | FIXED |
+| 2 | "#1" stripped | `#1 Rule In Biz: learn C# fast #ai` gives `#1 Rule In Biz: learn C# fast`. Unicode hashtag `Café #AIéquipe déjà` gives `Café déjà`. | FIXED |
+| 3 | Non-image cover crashes the run | 4 videos with non-image cover bytes: each one logs "unusable; skipping it this run", no partial files, run exits 0, social.json keeps its 5 existing videos. | FIXED |
+| 4 | Bot rebuild drops the Skool URL | With `EB_SKOOL_URL=https://www.skool.com/x`: 2 Skool links (good). Unset: `href="/#waitlist"` (good). **Set to the empty string: every Skool/waitlist button on the private pages gets `href=""`.** The workflow passes `${{ vars.EB_SKOOL_URL }}`, and an undefined Actions variable comes through as an empty string. `gh variable list --repo ericbeer/ericbeer-ai` returns nothing, so the variable is not set today. The next bot commit (the next new video) would ship dead "Join the waitlist" buttons on every private guide page. | NEW REGRESSION |
+| 5 | Local publish vs bot commits | README line 6 now says to run `git pull --rebase origin main` before any local publish. | FIXED (as documentation) |
+
+New observation (not blocking): a title made only of bare `#` signs (`#   #`) comes through as `# #`. Real titles never look like that.
+
+## Must-fix (after re-check)
+
+1. `build.py:202`: `os.environ.get("EB_SKOOL_URL", "/#waitlist")` only uses the default when the variable is missing, not when it is empty. Change it to `SKOOL_URL = os.environ.get("EB_SKOOL_URL") or "/#waitlist"`. The other option is to remove the `env:` line from `.github/workflows/update-videos.yml` until the variable exists, but the `or` fix is safer because it covers both cases.
+
 Status: NOT DONE
