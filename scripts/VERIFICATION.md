@@ -91,3 +91,19 @@ New observation (not blocking): a title made only of bare `#` signs (`#   #`) co
 1. `build.py:202`: `os.environ.get("EB_SKOOL_URL", "/#waitlist")` only uses the default when the variable is missing, not when it is empty. Change it to `SKOOL_URL = os.environ.get("EB_SKOOL_URL") or "/#waitlist"`. The other option is to remove the `env:` line from `.github/workflows/update-videos.yml` until the variable exists, but the `or` fix is safer because it covers both cases.
 
 Status: NOT DONE
+
+## Re-check 2 (fresh reviewer, 2026-10-08, against build.py with `os.environ.get("EB_SKOOL_URL") or "/#waitlist"`)
+
+Rebuilt every page three times in a scratch copy of the working tree and checked every private guide page:
+
+| Skool URL setting | `href=""` on private pages | Skool links | Your AI Team main button |
+|---|---|---|---|
+| set | 0 | 10 | the Skool URL |
+| not set | 0 | 0 | `/#waitlist` |
+| empty (what the bot gets while the repo variable does not exist) | 0 | 0 | `/#waitlist` |
+
+After the empty build the generated pages were byte-identical to the committed ones. Must-fix: none.
+
+Open, for Eric (not blocking): store full upload time for same-day ordering; keep the 60-day schedule from lapsing; the repo is public, so private page keys, gated sections and the held LEADS content are readable on GitHub.
+
+Status: DONE
