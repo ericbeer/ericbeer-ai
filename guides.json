@@ -1,5 +1,29 @@
 [
   {
+    "slug": "ai-company-blueprint",
+    "title": "The AI Company Blueprint: organize AI into a team that runs your business",
+    "short": "The AI Company Blueprint",
+    "blurb": "Stop using AI one prompt at a time. Map your company, write SOPs your agents follow, and build the team in Claude, ChatGPT or Claude Code.",
+    "keyword": "BLUEPRINT",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT / Claude Code",
+    "cover": "/assets/guides/blueprint-cover-1.png",
+    "inside": [
+      "Step 1: Write your company brief",
+      "Step 2: Map outcomes to departments and agents",
+      "Step 3: Turn every job into an SOP the AI can follow",
+      "Step 4 (Level 2): Give each department a home in Claude or ChatGPT",
+      "Step 5 (Level 3): Build the agent team in Claude Code",
+      "Step 6: Connect your tools",
+      "Step 7: Run it every morning",
+      "Step 8: The rules that keep it safe"
+    ],
+    "featured": true
+  },
+  {
     "slug": "ai-org-chart",
     "title": "Your AI Org Chart: the diagram, and how to build it for any business",
     "short": "Your AI Org Chart",
