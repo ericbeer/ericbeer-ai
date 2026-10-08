@@ -117,7 +117,7 @@ def watch_section():
         f'<img src="{v["cover"]}" alt="{e(v["title"])}" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a>'
         f'<h3>{e(v["title"])}</h3><div class="vlinks">'
         + "".join(f'<a href="{e(u)}" rel="noopener" target="_blank">{n}</a>' for n, u in v["links"].items())
-        + "</div></article>" for v in SOCIAL["videos"])
+        + "</div></article>" for v in SOCIAL["videos"][:int(SOCIAL.get("feed", {}).get("show", 4))])
     follow = "".join(f'<a class="btn btn-ghost" href="{p["url"]}" rel="noopener" target="_blank">{p["name"]} <span class="h">{e(p["handle"])}</span></a>' for p in SOCIAL["profiles"])
     return f"""<section class="block" id="watch"><div class="wrap">
 <div class="script">watch &amp; learn</div>
@@ -284,7 +284,16 @@ for g in G:
 <div class="gintro">{c['intro']}</div>
 {free}
 {unlock_block(g, c)}
-</article></main>
+</article>
+<hr class="divider">
+<section class="block"><div class="wrap">
+<div class="script">keep going</div>
+<h2>More free guides</h2>
+<div class="cards">{''.join(card(x) for x in G if x['slug'] != g['slug'])}<div class="card soon"><div class="script">new guides every week</div><p><a href="/guides/">See the library</a></p></div></div>
+<p style="margin-top:24px"><a class="btn btn-primary" href="/">Explore ericbeer.ai</a> <a class="btn btn-ghost" href="/#waitlist">Join the waitlist</a></p>
+</div></section>
+{watch_section()}
+</main>
 {FOOT}
 </body></html>"""
     write(f"/g/{g['slug']}-{c['key']}/", private)

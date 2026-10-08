@@ -1,0 +1,37 @@
+# Keeps the "Watch & learn" section on ericbeer.ai current with the newest YouTube Shorts.
+# Runs every 6 hours (and on demand). Commits only when something changed, then asks Pages to rebuild.
+name: Update videos
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: update-videos
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow
+      - name: Pull newest videos and rebuild
+        run: |
+          python scripts/update_videos.py
+          python build.py
+      - name: Commit and publish if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "No new videos."; exit 0; fi
+          git config user.name "ericbeer.ai bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Add newest videos to Watch & learn"
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages rebuild request failed; the push may still trigger it."
