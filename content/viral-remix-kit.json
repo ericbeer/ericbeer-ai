@@ -1,0 +1,40 @@
+{
+  "key": "212a2e847f",
+  "intro": "<p>Stop coming up with content ideas from scratch. Find a video that's already going viral, have Claude break it down second by second, and rewrite the same structure for your business. You start with something people have already proven they care about.</p>\n<p>You don't copy anyone's words. You borrow the structure that already works. If you can screen-record your phone and paste text into a chat, you can do all of this. Claude is the main tool here, and every prompt works the same in ChatGPT.</p>",
+  "free": [
+    {
+      "title": "Step 1: Write your business notes (once)",
+      "body": "<p>Do this first. You'll reuse it every time, and it's the difference between a generic script and one that sounds like you.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Here are my business notes. Use them for everything I ask next.\n\nBusiness: <span class=\"fill\">[what you do, in one or two sentences]</span>\nCustomers: <span class=\"fill\">[who they are and the problem they have]</span>\nWhat I sell: <span class=\"fill\">[product or service]</span>\nHow I talk: <span class=\"fill\">[plain, funny, direct, calm... plus one or two sentences you've actually said to customers]</span>\nThings I can honestly claim: <span class=\"fill\">[real results, real experience, real facts only]</span>\nThings I must not claim: <span class=\"fill\">[anything you can't prove, income promises, guarantees you don't offer]</span>\n\nReply with a short summary of how you understand my business, and ask me anything you need before we start.</div><p>Answer its questions. Keep that chat open, or save the notes to paste in again next time.</p>"
+    },
+    {
+      "title": "Step 2: Find the video and screen-record it",
+      "body": "<p>Look for a video that's doing well in your space or a nearby one: lots of views for the account's size, lots of comments and shares, posted recently. Pick one about a problem your customers have. Videos from other industries work too, because you're borrowing the structure, not the topic.</p>\n<ol>\n<li>Open the video and screen-record it from start to finish (under about 90 seconds).</li>\n<li>Copy the caption, and note the view count and the date.</li>\n<li>Drop the recording into your Claude chat.</li>\n</ol>\n<p><b>If your app won't take the video:</b> turn on captions or use any transcript tool, paste the words in, and add a short note of what's on screen at each moment. Less precise, but the structure still shows.</p>"
+    },
+    {
+      "title": "Step 3: Get the second-by-second breakdown",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in (with the video attached)</span>I attached a short video that's performing well. Reverse-engineer it for me.\n\nGive me a second-by-second breakdown in a table with these columns: time, what is said, what is on screen, and what this moment does for the viewer (why it works).\n\nThen answer:\n1. What is the hook, and why does it make someone stop scrolling?\n2. What is the reveal, and how long does the video wait before it?\n3. Which exact seconds keep people watching?\n4. What is the call to action, and how is it set up?\n5. What does the viewer believe or feel at the start versus the end?\n\nThen write the structure as a plain template with blanks, using none of the original words. Example: \"Hook: [bold claim about a task the viewer does by hand]. Proof: [one line]. Steps: [three]. Offer: [free thing].\"\n\nIf you can't tell something from the video, say so. Don't guess.</div><p>The template at the end is the part you keep.</p>"
+    },
+    {
+      "title": "Step 4: Rewrite it for your business",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Now use that template to write a video for my business, using my business notes.\n\nRules:\n- Keep the same structure and pacing as the original.\n- Don't reuse any of the original words or phrases.\n- Use my voice, my product and my customers.\n- Plain, short sentences. No hype words.\n- Only claim things from my \"Things I can honestly claim\" list. If a line needs a fact I haven't given you, write [ADD YOUR REAL EXAMPLE] instead of making something up.\n- No income claims and no made-up numbers.\n- 35 to 60 seconds when spoken.\n\nGive me:\n1. The full script, with time marks.\n2. Five different hooks to test, each from a different angle.\n3. A shot list: for each line, what I show on camera or on screen.\n4. A short caption and a call to action.</div><p>Out comes the script, the hooks to test and the shot list.</p>"
+    },
+    {
+      "title": "Step 5: Check it for anything you can't back up",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Review the script you just wrote. List every claim, number or promise in it. For each one, tell me whether it came from my business notes or whether you added it. Flag anything I'd need to prove. Then rewrite the script with the flagged items removed or replaced by a placeholder.</div><p>Fill the placeholders with true details only. No real example? Cut the line.</p>"
+    },
+    {
+      "title": "Step 6: Record, post and test the hook",
+      "body": "<ul>\n<li>Record the script in your own words. If a line feels stiff, say it the way you'd say it to a customer.</li>\n<li>Post the version with your favorite hook.</li>\n<li>Later, post the same video with a different hook from your list and compare. The hook decides whether anyone watches the rest.</li>\n</ul>\n<p><b>A quick example.</b> A house-cleaning company finds a landscaper's video: \"Your lawn looks bad because of one mistake,\" a before shot, three short steps, an after shot, \"Comment GRASS for the checklist.\" Claude turns it into a template: one mistake, show the problem, three steps, show the fix, keyword offer. The remix: \"Your bathroom still looks dirty after cleaning because of one mistake,\" a real photo of a streaky shower door from a job, the three steps the team actually uses, \"Comment SHOWER for my checklist.\" Same structure. Their words, their proof.</p>"
+    },
+    {
+      "title": "Step 7: Batch five in one afternoon",
+      "body": "<p>Once the first one works, repeat Steps 2 to 5 with four more videos in the same chat. Claude already knows your business notes, so each one goes faster.</p><div class=\"prompt\"><span class=\"tag\">Copy this in after a few remixes</span>Look at every template you've written in this chat. Turn them into a short library of reusable video formats for my business: name each format, when to use it, its structure, and one example hook for my customers.</div><p>Now you have formats you can reuse for any topic, instead of starting from a blank page every time.</p>\n<p><b>Common mistakes:</b> copying the words (read every line yourself), letting AI invent proof (always run Step 5), skipping the business notes, picking a video that only works because of a famous face or a stunt, and posting only the first hook.</p>"
+    }
+  ],
+  "locked": [
+    "My library of proven video formats and the hooks I test",
+    "The prompt that writes the shot list and on-screen graphics",
+    "Live sessions: we remix one of your videos together",
+    "Every new AI workflow I build for my own businesses"
+  ]
+}

@@ -1,5 +1,28 @@
 [
   {
+    "slug": "viral-remix-kit",
+    "title": "The Viral Remix Kit: turn any viral video into one for your business with Claude",
+    "short": "The Viral Remix Kit",
+    "blurb": "Stop coming up with content ideas from scratch. Have Claude reverse-engineer a video that's already going viral and rebuild it for your business.",
+    "keyword": "REMIX",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/remix-cover-1.png",
+    "inside": [
+      "Step 1: Write your business notes (once)",
+      "Step 2: Find the video and screen-record it",
+      "Step 3: Get the second-by-second breakdown",
+      "Step 4: Rewrite it for your business",
+      "Step 5: Check it for anything you can't back up",
+      "Step 6: Record, post and test the hook",
+      "Step 7: Batch five in one afternoon"
+    ],
+    "featured": true
+  },
+  {
     "slug": "ai-company-blueprint",
     "title": "The AI Company Blueprint: organize AI into a team that runs your business",
     "short": "The AI Company Blueprint",
