@@ -18,6 +18,14 @@
   ],
   "videos": [
     {
+      "title": "Still coming up with content ideas yourself? AI can do it for you",
+      "cover": "/assets/videos/yt-6zrHQEXf3iQ.jpg",
+      "published": "2026-10-10",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/6zrHQEXf3iQ"
+      }
+    },
+    {
       "title": "Bad at managing people? Build an AI team instead with Claude",
       "cover": "/assets/videos/yt-ZMu9OGjeAb4.jpg",
       "published": "2026-10-08",
