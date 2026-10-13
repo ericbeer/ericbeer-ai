@@ -1,5 +1,27 @@
 [
   {
+    "slug": "ai-operating-system-blueprint",
+    "title": "The AI Operating System Blueprint: 5 steps to AI agents that run your business",
+    "short": "The AI Operating System Blueprint",
+    "blurb": "Ingest your business, map the company, design the AI workforce, connect your tools, then test and deploy. The 5 steps, with the prompts for each.",
+    "keyword": "BLUEPRINT",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/os-cover-1.png",
+    "inside": [
+      "Step 1: Ingest your business",
+      "Step 2: Map your company",
+      "Step 3: Design the AI workforce",
+      "Step 4: Connect everything",
+      "Step 5: Test, deploy and oversee",
+      "Build your first domino chain this week"
+    ],
+    "featured": true
+  },
+  {
     "slug": "viral-remix-kit",
     "title": "The Viral Remix Kit: turn any viral video into one for your business with Claude",
     "short": "The Viral Remix Kit",
@@ -27,7 +49,7 @@
     "title": "The AI Company Blueprint: organize AI into a team that runs your business",
     "short": "The AI Company Blueprint",
     "blurb": "Stop using AI one prompt at a time. Map your company, write SOPs your agents follow, and build the team in Claude, ChatGPT or Claude Code.",
-    "keyword": "BLUEPRINT",
+    "keyword": "COMPANY",
     "topics": [
       "agents",
       "getting-started"
