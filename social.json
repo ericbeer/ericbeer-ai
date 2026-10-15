@@ -18,6 +18,14 @@
   ],
   "videos": [
     {
+      "title": "Claude Rewrote My Whole LinkedIn With One Button",
+      "cover": "/assets/videos/yt-Op6iBHz_8a4.jpg",
+      "published": "2026-10-15",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/Op6iBHz_8a4"
+      }
+    },
+    {
       "title": "How an AI Operating System Actually Works (5 Steps)",
       "cover": "/assets/videos/yt-lf8uTm_hbeI.jpg",
       "published": "2026-10-13",
