@@ -1,5 +1,26 @@
 [
   {
+    "slug": "scout-ai-team",
+    "title": "Meet Scout's AI team: the org chart of AI agents that runs a job search, and how to connect it to Claude",
+    "short": "Meet Scout's AI Team",
+    "blurb": "See every agent behind Scout Jobs: Scout at the top, 35 AI managers that each own one outcome, and the 154 specialists who do the work, each with one job. Then connect Scout to Claude, step by step, and put the team to work on your job search.",
+    "keyword": "SCOUT",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude + Scout",
+    "cover": "/assets/guides/scout-team-cover-1.png",
+    "inside": [
+      "Meet Scout's AI team: the org chart",
+      "Connect Scout to Claude (5 minutes)",
+      "Put the team to work: your first prompts",
+      "Build a team like this for your business",
+      "Try it yourself"
+    ],
+    "featured": true
+  },
+  {
     "slug": "ai-job-agent-scout",
     "title": "Let AI run your job search: connect Scout to Claude and get a custom website for every job",
     "short": "Your AI Job Agent: Scout + Claude",
