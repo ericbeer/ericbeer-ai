@@ -1,5 +1,28 @@
 [
   {
+    "slug": "scout-linkedin-profile",
+    "title": "Let Claude rewrite your whole LinkedIn profile: connect Scout and press one button",
+    "short": "Rewrite Your LinkedIn With Claude",
+    "blurb": "Connect Scout to Claude, give it your resume, and press one button. A team of AI agents writes your headline, About, experience, Featured and Skills, checked against what's true. Every step with screenshots.",
+    "keyword": "LINKEDIN",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude + Scout",
+    "cover": "/assets/guides/linkedin-cover-1.png",
+    "inside": [
+      "Step 1: Get Scout (free)",
+      "Step 2: Connect Scout to Claude",
+      "Step 3: Let Scout work without asking every time",
+      "Step 4: Give Scout your resume",
+      "Step 5: Press the one button",
+      "Step 6: Paste it into LinkedIn",
+      "Keep it current from now on"
+    ],
+    "featured": true
+  },
+  {
     "slug": "ai-operating-system-blueprint",
     "title": "The AI Operating System Blueprint: 5 steps to AI agents that run your business",
     "short": "The AI Operating System Blueprint",
