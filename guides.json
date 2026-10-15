@@ -1,5 +1,34 @@
 [
   {
+    "slug": "ai-job-agent-scout",
+    "title": "Let AI run your job search: connect Scout to Claude and get a custom website for every job",
+    "short": "Your AI Job Agent: Scout + Claude",
+    "blurb": "Connect Scout to Claude and a team of AI agents learns who you are, builds your CareerID and a Showcase website, finds jobs, makes a custom Showcase for each one, applies, and emails the hiring manager. Every step, with screenshots.",
+    "keyword": "HIRED",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude + Scout",
+    "cover": "/assets/guides/hired-cover-1.png",
+    "inside": [
+      "Step 1: Get Scout (free)",
+      "Step 2: Connect Scout to Claude",
+      "Step 3: Let Scout work without asking every time",
+      "Step 4: Let Scout learn who you are",
+      "Step 5: Scout profiles you",
+      "Step 6: Your CareerID",
+      "Step 7: Turn your CareerID into a Showcase",
+      "Step 8: Scout finds jobs worth your time",
+      "Step 9: A custom Showcase for every job",
+      "Step 10: Turn on auto-apply",
+      "Step 11: Find the hiring team",
+      "Step 12: Email them directly with your Showcase",
+      "Step 13: Let it run while you sleep"
+    ],
+    "featured": true
+  },
+  {
     "slug": "scout-linkedin-profile",
     "title": "Let Claude rewrite your whole LinkedIn profile: connect Scout and press one button",
     "short": "Rewrite Your LinkedIn With Claude",
