@@ -18,6 +18,14 @@
   ],
   "videos": [
     {
+      "title": "Claude Can Now Find You a Job (Meet the AI Team)",
+      "cover": "/assets/videos/yt-xLkGYJUxZt0.jpg",
+      "published": "2026-10-16",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/xLkGYJUxZt0"
+      }
+    },
+    {
       "title": "Claude Rewrote My Whole LinkedIn With One Button",
       "cover": "/assets/videos/yt-Op6iBHz_8a4.jpg",
       "published": "2026-10-15",
