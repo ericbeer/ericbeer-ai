@@ -18,6 +18,14 @@
   ],
   "videos": [
     {
+      "title": "My LinkedIn Got Hacked. I Let AI Rebuild the Whole Thing.",
+      "cover": "/assets/videos/yt-Z1zDjYNM_cI.jpg",
+      "published": "2026-10-18",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/Z1zDjYNM_cI"
+      }
+    },
+    {
       "title": "Claude Can Now Find You a Job (Meet the AI Team)",
       "cover": "/assets/videos/yt-xLkGYJUxZt0.jpg",
       "published": "2026-10-16",
