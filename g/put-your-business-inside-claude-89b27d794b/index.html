@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Put Your Business Inside Claude | Eric Beer</title>
+<meta name="description" content="My company Scout Jobs runs inside Claude as a connector. Here&#x27;s how to connect your own tools in three levels, from one-click connectors to building your own with Claude Code.">
+<link rel="canonical" href="https://ericbeer.ai/g/put-your-business-inside-claude-89b27d794b/">
+<meta property="og:title" content="Put Your Business Inside Claude | Eric Beer">
+<meta property="og:description" content="My company Scout Jobs runs inside Claude as a connector. Here&#x27;s how to connect your own tools in three levels, from one-click connectors to building your own with Claude Code.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ericbeer.ai/g/put-your-business-inside-claude-89b27d794b/">
+<meta property="og:image" content="https://ericbeer.ai/assets/eric-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1B2D'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-size='30' font-weight='700' text-anchor='middle' fill='%23C8963E'%3EEB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=8a16c89a">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="reading">
+<header class="nav"><div class="wrap"><a class="brand" href="/">Eric Beer<span>.</span></a><nav aria-label="Main"><ul><li><a href="/">Home</a></li><li><a href="/guides/" aria-current=page>Free guides</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header>
+<main><article class="guide-read wrap">
+<div class="full-card"><h2>Want the complete guide?</h2><p>The full guide, every other guide, the AI agents I use and live calls are going inside my community. Join the waitlist for the founding-member price.</p>
+<a class="btn btn-gold" href="/#waitlist">Join the waitlist &rarr;</a></div>
+<div class="script">your free guide</div>
+<h1>Put Your Business Inside Claude: connect your tools and data so Claude can work in your business</h1>
+<div class="gintro"><p>Your customers already ask AI for help. So I put my business where they already are: inside Claude.</p><p>My company Scout Jobs runs inside Claude as a connector. People add it in about a minute: in Claude they go to <b>Customize</b>, then <b>Connectors</b>, then <b>Add custom connector</b>, paste the Scout URL and sign in. From then on, Claude can use Scout's tools right in the chat. Behind that one chat are Scout, 35 AI managers and 154 specialists that run a job search.</p><p>You don't need anything that big to start. This guide takes you up three levels: turn on connectors for the tools you already use, connect more of your tools through an automation service, and then, when you're ready, have Claude Code help you build a connector for your own business. Every step has the exact prompt. Each level works on its own, so stop wherever you like.</p></div>
+<section class="gsec"><div class="gnum">1</div><h2>Step 1: Understand what a connector is (in plain words)</h2><p>A connector lets Claude use your business's data and actions. Without one, Claude only knows what you paste into the chat. With one, Claude can look things up and do things in your tools, with your permission.</p><ul><li><b>Data</b> means Claude can read: your calendar, your inbox, your files, your customer list.</li><li><b>Actions</b> means Claude can do: draft an email, create a calendar event, add a contact, update a deal.</li></ul><p>Under the hood, connectors use a standard called MCP (Model Context Protocol). You don't need to understand it. Just know that when a service says it "offers an MCP connection" or "an MCP server," it means Claude can plug into it.</p><p><b>Plan rules, honestly:</b> custom connectors (the kind where you paste a URL, like Scout) are available on paid Claude plans, and the Free plan has been more limited. Team and Enterprise accounts need an Owner to add them. These rules change, so check Claude's help center for the current version before you start. ChatGPT has its own connector rules and its own menus.</p></section><section class="gsec"><div class="gnum">2</div><h2>Step 2: List what you&#x27;d want Claude to do</h2><p>Before you connect anything, decide what's worth connecting. Start a new chat in Claude and paste this.</p><div class="prompt"><span class="tag">Copy this in</span>I run a <span class="fill">[type of business]</span>. Here are the tools my business uses every day:
+<span class="fill">[list them, for example: Gmail, Google Calendar, Google Drive, QuickBooks, HubSpot, Jobber, Square, Notion]</span>
+
+Here are the tasks I still do by hand that touch those tools:
+<span class="fill">[for example: answering quote requests, booking jobs, sending invoices, checking who hasn't paid, writing weekly updates]</span>
+
+Make a table with these columns: Task, Tool it needs, What Claude would read, What Claude would do, How much time it might save me (low, medium or high, no made-up numbers), and Risk if it goes wrong (low, medium or high).
+
+Then sort the table so the safest, most useful tasks are at the top. Mark which tools are common enough that they probably already have a ready-made connector. I'll check each one myself.</div><p>The top of that list is where you start. Pick tasks where Claude mostly reads and drafts, not ones where it sends money or deletes things.</p></section><section class="gsec"><div class="gnum">3</div><h2>Step 3: Level 1, turn on connectors for tools you already use</h2><p>Claude has a directory of ready-made connectors for popular tools like Gmail, Google Drive, Google Calendar, Notion and HubSpot, plus many more. This is the easiest win.</p><ol><li>Open Claude on your computer (the website or the desktop app).</li><li>Click <b>Customize</b>, then <b>Connectors</b>. (In some versions it's under <b>Settings</b>, then <b>Connectors</b>.)</li><li>Browse the directory and find a tool from your Step 2 list.</li><li>Click <b>Connect</b>, sign in to that tool on its own page, and approve what it can access. Your password goes into the tool's page, never into the chat.</li><li>In a chat, click the <b>+</b> button, open <b>Connectors</b>, and make sure the one you added is switched on.</li></ol><p>Start with one or two. You can always add more.</p></section><section class="gsec"><div class="gnum">4</div><h2>Step 4: Put your connectors to work</h2><p>Now try real work. Start with a read-only task, so you can see what Claude finds before you let it act.</p><div class="prompt"><span class="tag">Copy this in</span>Look through my email from the last 7 days and find every message from a customer or a lead that hasn't had a reply from me yet. List them with the sender, the date, what they asked for and how urgent it seems. Don't send anything.</div><div class="prompt"><span class="tag">Copy this in</span>For the first three emails on that list, draft a reply in my voice. Keep each under 80 words, answer what they asked and end with one clear next step. Leave them as drafts. Don't send.
+
+My voice: <span class="fill">[friendly and short / direct and professional]</span>. Facts you can use: <span class="fill">[hours, prices, service area, booking link]</span>. If you need a fact I haven't given you, write [CHECK] instead of guessing.</div><div class="prompt"><span class="tag">Copy this in</span>Check my calendar for next week. Find three open 30-minute slots between <span class="fill">[start time]</span> and <span class="fill">[end time]</span> for a call with a new client, and write a short message offering those times.</div><p><b>About permissions:</b> Claude asks before it uses a connector's tools, and you can decide per tool whether it should always ask, always be allowed, or never be used. Keep "ask" on for anything that sends, publishes, pays or deletes. Only switch read-only tools to always allow, once you trust them.</p></section><section class="gsec"><div class="gnum">5</div><h2>Step 5: Level 2, connect more tools through Zapier or Make</h2><p>Your scheduling software, invoicing tool or industry app might not be in Claude's directory. Automation services like Zapier and Make already connect to thousands of apps, and both offer an MCP connection, which means Claude can use them as a bridge.</p><ol><li>In Zapier or Make, find their MCP option (the names and menus change, so search their help pages for "MCP").</li><li>Choose exactly which actions Claude is allowed to use. For example: "find a customer in my invoicing tool" and "create a draft invoice." Keep the list short.</li><li>The service gives you a connector URL. In Claude, go to <b>Customize</b>, then <b>Connectors</b>, then <b>Add custom connector</b>, paste the URL and sign in. It's the same steps people use to add Scout.</li><li>Test it with a fake customer or a test record first.</li></ol><p>Not sure which actions to turn on? Ask Claude.</p><div class="prompt"><span class="tag">Copy this in</span>I'm connecting <span class="fill">[tool name]</span> to Claude through <span class="fill">[Zapier or Make]</span>. These are the tasks I want help with: <span class="fill">[tasks from your Step 2 table]</span>.
+
+List the smallest set of actions I should allow, starting with read-only ones. For each, explain in one sentence what it lets Claude do, and flag any action that could send, charge or delete something so I keep it on "ask" or leave it off.</div><p>Automation services often charge for their plans or count each action as a task, so check their pricing before you rely on it.</p></section><section class="gsec"><div class="gnum">6</div><h2>Step 6: Level 3, build a connector for your own business</h2><p>This is what I did with Scout Jobs. If your business has its own data or service (a booking system, a price list, a customer portal, a database), you can give it a connector of its own. Then you, your team, and even your customers can add it to Claude the same way people add Scout.</p><p>You don't have to write the code yourself. Claude Code is Anthropic's coding tool, and it can build this with you step by step, or you can hand this prompt to a developer.</p><div class="prompt"><span class="tag">Copy this in</span>I want to build a custom MCP connector so Claude can use my business's data and actions. I'm not a developer, so explain each step in plain words before you do it, and wait for my OK.
+
+My business: <span class="fill">[what you do, in one or two sentences]</span>
+Where my data lives today: <span class="fill">[for example: a Google Sheet of prices, an Airtable base of jobs, my booking software's API, a database]</span>
+What Claude should be able to READ: <span class="fill">[for example: look up a customer, check open time slots, get the price for a service]</span>
+What Claude should be able to DO: <span class="fill">[for example: create a draft quote, request a booking]</span>
+Who will use it: <span class="fill">[just me / my team / my customers]</span>
+
+Please:
+1. Recommend the simplest way to build this as a remote MCP server that Claude can add as a custom connector by URL, and where to host it. Tell me what it will cost to run.
+2. Start with read-only tools only. Add actions later, one at a time.
+3. Add sign-in so only the right people can use it, and make sure each person only sees their own data.
+4. Keep every password, API key and secret in environment variables, never in the code or in this chat.
+5. Give every tool a clear name and a plain-English description, so Claude knows when to use it.
+6. Build it, test it locally with fake data, and show me how to check it works before anything goes live.
+7. Give me the exact steps to add it in Claude under Customize, then Connectors, then Add custom connector.
+8. Write a short checklist of what could go wrong and how we guard against it.</div><p>Go one tool at a time. A connector that does three things well beats one that does twenty things badly.</p></section><section class="gsec"><div class="gnum">7</div><h2>Step 7: A worked example, and the rules to keep</h2><p><b>A quick example.</b> Say you own a small plumbing company.</p><ul><li><b>Level 1:</b> connect Gmail and Google Calendar. Every morning: "List new quote requests from yesterday, draft a reply to each, and suggest two open times for a site visit." The owner reads the drafts and sends them.</li><li><b>Level 2:</b> the company's job software isn't in Claude's directory, so it's connected through Zapier with two allowed actions: "find a job by customer name" and "add a note to a job." Now: "What's the status of the Garcia job, and add a note that they called."</li><li><b>Level 3:</b> the price list and service area live in a spreadsheet. Claude Code helps build a small read-only connector with two tools: "get the price range for a service" and "check if an address is in our area." The office team adds it to Claude and answers quote calls faster.</li></ul><p><b>The rules:</b></p><ul><li>Start read-only. Add actions one at a time, after you trust it.</li><li>Keep "ask before using" on for anything that sends, publishes, pays or deletes.</li><li>Only connect what you need. Fewer tools means fewer mistakes.</li><li>Test with fake data and a test record before real customers.</li><li>Never paste passwords, API keys or customer card numbers into a chat.</li><li>Only connect services you trust, and remove connectors you stop using.</li><li>If customers will use your connector, make sure they can only see their own data, and tell them clearly what it does.</li><li>Check Claude's help center for the current plan rules before you plan around them.</li></ul></section>
+<section class="locked"><div class="fade" aria-hidden="true"><span class="bar" style="width:96%"></span><span class="bar" style="width:88%"></span><span class="bar" style="width:92%"></span><span class="bar" style="width:70%"></span><span class="bar" style="width:95%"></span><span class="bar" style="width:84%"></span><span class="bar" style="width:60%"></span><span class="bar" style="width:90%"></span><span class="bar" style="width:78%"></span></div>
+<div class="lockbox">
+<div class="script">the rest of this guide is inside the community</div>
+<h2>Unlock the full guide</h2>
+<ul class="lock-list"><li>How Scout Jobs is set up as a connector, walked through on screen</li><li>My Claude Code prompts for building and testing a connector, step by step</li><li>Live build sessions: we connect your tools or plan your own connector together</li><li>Every new AI workflow I build for my own businesses</li></ul>
+<p>Get this guide in full, every other guide, the AI agents I use, and live calls, inside my community.</p>
+<div class="price">Founding members: <b>$47 first month</b>, then $97/month.</div>
+<a class="btn btn-gold" href="/#waitlist">Join the waitlist</a>
+</div></section>
+</article>
+<hr class="divider">
+<section class="block"><div class="wrap">
+<div class="script">keep going</div>
+<h2>More free guides</h2>
+<div class="cards"><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/scout-ai-team/"><img src="/assets/guides/scout-team-cover-1.png" alt="Cover of Meet Scout&#x27;s AI Team" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude + Scout</span></div>
+<h3>Meet Scout&#x27;s AI team: the org chart of AI agents that runs a job search, and how to connect it to Claude</h3>
+<p>See every agent behind Scout Jobs: Scout at the top, 35 AI managers that each own one outcome, and the 154 specialists who do the work, each with one job. Then connect Scout to Claude, step by step, and put the team to work on your job search.</p>
+<a class="go" href="/guides/scout-ai-team/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-job-agent-scout/"><img src="/assets/guides/hired-cover-1.png" alt="Cover of Your AI Job Agent: Scout + Claude" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude + Scout</span></div>
+<h3>Let AI run your job search: connect Scout to Claude and get a custom website for every job</h3>
+<p>Connect Scout to Claude and a team of AI agents learns who you are, builds your CareerID and a Showcase website, finds jobs, makes a custom Showcase for each one, applies, and emails the hiring manager. Every step, with screenshots.</p>
+<a class="go" href="/guides/ai-job-agent-scout/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/scout-linkedin-profile/"><img src="/assets/guides/linkedin-cover-1.png" alt="Cover of Build Your LinkedIn Profile With AI" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude + Scout</span></div>
+<h3>Build your LinkedIn profile with AI: connect Scout to Claude and let it write every section</h3>
+<p>Create or fix your LinkedIn profile, section by section: headline, About, experience, Skills and Featured. Connect Scout to Claude, give it your resume, and AI agents write every section, checked against what&#x27;s true. Every step with screenshots.</p>
+<a class="go" href="/guides/scout-linkedin-profile/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-operating-system-blueprint/"><img src="/assets/guides/os-cover-1.png" alt="Cover of The AI Operating System Blueprint" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Operating System Blueprint: 5 steps to AI agents that run your business</h3>
+<p>Ingest your business, map the company, design the AI workforce, connect your tools, then test and deploy. The 5 steps, with the prompts for each.</p>
+<a class="go" href="/guides/ai-operating-system-blueprint/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/viral-remix-kit/"><img src="/assets/guides/remix-cover-1.png" alt="Cover of The Viral Remix Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Viral Remix Kit: turn any viral video into one for your business with Claude</h3>
+<p>Stop coming up with content ideas from scratch. Have Claude reverse-engineer a video that&#x27;s already going viral and rebuild it for your business.</p>
+<a class="go" href="/guides/viral-remix-kit/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/five-minute-follow-up/"><img src="/assets/guides/five-minute-follow-up-cover-1.png" alt="Cover of The 5-Minute Follow-Up Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The 5-Minute Follow-Up Kit: let AI write every follow-up so no lead goes cold</h3>
+<p>Whoever answers first usually wins. Have Claude write your instant reply, your 7-day follow-up and the win-back text for old leads, then load them into your CRM once.</p>
+<a class="go" href="/guides/five-minute-follow-up/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/pain-to-content-matrix/"><img src="/assets/guides/pain-to-content-matrix-cover-1.png" alt="Cover of The Pain-to-Content Matrix" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Pain-to-Content Matrix: map every customer problem to a video brief with Claude</h3>
+<p>Stop guessing what to post. Have Claude map every stage of your customer&#x27;s journey, the pain at each one, and a ready-to-film video brief for every pain.</p>
+<a class="go" href="/guides/pain-to-content-matrix/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-avatar-playbook/"><img src="/assets/guides/ai-avatar-playbook-cover-1.png" alt="Cover of The AI Avatar Playbook" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT + an AI video tool</span></div>
+<h3>The AI Avatar Playbook: put an AI host on camera for your business, the honest way</h3>
+<p>Stop filming every video yourself. Build an AI host with one photo and one voice, have Claude write the scripts, check the lips word by word and always label it AI.</p>
+<a class="go" href="/guides/ai-avatar-playbook/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/creator-brief-template/"><img src="/assets/guides/creator-brief-template-cover-1.png" alt="Cover of The Creator Brief Template" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Creator Brief Template: have Claude write a filmable brief for every creator and team member</h3>
+<p>Stop writing every script yourself. Have Claude turn one customer problem into a full brief your creators can film straight from, then check it before it goes out.</p>
+<a class="go" href="/guides/creator-brief-template/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/comment-to-customer-funnel/"><img src="/assets/guides/comment-to-customer-funnel-cover-1.png" alt="Cover of The Comment-to-Customer Funnel Map" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Comment-to-Customer Funnel Map: turn every video comment into an email subscriber with Claude</h3>
+<p>Turn comments into customers. Map the full path from comment keyword to DM, email, tag and daily email, with Claude writing every message.</p>
+<a class="go" href="/guides/comment-to-customer-funnel/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents prompts">
+<a class="thumb" href="/guides/sop-to-agent-kit/"><img src="/assets/guides/sop-to-agent-kit-cover-1.png" alt="Cover of The SOP-to-Agent Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Prompts</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The SOP-to-Agent Kit: turn one written process into an AI agent that does the job your way</h3>
+<p>Stop being the bottleneck. Have Claude turn one of your processes into an agent in a Claude Project, test it, and fix it until it does the job your way.</p>
+<a class="go" href="/guides/sop-to-agent-kit/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="getting-started prompts">
+<a class="thumb" href="/guides/business-brain/"><img src="/assets/guides/business-brain-cover-1.png" alt="Cover of The Business Brain" loading="lazy"></a>
+<div class="chips"><span class="chip">Getting started</span><span class="chip">Prompts</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Business Brain: have Claude interview you and write the one document that teaches AI your business</h3>
+<p>Stop getting generic answers. Let Claude interview you, write one document about your business, and put it in a Project so every chat knows your business.</p>
+<a class="go" href="/guides/business-brain/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="getting-started prompts">
+<a class="thumb" href="/guides/build-your-site-with-claude/"><img src="/assets/guides/build-your-site-with-claude-cover-1.png" alt="Cover of Build Your Site With Claude" loading="lazy"></a>
+<div class="chips"><span class="chip">Getting started</span><span class="chip">Prompts</span><span class="chip tool">Claude / Claude Code</span></div>
+<h3>Build Your Site With Claude: plan, write, build and publish your business website with AI</h3>
+<p>Stop paying someone every time your site needs a change. Decide the one job your site has, then have Claude plan, write and build it, connect the form to your CRM and put it live.</p>
+<a class="go" href="/guides/build-your-site-with-claude/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-chief-of-staff/"><img src="/assets/guides/ai-chief-of-staff-cover-1.png" alt="Cover of The AI Chief of Staff Setup" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Chief of Staff Setup: let Claude answer your team&#x27;s simple emails and only bring you what needs you</h3>
+<p>Stop answering every team email yourself. Start with a read-only morning brief, move to drafts you approve, and add one-line alerts for anything only you can decide.</p>
+<a class="go" href="/guides/ai-chief-of-staff/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-webinar-builder/"><img src="/assets/guides/ai-webinar-builder-cover-1.png" alt="Cover of The AI Webinar Builder" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Webinar Builder: plan your whole webinar with Claude, from the promise to the follow-up emails</h3>
+<p>Stop building webinars by hand. Use Claude to write the promise, the run of show, the slides, the registration page and every email, one piece at a time.</p>
+<a class="go" href="/guides/ai-webinar-builder/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-email-kit/"><img src="/assets/guides/ai-email-kit-cover-1.png" alt="Cover of The AI Email Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Email Kit: have Claude write the emails to your list in your voice</h3>
+<p>Stop writing every email to your list yourself. Give Claude your voice once, then turn each video or post into an email and set up your welcome and follow-up emails.</p>
+<a class="go" href="/guides/ai-email-kit/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-company-blueprint/"><img src="/assets/guides/blueprint-cover-1.png" alt="Cover of The AI Company Blueprint" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT / Claude Code</span></div>
+<h3>The AI Company Blueprint: organize AI into a team that runs your business</h3>
+<p>Stop using AI one prompt at a time. Map your company, write SOPs your agents follow, and build the team in Claude, ChatGPT or Claude Code.</p>
+<a class="go" href="/guides/ai-company-blueprint/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-org-chart/"><img src="/assets/guides/org-cover-1.png" alt="Cover of Your AI Org Chart" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>Your AI Org Chart: the diagram, and how to build it for any business</h3>
+<p>The diagram of an AI-run business, plus 7 steps with copy-paste prompts to build your own AI managers and agents.</p>
+<a class="go" href="/guides/ai-org-chart/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/make-ai-think/"><img src="/assets/guides/think-cover-1.png" alt="Cover of Make AI Do the Thinking" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">ChatGPT / Claude</span></div>
+<h3>Make AI Do the Thinking: the 3 prompts, word for word</h3>
+<p>You don&#x27;t need to become an AI expert. Three copy-paste prompts: tell it what&#x27;s costing you time, make it interview you, get the plan.</p>
+<a class="go" href="/guides/make-ai-think/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/first-5-ai-jobs/"><img src="/assets/guides/jobs-cover-1.png" alt="Cover of Your First 5 AI Jobs" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Any AI</span></div>
+<h3>Your First 5 AI Jobs: stop doing the work AI should be doing</h3>
+<p>How to find the jobs AI should own inside your business, score them, and start with the one that saves you the most time.</p>
+<a class="go" href="/guides/first-5-ai-jobs/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/your-ai-team/"><img src="/assets/guides/team-cover-1.png" alt="Cover of Your AI Team" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Any AI</span></div>
+<h3>Your AI Team: set up AI agents that run your outcomes</h3>
+<p>The 7-step setup I use: outcomes, an AI manager for each, agents with one job, and decisions that come to you.</p>
+<a class="go" href="/guides/your-ai-team/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-system-starter-kit/"><img src="/assets/guides/kit-cover-1.png" alt="Cover of AI System Starter Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">ChatGPT / Claude</span></div>
+<h3>The AI System Starter Kit: 3 prompts that turn AI into a system</h3>
+<p>Stop using AI like Google. Three copy-paste prompts to find the problem worth solving and get a step-by-step plan.</p>
+<a class="go" href="/guides/ai-system-starter-kit/">Get the guide &rarr;</a>
+</article><div class="card soon"><div class="script">new guides every week</div><p><a href="/guides/">See the library</a></p></div></div>
+<p style="margin-top:24px"><a class="btn btn-primary" href="/">Explore ericbeer.ai</a> <a class="btn btn-ghost" href="/#waitlist">Join the waitlist</a></p>
+</div></section>
+<section class="block" id="watch"><div class="wrap">
+<div class="script">watch &amp; learn</div>
+<h2>See how I put AI to work</h2>
+<p class="sub">Short videos on how I run my business with an AI team. Watch on whichever app you like.</p>
+<div class="vids"><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/Z1zDjYNM_cI" rel="noopener" target="_blank"><img src="/assets/videos/yt-Z1zDjYNM_cI.jpg" alt="My LinkedIn Got Hacked. I Let AI Rebuild the Whole Thing." loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>My LinkedIn Got Hacked. I Let AI Rebuild the Whole Thing.</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/Z1zDjYNM_cI" rel="noopener" target="_blank">YouTube</a></div></article><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/xLkGYJUxZt0" rel="noopener" target="_blank"><img src="/assets/videos/yt-xLkGYJUxZt0.jpg" alt="Claude Can Now Find You a Job (Meet the AI Team)" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>Claude Can Now Find You a Job (Meet the AI Team)</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/xLkGYJUxZt0" rel="noopener" target="_blank">YouTube</a></div></article><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/Op6iBHz_8a4" rel="noopener" target="_blank"><img src="/assets/videos/yt-Op6iBHz_8a4.jpg" alt="Claude Rewrote My Whole LinkedIn With One Button" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>Claude Rewrote My Whole LinkedIn With One Button</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/Op6iBHz_8a4" rel="noopener" target="_blank">YouTube</a></div></article><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/FAwu8bGwmeE" rel="noopener" target="_blank"><img src="/assets/videos/yt-FAwu8bGwmeE.jpg" alt="AI Applied to 64 Jobs For Me (I Got an Interview Overnight)" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>AI Applied to 64 Jobs For Me (I Got an Interview Overnight)</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/FAwu8bGwmeE" rel="noopener" target="_blank">YouTube</a></div></article></div>
+<div class="follow"><a class="btn btn-ghost" href="https://www.youtube.com/@ericbeer" rel="noopener" target="_blank">YouTube <span class="h">@ericbeer</span></a><a class="btn btn-ghost" href="https://www.tiktok.com/@ericbeer" rel="noopener" target="_blank">TikTok <span class="h">@ericbeer</span></a><a class="btn btn-ghost" href="https://www.instagram.com/ericbeerofficial/" rel="noopener" target="_blank">Instagram <span class="h">@ericbeerofficial</span></a></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<div class="socials"><a href="https://www.youtube.com/@ericbeer" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@ericbeer" rel="noopener">TikTok</a><a href="https://www.instagram.com/ericbeerofficial/" rel="noopener">Instagram</a><a href="/guides/">Free guides</a><a href="/#waitlist">Waitlist</a></div>
+<div>Eric Beer &middot; AI teams for business owners, no tech required</div>
+<div style="margin-top:6px">&copy; 2026 Eric Beer &middot; <a href="/privacy/">Privacy</a></div>
+</div></footer>
+<script src="/assets/site.js" defer></script>
+</body></html>

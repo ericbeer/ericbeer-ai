@@ -119,6 +119,283 @@
     "featured": true
   },
   {
+    "slug": "five-minute-follow-up",
+    "title": "The 5-Minute Follow-Up Kit: let AI write every follow-up so no lead goes cold",
+    "short": "The 5-Minute Follow-Up Kit",
+    "blurb": "Whoever answers first usually wins. Have Claude write your instant reply, your 7-day follow-up and the win-back text for old leads, then load them into your CRM once.",
+    "keyword": "LEADS",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/five-minute-follow-up-cover-1.png",
+    "inside": [
+      "Step 1: Time how fast you answer today",
+      "Step 2: Teach Claude your business (once)",
+      "Step 3: Write the instant reply",
+      "Step 4: Write the 7-day follow-up",
+      "Step 5: Wake up the leads who never booked",
+      "Step 6: Get your replies ready",
+      "Step 7: Turn it on, then check it weekly"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "pain-to-content-matrix",
+    "title": "The Pain-to-Content Matrix: map every customer problem to a video brief with Claude",
+    "short": "The Pain-to-Content Matrix",
+    "blurb": "Stop guessing what to post. Have Claude map every stage of your customer's journey, the pain at each one, and a ready-to-film video brief for every pain.",
+    "keyword": "MATRIX",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/pain-to-content-matrix-cover-1.png",
+    "inside": [
+      "Step 1: Tell Claude about your business",
+      "Step 2: Map every stage of the customer's journey",
+      "Step 3: Write the pain at each stage, in their words",
+      "Step 4: Match each pain to what you really do",
+      "Step 5: Turn every row into a video brief",
+      "Step 6: Put it all in one sheet and hand it off",
+      "Step 7: A worked example, and the mistakes to skip"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ai-avatar-playbook",
+    "title": "The AI Avatar Playbook: put an AI host on camera for your business, the honest way",
+    "short": "The AI Avatar Playbook",
+    "blurb": "Stop filming every video yourself. Build an AI host with one photo and one voice, have Claude write the scripts, check the lips word by word and always label it AI.",
+    "keyword": "AVATAR",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT + an AI video tool",
+    "cover": "/assets/guides/ai-avatar-playbook-cover-1.png",
+    "inside": [
+      "Step 1: Decide who your host is, and what it never says",
+      "Step 2: Lock one photo and one voice",
+      "Step 3: Write the script with Claude",
+      "Step 4: Fix hard words, then make one test clip",
+      "Step 5: Check the lips word by word",
+      "Step 6: Label it AI, every time",
+      "Step 7: Post, review, and the mistakes to skip"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "put-your-business-inside-claude",
+    "title": "Put Your Business Inside Claude: connect your tools and data so Claude can work in your business",
+    "short": "Put Your Business Inside Claude",
+    "blurb": "My company Scout Jobs runs inside Claude as a connector. Here's how to connect your own tools in three levels, from one-click connectors to building your own with Claude Code.",
+    "keyword": "CONNECT",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude / Claude Code",
+    "cover": "/assets/guides/put-your-business-inside-claude-cover-1.png",
+    "inside": [
+      "Step 1: Understand what a connector is (in plain words)",
+      "Step 2: List what you'd want Claude to do",
+      "Step 3: Level 1, turn on connectors for tools you already use",
+      "Step 4: Put your connectors to work",
+      "Step 5: Level 2, connect more tools through Zapier or Make",
+      "Step 6: Level 3, build a connector for your own business",
+      "Step 7: A worked example, and the rules to keep"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "creator-brief-template",
+    "title": "The Creator Brief Template: have Claude write a filmable brief for every creator and team member",
+    "short": "The Creator Brief Template",
+    "blurb": "Stop writing every script yourself. Have Claude turn one customer problem into a full brief your creators can film straight from, then check it before it goes out.",
+    "keyword": "CREATORS",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/creator-brief-template-cover-1.png",
+    "inside": [
+      "Step 1: Save the brief template (once)",
+      "Step 2: Give Claude your business and your rules",
+      "Step 3: Turn one customer problem into a full brief",
+      "Step 4: Have Claude review the brief before it goes out",
+      "Step 5: Assign it, and don't let it go out until the keyword is live",
+      "Step 6: A worked example",
+      "Step 7: Rules and common mistakes"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "comment-to-customer-funnel",
+    "title": "The Comment-to-Customer Funnel Map: turn every video comment into an email subscriber with Claude",
+    "short": "The Comment-to-Customer Funnel Map",
+    "blurb": "Turn comments into customers. Map the full path from comment keyword to DM, email, tag and daily email, with Claude writing every message.",
+    "keyword": "FUNNEL",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/comment-to-customer-funnel-cover-1.png",
+    "inside": [
+      "Step 1: See the whole map first",
+      "Step 2: Pick one unique keyword per video",
+      "Step 3: Write the replies and DMs with Claude",
+      "Step 4: Capture the email and tag it by keyword",
+      "Step 5: Write the delivery email and the first week",
+      "Step 6: Instagram and TikTok notes",
+      "Step 7: A worked example, then the rules"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "sop-to-agent-kit",
+    "title": "The SOP-to-Agent Kit: turn one written process into an AI agent that does the job your way",
+    "short": "The SOP-to-Agent Kit",
+    "blurb": "Stop being the bottleneck. Have Claude turn one of your processes into an agent in a Claude Project, test it, and fix it until it does the job your way.",
+    "keyword": "AGENT",
+    "topics": [
+      "agents",
+      "prompts"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/sop-to-agent-kit-cover-1.png",
+    "inside": [
+      "Step 1: Pick one process to start with",
+      "Step 2: No SOP yet? Let Claude interview you",
+      "Step 3: Turn the SOP into agent instructions",
+      "Step 4: Put it in a Claude Project",
+      "Step 5: Test it on real past cases",
+      "Step 6: Fix the SOP, not the answer",
+      "Step 7: Repeat, then follow the rules"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "business-brain",
+    "title": "The Business Brain: have Claude interview you and write the one document that teaches AI your business",
+    "short": "The Business Brain",
+    "blurb": "Stop getting generic answers. Let Claude interview you, write one document about your business, and put it in a Project so every chat knows your business.",
+    "keyword": "BRAIN",
+    "topics": [
+      "getting-started",
+      "prompts"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/business-brain-cover-1.png",
+    "inside": [
+      "Step 1: Let Claude interview you",
+      "Step 2: Give it real examples of your writing",
+      "Step 3: Have Claude write the document",
+      "Step 4: Check it and fill the gaps",
+      "Step 5: Put it in a Claude Project",
+      "Step 6: See the difference (before and after)",
+      "Step 7: Keep it updated, and the rules"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "build-your-site-with-claude",
+    "title": "Build Your Site With Claude: plan, write, build and publish your business website with AI",
+    "short": "Build Your Site With Claude",
+    "blurb": "Stop paying someone every time your site needs a change. Decide the one job your site has, then have Claude plan, write and build it, connect the form to your CRM and put it live.",
+    "keyword": "WEBSITE",
+    "topics": [
+      "getting-started",
+      "prompts"
+    ],
+    "tool": "Claude / Claude Code",
+    "cover": "/assets/guides/build-your-site-with-claude-cover-1.png",
+    "inside": [
+      "Step 1: Decide the one job of your site",
+      "Step 2: Plan the pages",
+      "Step 3: Write the copy in your voice",
+      "Step 4: Have Claude build it",
+      "Step 5: Connect your form to your CRM or email tool",
+      "Step 6: Publish it free and point your domain",
+      "Step 7: Add pages without starting over (and the mistakes to avoid)"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ai-chief-of-staff",
+    "title": "The AI Chief of Staff Setup: let Claude answer your team's simple emails and only bring you what needs you",
+    "short": "The AI Chief of Staff Setup",
+    "blurb": "Stop answering every team email yourself. Start with a read-only morning brief, move to drafts you approve, and add one-line alerts for anything only you can decide.",
+    "keyword": "BRIEFING",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/ai-chief-of-staff-cover-1.png",
+    "inside": [
+      "Step 1: Connect Claude to your email and calendar",
+      "Step 2: Get a morning brief",
+      "Step 3: Put the brief on a schedule",
+      "Step 4: Write your rules block",
+      "Step 5: Let it draft replies, and you hit send",
+      "Step 6: Set up your one-line alerts",
+      "Step 7: Optional and advanced: let it answer a short list of senders"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ai-webinar-builder",
+    "title": "The AI Webinar Builder: plan your whole webinar with Claude, from the promise to the follow-up emails",
+    "short": "The AI Webinar Builder",
+    "blurb": "Stop building webinars by hand. Use Claude to write the promise, the run of show, the slides, the registration page and every email, one piece at a time.",
+    "keyword": "WEBINAR",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/ai-webinar-builder-cover-1.png",
+    "inside": [
+      "Step 1: Pick the offer and the one promise",
+      "Step 2: Get title and hook options",
+      "Step 3: Build the outline and run of show",
+      "Step 4: Write the slide-by-slide words",
+      "Step 5: Write the registration page",
+      "Step 6: Write the reminder emails (before)",
+      "Step 7: Write the replay and follow-up emails (after)",
+      "Step 8: Practice and prep for the Q&A"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ai-email-kit",
+    "title": "The AI Email Kit: have Claude write the emails to your list in your voice",
+    "short": "The AI Email Kit",
+    "blurb": "Stop writing every email to your list yourself. Give Claude your voice once, then turn each video or post into an email and set up your welcome and follow-up emails.",
+    "keyword": "NEWSLETTER",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/ai-email-kit-cover-1.png",
+    "inside": [
+      "Step 1: Give Claude your voice (once)",
+      "Step 2: Write your welcome email",
+      "Step 3: Write a delivery email for every freebie",
+      "Step 4: Turn today's video or post into today's email",
+      "Step 5: Test your subject lines",
+      "Step 6: Build a 5-email nurture sequence",
+      "Step 7: The rules that keep your list healthy"
+    ],
+    "featured": true
+  },
+  {
     "slug": "ai-company-blueprint",
     "title": "The AI Company Blueprint: organize AI into a team that runs your business",
     "short": "The AI Company Blueprint",

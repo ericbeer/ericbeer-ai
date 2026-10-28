@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The SOP-to-Agent Kit | Eric Beer</title>
+<meta name="description" content="Stop being the bottleneck. Have Claude turn one of your processes into an agent in a Claude Project, test it, and fix it until it does the job your way.">
+<link rel="canonical" href="https://ericbeer.ai/g/sop-to-agent-kit-2bb1e66a9a/">
+<meta property="og:title" content="The SOP-to-Agent Kit | Eric Beer">
+<meta property="og:description" content="Stop being the bottleneck. Have Claude turn one of your processes into an agent in a Claude Project, test it, and fix it until it does the job your way.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ericbeer.ai/g/sop-to-agent-kit-2bb1e66a9a/">
+<meta property="og:image" content="https://ericbeer.ai/assets/eric-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1B2D'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-size='30' font-weight='700' text-anchor='middle' fill='%23C8963E'%3EEB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=8a16c89a">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="reading">
+<header class="nav"><div class="wrap"><a class="brand" href="/">Eric Beer<span>.</span></a><nav aria-label="Main"><ul><li><a href="/">Home</a></li><li><a href="/guides/" aria-current=page>Free guides</a></li><li><a href="/contact/">Contact</a></li></ul></nav></div></header>
+<main><article class="guide-read wrap">
+<div class="full-card"><h2>Want the complete guide?</h2><p>The full guide, every other guide, the AI agents I use and live calls are going inside my community. Join the waitlist for the founding-member price.</p>
+<a class="btn btn-gold" href="/#waitlist">Join the waitlist &rarr;</a></div>
+<div class="script">your free guide</div>
+<h1>The SOP-to-Agent Kit: turn one written process into an AI agent that does the job your way</h1>
+<div class="gintro"><p>Most owners are the bottleneck. Every task runs through them because nobody else does it the right way. The fix isn't working harder. It's writing down how you do one job and turning it into an AI agent that does it your way.</p>
+<p>Here's the method. Take one written process. Have Claude turn it into instructions for an agent. Put those instructions in a Claude Project. Test it, and when it gets something wrong, fix the process, not the answer. One SOP, one agent. Then repeat. No code. Every step works the same in ChatGPT with a Project or a custom GPT.</p>
+<p>An SOP (standard operating procedure) is just a written process: the steps someone follows to do a job. If yours only lives in your head, Step 2 has Claude interview you and write it.</p></div>
+<section class="gsec"><div class="gnum">1</div><h2>Step 1: Pick one process to start with</h2><p>Pick a job that repeats every week, follows roughly the same steps each time, and that you're tired of doing or checking yourself. Good first picks: replying to new quote requests, writing a weekly client update, turning call notes into a follow-up email, or checking an order before it ships.</p><p>Skip anything that moves money, needs legal judgment, or needs access you aren't ready to give. Start small.</p><div class="prompt"><span class="tag">Copy this in</span>Help me pick the first process to turn into an AI agent. Here are the jobs I do every week: <span class="fill">[list them, even roughly]</span>.
+
+For each one, score it from 1 to 5 on: how often it happens, how much of my time it takes, how much it follows the same steps each time, and how low the risk is if a draft is wrong. Show a table, then recommend one to start with and tell me why.</div></section><section class="gsec"><div class="gnum">2</div><h2>Step 2: No SOP yet? Let Claude interview you</h2><div class="prompt"><span class="tag">Copy this in</span>I want to write an SOP (standard operating procedure) for this job: <span class="fill">[job name]</span>. I've never written it down. Interview me to get it out of my head.
+
+Ask me one question at a time. Wait for my answer before asking the next one. Cover:
+- What starts this job (the trigger)
+- What information or files I need before I start
+- Every step I take, in order
+- The decisions I make along the way and how I make them
+- What a great result looks like, and what a bad one looks like
+- Mistakes new people make
+- When I'd stop and ask someone, or say no
+- Who gets the finished work, and in what format
+
+If an answer is vague, ask me for a real example. When you have enough, write the SOP in plain numbered steps, and list anything you're still unsure about.</div><p>Answer the way you'd explain it to a new hire. Use voice dictation if typing is slow. Real examples are worth more than rules.</p></section><section class="gsec"><div class="gnum">3</div><h2>Step 3: Turn the SOP into agent instructions</h2><p>This is the main prompt. Paste your SOP in at the bottom.</p><div class="prompt"><span class="tag">Copy this in</span>Turn this SOP into instructions for an AI agent that does this job for my business. Write the instructions to the agent, starting with "You are...".
+
+Include these sections:
+1. The job: one or two sentences on what this agent does and for whom.
+2. What you'll be given: the inputs it should expect each time.
+3. The steps: numbered, in order, taken from the SOP.
+4. What good looks like: a clear description of a great result, plus a short checklist the agent runs before it answers.
+5. When to stop and ask me: the exact situations where it must not guess and must ask instead.
+6. Never do: things it must never do or say.
+7. The output: the exact format of what it hands back.
+
+Keep every detail from the SOP. Don't add steps I didn't describe. If something in the SOP is unclear or missing, list it as a question at the end instead of filling the gap yourself.
+
+My SOP:
+<span class="fill">[paste your SOP]</span></div><p>Answer the questions at the end, then ask Claude to update the instructions with your answers. Save the final version.</p></section><section class="gsec"><div class="gnum">4</div><h2>Step 4: Put it in a Claude Project</h2><ol>
+<li>In Claude, create a new Project and name it after the job, like "Quote Reply Agent".</li>
+<li>Paste the agent instructions into the Project instructions.</li>
+<li>Add knowledge files: the SOP itself, your price or service list if the job needs it, two or three examples of great past work, and any templates.</li>
+<li>In ChatGPT: create a Project or a custom GPT, paste the same instructions, and upload the same files.</li>
+</ol><p>Now that one job has its own agent. Open a chat in the Project, give it the inputs, and it works from your instructions every time. On a plan that lets you share Projects, or by sharing a custom GPT, anyone on your team can use it too.</p></section><section class="gsec"><div class="gnum">5</div><h2>Step 5: Test it on real past cases</h2><p>Don't trust it yet. Give it three to five real jobs from the past where you know what the right result looked like. Remove names and private details first.</p><div class="prompt"><span class="tag">Copy this in</span><span class="fill">[paste a real past request]</span>
+
+Do this job using your instructions. After your answer, show me the checklist from "what good looks like" with each item marked done or not done, and tell me anything you weren't sure about.</div><p>Compare each answer to what you, or your best person, would have done. Write down every gap.</p><p><b>Example.</b> A small cleaning company turns its "reply to a new quote request" SOP into an agent. The Project holds the SOP, the price ranges by home size, and three of the owner's best past replies. First test: a request for a deep clean of a 3-bedroom home with a dog. The agent writes a friendly reply with the right price range and asks for the move-in date. But it offers a Saturday slot, and the owner always checks Saturdays with the team first. The SOP never said so. That's a gap in the SOP, not a bad answer.</p></section><section class="gsec"><div class="gnum">6</div><h2>Step 6: Fix the SOP, not the answer</h2><p>When the agent gets something wrong, the easy move is to fix the answer and move on. Don't. Fix the instructions, so it never makes that mistake again.</p><div class="prompt"><span class="tag">Copy this in</span>Here's what you did on this test: <span class="fill">[paste the agent's answer]</span>
+Here's what it should have done: <span class="fill">[what you'd have done, and why]</span>
+
+Don't redo the answer. Tell me which part of the instructions or the SOP caused the gap, and write the exact change to fix it: a new step, a clearer rule, or a new "stop and ask me" case. Show me only the updated section.</div><p>Paste the change into the Project instructions and the SOP file, then run the same test again. In the cleaning example, the fix is one new "stop and ask me" line: weekend slots need the owner's OK. When it passes all your test cases, it's ready to use. Keep a person checking anything that goes to a customer until it's earned your trust.</p></section><section class="gsec"><div class="gnum">7</div><h2>Step 7: Repeat, then follow the rules</h2><p>One SOP, one agent. Do that ten times and you've got a team. Each new agent goes faster, because now you know the steps.</p><div class="prompt"><span class="tag">Copy this in</span>Here are the agents I've built so far: <span class="fill">[list]</span>. Here are the other jobs in my business: <span class="fill">[list]</span>.
+
+Which three should I turn into agents next, and in what order? For each, tell me what SOP I need, what files the Project needs, and how it hands work to or from the agents I already have.</div><p><b>Rules and common mistakes:</b></p><ul>
+<li>One agent, one job. An agent that does five jobs does all of them badly.</li>
+<li>Always include "when to stop and ask me". That's what keeps it safe.</li>
+<li>Test on real past cases before any customer sees its work.</li>
+<li>Fix the SOP, not the answer.</li>
+<li>Keep a person reviewing anything that goes to a customer until you trust it.</li>
+<li>Never paste passwords, card numbers or private customer data into a chat.</li>
+<li>Update the Project the day your process changes.</li>
+</ul></section>
+<section class="locked"><div class="fade" aria-hidden="true"><span class="bar" style="width:96%"></span><span class="bar" style="width:88%"></span><span class="bar" style="width:92%"></span><span class="bar" style="width:70%"></span><span class="bar" style="width:95%"></span><span class="bar" style="width:84%"></span><span class="bar" style="width:60%"></span><span class="bar" style="width:90%"></span><span class="bar" style="width:78%"></span></div>
+<div class="lockbox">
+<div class="script">the rest of this guide is inside the community</div>
+<h2>Unlock the full guide</h2>
+<ul class="lock-list"><li>My agent instructions template, with real examples from my own businesses</li><li>The test-case prompts I run before any agent goes live</li><li>Live sessions: we turn one of your SOPs into an agent together</li><li>How I set up agents so they hand work to each other</li></ul>
+<p>Get this guide in full, every other guide, the AI agents I use, and live calls, inside my community.</p>
+<div class="price">Founding members: <b>$47 first month</b>, then $97/month.</div>
+<a class="btn btn-gold" href="/#waitlist">Join the waitlist</a>
+</div></section>
+</article>
+<hr class="divider">
+<section class="block"><div class="wrap">
+<div class="script">keep going</div>
+<h2>More free guides</h2>
+<div class="cards"><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/scout-ai-team/"><img src="/assets/guides/scout-team-cover-1.png" alt="Cover of Meet Scout&#x27;s AI Team" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude + Scout</span></div>
+<h3>Meet Scout&#x27;s AI team: the org chart of AI agents that runs a job search, and how to connect it to Claude</h3>
+<p>See every agent behind Scout Jobs: Scout at the top, 35 AI managers that each own one outcome, and the 154 specialists who do the work, each with one job. Then connect Scout to Claude, step by step, and put the team to work on your job search.</p>
+<a class="go" href="/guides/scout-ai-team/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-job-agent-scout/"><img src="/assets/guides/hired-cover-1.png" alt="Cover of Your AI Job Agent: Scout + Claude" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude + Scout</span></div>
+<h3>Let AI run your job search: connect Scout to Claude and get a custom website for every job</h3>
+<p>Connect Scout to Claude and a team of AI agents learns who you are, builds your CareerID and a Showcase website, finds jobs, makes a custom Showcase for each one, applies, and emails the hiring manager. Every step, with screenshots.</p>
+<a class="go" href="/guides/ai-job-agent-scout/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/scout-linkedin-profile/"><img src="/assets/guides/linkedin-cover-1.png" alt="Cover of Build Your LinkedIn Profile With AI" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude + Scout</span></div>
+<h3>Build your LinkedIn profile with AI: connect Scout to Claude and let it write every section</h3>
+<p>Create or fix your LinkedIn profile, section by section: headline, About, experience, Skills and Featured. Connect Scout to Claude, give it your resume, and AI agents write every section, checked against what&#x27;s true. Every step with screenshots.</p>
+<a class="go" href="/guides/scout-linkedin-profile/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-operating-system-blueprint/"><img src="/assets/guides/os-cover-1.png" alt="Cover of The AI Operating System Blueprint" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Operating System Blueprint: 5 steps to AI agents that run your business</h3>
+<p>Ingest your business, map the company, design the AI workforce, connect your tools, then test and deploy. The 5 steps, with the prompts for each.</p>
+<a class="go" href="/guides/ai-operating-system-blueprint/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/viral-remix-kit/"><img src="/assets/guides/remix-cover-1.png" alt="Cover of The Viral Remix Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Viral Remix Kit: turn any viral video into one for your business with Claude</h3>
+<p>Stop coming up with content ideas from scratch. Have Claude reverse-engineer a video that&#x27;s already going viral and rebuild it for your business.</p>
+<a class="go" href="/guides/viral-remix-kit/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/five-minute-follow-up/"><img src="/assets/guides/five-minute-follow-up-cover-1.png" alt="Cover of The 5-Minute Follow-Up Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The 5-Minute Follow-Up Kit: let AI write every follow-up so no lead goes cold</h3>
+<p>Whoever answers first usually wins. Have Claude write your instant reply, your 7-day follow-up and the win-back text for old leads, then load them into your CRM once.</p>
+<a class="go" href="/guides/five-minute-follow-up/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/pain-to-content-matrix/"><img src="/assets/guides/pain-to-content-matrix-cover-1.png" alt="Cover of The Pain-to-Content Matrix" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Pain-to-Content Matrix: map every customer problem to a video brief with Claude</h3>
+<p>Stop guessing what to post. Have Claude map every stage of your customer&#x27;s journey, the pain at each one, and a ready-to-film video brief for every pain.</p>
+<a class="go" href="/guides/pain-to-content-matrix/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-avatar-playbook/"><img src="/assets/guides/ai-avatar-playbook-cover-1.png" alt="Cover of The AI Avatar Playbook" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT + an AI video tool</span></div>
+<h3>The AI Avatar Playbook: put an AI host on camera for your business, the honest way</h3>
+<p>Stop filming every video yourself. Build an AI host with one photo and one voice, have Claude write the scripts, check the lips word by word and always label it AI.</p>
+<a class="go" href="/guides/ai-avatar-playbook/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/put-your-business-inside-claude/"><img src="/assets/guides/put-your-business-inside-claude-cover-1.png" alt="Cover of Put Your Business Inside Claude" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / Claude Code</span></div>
+<h3>Put Your Business Inside Claude: connect your tools and data so Claude can work in your business</h3>
+<p>My company Scout Jobs runs inside Claude as a connector. Here&#x27;s how to connect your own tools in three levels, from one-click connectors to building your own with Claude Code.</p>
+<a class="go" href="/guides/put-your-business-inside-claude/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/creator-brief-template/"><img src="/assets/guides/creator-brief-template-cover-1.png" alt="Cover of The Creator Brief Template" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Creator Brief Template: have Claude write a filmable brief for every creator and team member</h3>
+<p>Stop writing every script yourself. Have Claude turn one customer problem into a full brief your creators can film straight from, then check it before it goes out.</p>
+<a class="go" href="/guides/creator-brief-template/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/comment-to-customer-funnel/"><img src="/assets/guides/comment-to-customer-funnel-cover-1.png" alt="Cover of The Comment-to-Customer Funnel Map" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Comment-to-Customer Funnel Map: turn every video comment into an email subscriber with Claude</h3>
+<p>Turn comments into customers. Map the full path from comment keyword to DM, email, tag and daily email, with Claude writing every message.</p>
+<a class="go" href="/guides/comment-to-customer-funnel/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="getting-started prompts">
+<a class="thumb" href="/guides/business-brain/"><img src="/assets/guides/business-brain-cover-1.png" alt="Cover of The Business Brain" loading="lazy"></a>
+<div class="chips"><span class="chip">Getting started</span><span class="chip">Prompts</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The Business Brain: have Claude interview you and write the one document that teaches AI your business</h3>
+<p>Stop getting generic answers. Let Claude interview you, write one document about your business, and put it in a Project so every chat knows your business.</p>
+<a class="go" href="/guides/business-brain/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="getting-started prompts">
+<a class="thumb" href="/guides/build-your-site-with-claude/"><img src="/assets/guides/build-your-site-with-claude-cover-1.png" alt="Cover of Build Your Site With Claude" loading="lazy"></a>
+<div class="chips"><span class="chip">Getting started</span><span class="chip">Prompts</span><span class="chip tool">Claude / Claude Code</span></div>
+<h3>Build Your Site With Claude: plan, write, build and publish your business website with AI</h3>
+<p>Stop paying someone every time your site needs a change. Decide the one job your site has, then have Claude plan, write and build it, connect the form to your CRM and put it live.</p>
+<a class="go" href="/guides/build-your-site-with-claude/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-chief-of-staff/"><img src="/assets/guides/ai-chief-of-staff-cover-1.png" alt="Cover of The AI Chief of Staff Setup" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Chief of Staff Setup: let Claude answer your team&#x27;s simple emails and only bring you what needs you</h3>
+<p>Stop answering every team email yourself. Start with a read-only morning brief, move to drafts you approve, and add one-line alerts for anything only you can decide.</p>
+<a class="go" href="/guides/ai-chief-of-staff/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-webinar-builder/"><img src="/assets/guides/ai-webinar-builder-cover-1.png" alt="Cover of The AI Webinar Builder" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Webinar Builder: plan your whole webinar with Claude, from the promise to the follow-up emails</h3>
+<p>Stop building webinars by hand. Use Claude to write the promise, the run of show, the slides, the registration page and every email, one piece at a time.</p>
+<a class="go" href="/guides/ai-webinar-builder/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-email-kit/"><img src="/assets/guides/ai-email-kit-cover-1.png" alt="Cover of The AI Email Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>The AI Email Kit: have Claude write the emails to your list in your voice</h3>
+<p>Stop writing every email to your list yourself. Give Claude your voice once, then turn each video or post into an email and set up your welcome and follow-up emails.</p>
+<a class="go" href="/guides/ai-email-kit/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-company-blueprint/"><img src="/assets/guides/blueprint-cover-1.png" alt="Cover of The AI Company Blueprint" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT / Claude Code</span></div>
+<h3>The AI Company Blueprint: organize AI into a team that runs your business</h3>
+<p>Stop using AI one prompt at a time. Map your company, write SOPs your agents follow, and build the team in Claude, ChatGPT or Claude Code.</p>
+<a class="go" href="/guides/ai-company-blueprint/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/ai-org-chart/"><img src="/assets/guides/org-cover-1.png" alt="Cover of Your AI Org Chart" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Claude / ChatGPT</span></div>
+<h3>Your AI Org Chart: the diagram, and how to build it for any business</h3>
+<p>The diagram of an AI-run business, plus 7 steps with copy-paste prompts to build your own AI managers and agents.</p>
+<a class="go" href="/guides/ai-org-chart/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/make-ai-think/"><img src="/assets/guides/think-cover-1.png" alt="Cover of Make AI Do the Thinking" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">ChatGPT / Claude</span></div>
+<h3>Make AI Do the Thinking: the 3 prompts, word for word</h3>
+<p>You don&#x27;t need to become an AI expert. Three copy-paste prompts: tell it what&#x27;s costing you time, make it interview you, get the plan.</p>
+<a class="go" href="/guides/make-ai-think/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/first-5-ai-jobs/"><img src="/assets/guides/jobs-cover-1.png" alt="Cover of Your First 5 AI Jobs" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Any AI</span></div>
+<h3>Your First 5 AI Jobs: stop doing the work AI should be doing</h3>
+<p>How to find the jobs AI should own inside your business, score them, and start with the one that saves you the most time.</p>
+<a class="go" href="/guides/first-5-ai-jobs/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="agents getting-started">
+<a class="thumb" href="/guides/your-ai-team/"><img src="/assets/guides/team-cover-1.png" alt="Cover of Your AI Team" loading="lazy"></a>
+<div class="chips"><span class="chip">AI agents</span><span class="chip">Getting started</span><span class="chip tool">Any AI</span></div>
+<h3>Your AI Team: set up AI agents that run your outcomes</h3>
+<p>The 7-step setup I use: outcomes, an AI manager for each, agents with one job, and decisions that come to you.</p>
+<a class="go" href="/guides/your-ai-team/">Get the guide &rarr;</a>
+</article><article class="card" data-topics="prompts getting-started">
+<a class="thumb" href="/guides/ai-system-starter-kit/"><img src="/assets/guides/kit-cover-1.png" alt="Cover of AI System Starter Kit" loading="lazy"></a>
+<div class="chips"><span class="chip">Prompts</span><span class="chip">Getting started</span><span class="chip tool">ChatGPT / Claude</span></div>
+<h3>The AI System Starter Kit: 3 prompts that turn AI into a system</h3>
+<p>Stop using AI like Google. Three copy-paste prompts to find the problem worth solving and get a step-by-step plan.</p>
+<a class="go" href="/guides/ai-system-starter-kit/">Get the guide &rarr;</a>
+</article><div class="card soon"><div class="script">new guides every week</div><p><a href="/guides/">See the library</a></p></div></div>
+<p style="margin-top:24px"><a class="btn btn-primary" href="/">Explore ericbeer.ai</a> <a class="btn btn-ghost" href="/#waitlist">Join the waitlist</a></p>
+</div></section>
+<section class="block" id="watch"><div class="wrap">
+<div class="script">watch &amp; learn</div>
+<h2>See how I put AI to work</h2>
+<p class="sub">Short videos on how I run my business with an AI team. Watch on whichever app you like.</p>
+<div class="vids"><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/Z1zDjYNM_cI" rel="noopener" target="_blank"><img src="/assets/videos/yt-Z1zDjYNM_cI.jpg" alt="My LinkedIn Got Hacked. I Let AI Rebuild the Whole Thing." loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>My LinkedIn Got Hacked. I Let AI Rebuild the Whole Thing.</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/Z1zDjYNM_cI" rel="noopener" target="_blank">YouTube</a></div></article><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/xLkGYJUxZt0" rel="noopener" target="_blank"><img src="/assets/videos/yt-xLkGYJUxZt0.jpg" alt="Claude Can Now Find You a Job (Meet the AI Team)" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>Claude Can Now Find You a Job (Meet the AI Team)</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/xLkGYJUxZt0" rel="noopener" target="_blank">YouTube</a></div></article><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/Op6iBHz_8a4" rel="noopener" target="_blank"><img src="/assets/videos/yt-Op6iBHz_8a4.jpg" alt="Claude Rewrote My Whole LinkedIn With One Button" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>Claude Rewrote My Whole LinkedIn With One Button</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/Op6iBHz_8a4" rel="noopener" target="_blank">YouTube</a></div></article><article class="vid"><a class="vthumb" href="https://www.youtube.com/shorts/FAwu8bGwmeE" rel="noopener" target="_blank"><img src="/assets/videos/yt-FAwu8bGwmeE.jpg" alt="AI Applied to 64 Jobs For Me (I Got an Interview Overnight)" loading="lazy" width="360" height="640"><span class="play" aria-hidden="true">&#9654;</span></a><h3>AI Applied to 64 Jobs For Me (I Got an Interview Overnight)</h3><div class="vlinks"><a href="https://www.youtube.com/shorts/FAwu8bGwmeE" rel="noopener" target="_blank">YouTube</a></div></article></div>
+<div class="follow"><a class="btn btn-ghost" href="https://www.youtube.com/@ericbeer" rel="noopener" target="_blank">YouTube <span class="h">@ericbeer</span></a><a class="btn btn-ghost" href="https://www.tiktok.com/@ericbeer" rel="noopener" target="_blank">TikTok <span class="h">@ericbeer</span></a><a class="btn btn-ghost" href="https://www.instagram.com/ericbeerofficial/" rel="noopener" target="_blank">Instagram <span class="h">@ericbeerofficial</span></a></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<div class="socials"><a href="https://www.youtube.com/@ericbeer" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@ericbeer" rel="noopener">TikTok</a><a href="https://www.instagram.com/ericbeerofficial/" rel="noopener">Instagram</a><a href="/guides/">Free guides</a><a href="/#waitlist">Waitlist</a></div>
+<div>Eric Beer &middot; AI teams for business owners, no tech required</div>
+<div style="margin-top:6px">&copy; 2026 Eric Beer &middot; <a href="/privacy/">Privacy</a></div>
+</div></footer>
+<script src="/assets/site.js" defer></script>
+</body></html>
