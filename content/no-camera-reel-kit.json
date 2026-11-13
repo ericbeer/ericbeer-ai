@@ -1,6 +1,6 @@
 {
  "key": "7c41e9b2d5",
- "intro": "<p>You're a business owner still filming every video yourself? AI can do that for you. The reel that sent you here was not filmed. I gave Claude three photos of my face and a voice memo, and about an hour later I had a 55-second vertical video of me talking, with captions, graphics and music.</p><p>This guide is the exact setup I used, including the two things that went wrong and how I fixed each one with a single sentence. One thing to know up front: this kit remakes one specific reel, Higgsfield's Shorts Studio promo. The script, captions and music are theirs. You get the same video with your face and your voice in it. It's the fastest way to see what this technology does with you on screen before you build your own.</p>",
+ "intro": "<p>You're a business owner still filming every video yourself? AI can do that for you. The reel that sent you here was not filmed. I gave Claude three photos of my face and a voice memo, and about an hour later I had a 55-second vertical video of me talking, with captions, graphics and music.</p><p>This guide is the exact setup I used, including the two things that went wrong and how I fixed each one with a single sentence. One thing to know up front: this kit remakes one specific reel, a promo for Higgsfield's Shorts Studio. The script, captions and music come with it. They aren't yours or mine. You get the same video with your face and your voice in it. It's the fastest way to see what this technology does with you on screen before you build your own.</p>",
  "free": [
   {
    "title": "Step 1: What you need (and what it costs)",
@@ -16,7 +16,7 @@
   },
   {
    "title": "Step 4: Get the skill",
-   "body": "<p>A skill is a small folder of instructions that teaches Claude one job. This one was made by Higgsfield and it's free. It's the same file I used. Download it here:</p><p><a class=\"btn btn-gold\" href=\"/assets/guides/reels-revoice-higgsfield.zip\" download>Download the reel skill (40 MB) &rarr;</a></p><p>Leave the file zipped. You don't need to open it.</p>"
+   "body": "<p>A skill is a small folder of instructions that teaches Claude one job. This is the same file I used. Download it here:</p><p><a class=\"btn btn-gold\" href=\"/assets/guides/reels-revoice-higgsfield.zip\" download>Download the reel skill (40 MB) &rarr;</a></p><p>Leave the file zipped. You don't need to open it.</p>"
   },
   {
    "title": "Step 5: Set up Claude (once)",
@@ -32,7 +32,7 @@
   },
   {
    "title": "Step 8: Post it",
-   "body": "<ol><li>Download the video from the link Claude gives you.</li><li>When you upload, turn on the <b>AI-generated</b> label. Instagram, TikTok and YouTube all ask for it on realistic AI video of a person, and it's you, so own it. \"I didn't film this\" is the hook anyway.</li><li>Write your own caption. Say what it is: you, made from three photos and a voice memo.</li></ol><p>Remember what this reel is: Higgsfield's script with you in it. Post it as a demo of what AI can do with your face and voice. For videos about your own business, in your own words, you need your own format. That's what I build next.</p>"
+   "body": "<ol><li>Download the video from the link Claude gives you.</li><li>When you upload, turn on the <b>AI-generated</b> label. Instagram, TikTok and YouTube all ask for it on realistic AI video of a person, and it's you, so own it. \"I didn't film this\" is the hook anyway.</li><li>Write your own caption. Say what it is: you, made from three photos and a voice memo.</li></ol><p>Remember what this reel is: someone else's script with you in it. Post it as a demo of what AI can do with your face and voice. For videos about your own business, in your own words, you need your own format. That's what I build next.</p>"
   }
  ],
  "locked": [
