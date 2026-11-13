@@ -16,7 +16,7 @@
   },
   {
    "title": "Step 4: Get the skill",
-   "body": "<p>A skill is a small folder of instructions that teaches Claude one job. This one is made by Higgsfield and it's free. Download it from their page:</p><p><a class=\"btn btn-gold\" href=\"https://shorts-studio-reel.higgsfield.app/\" rel=\"noopener\" target=\"_blank\">Get the reel skill from Higgsfield &rarr;</a></p><p>Scroll to <b>Download the skill</b> at the bottom of that page. There are two versions: the regular download, and a 40 MB full version with every source file inside. Either one works. If Claude says the file is too big, use the regular one.</p><p>Leave the file zipped. You don't need to open it.</p>"
+   "body": "<p>A skill is a small folder of instructions that teaches Claude one job. This one was made by Higgsfield and it's free. It's the same file I used. Download it here:</p><p><a class=\"btn btn-gold\" href=\"/assets/guides/reels-revoice-higgsfield.zip\" download>Download the reel skill (40 MB) &rarr;</a></p><p>Leave the file zipped. You don't need to open it.</p><p>If Claude says the file is too big to upload, Higgsfield has a smaller version of the same skill on <a href=\"https://shorts-studio-reel.higgsfield.app/\" rel=\"noopener\" target=\"_blank\">their page</a>. Scroll to <b>Download the skill</b> at the bottom.</p>"
   },
   {
    "title": "Step 5: Set up Claude (once)",
