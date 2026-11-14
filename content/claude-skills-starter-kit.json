@@ -1,0 +1,44 @@
+{
+ "key": "7c41d9e2b5",
+ "intro": "<p>You're a business owner using Claude without skills? Then you're still doing work it could do for you. Every time you explain how you want a proposal written, how you prep for a sales call, or how you close out the month, you're teaching Claude the same job again.</p><p>A skill fixes that. It teaches Claude one job, once, so you never explain it twice. These are the five I'd install first, with exactly where to click and a prompt to try each one. It takes about ten minutes. I checked every step against the app in November 2026. Claude moves its menus around often, so if something isn't where I say it is, use the search box at the top of Settings.</p>",
+ "free": [
+  {
+   "title": "What a skill is (30 seconds)",
+   "body": "<p>A skill is a set of instructions Claude loads when a job calls for it. Think of it as a trained employee for one task. You install it once. After that you ask in plain words, and Claude uses the skill without you pointing to it.</p><ul><li><b>A skill</b> teaches Claude one job.</li><li><b>A plugin</b> is a bundle of skills for a whole area, such as marketing or sales. You install it the same way.</li><li><b>A connector</b> is different. It lets Claude into your other apps, such as Gmail or your calendar. Skills are the know-how. Connectors are the access.</li></ul>"
+  },
+  {
+   "title": "How to install any skill",
+   "body": "<ol><li>Click your name in the bottom-left corner, then <b>Settings</b>.</li><li>Click <b>Customize</b>.</li><li>Click <b>Skills</b> at the top.</li><li>Click <b>Discover</b>. <b>Yours</b> shows what you already have. <b>Discover</b> shows what you can add.</li><li>Find the skill, or type its name in the search box, and click the <b>+</b> next to it.</li></ol><p>There's a <b>Try</b> button next to most of them if you want to test one before you add it. Anything you add moves to <b>Yours</b>, where you can turn it off or remove it later.</p><p><b>Check who made it.</b> The directory has thousands of skills from many authors. Every one in this guide is from Anthropic, the company that makes Claude, and says so on its card. For anything else, read who it's by before you add it.</p><p><b>If you don't see Skills or the +.</b> Some of this depends on your plan, and Claude rolls features out in stages. Use the ones you can see and come back for the rest.</p>"
+  },
+  {
+   "title": "Skill 1: Small Business",
+   "body": "<p><b>What it does.</b> Ready-made workflows to help you run and grow your business. It works with most of the tools you already use, and you approve each step before it happens.</p><ol><li>Open <b>Settings</b>, then <b>Customize</b>, then <b>Skills</b>.</li><li>Type <b>Small Business</b> in the search box at the top.</li><li>Find the one that says <b>Small Business, by Anthropic</b> and click the <b>+</b> next to it.</li></ol><p>It's also under <b>Most installed skills</b> on the Discover page.</p><div class=\"prompt\"><span class=\"tag\">Try it</span>I own <span class=\"fill\">[business name]</span>, a <span class=\"fill\">[what the business does]</span> with <span class=\"fill\">[team size]</span> people. Use the Small Business skill. What are the three workflows you'd set up for me first, and what do you need from me to start the first one?</div>"
+  },
+  {
+   "title": "Skill 2: Marketing",
+   "body": "<p><b>What it does.</b> Creates content, plans campaigns and looks at what's working across your marketing channels. It also helps keep your brand voice consistent.</p><ol><li>Open <b>Settings</b>, then <b>Customize</b>, then <b>Skills</b>.</li><li>Type <b>Marketing</b> in the search box at the top.</li><li>Find the one that says <b>Marketing, Plugin, from Anthropic</b> and click the <b>+</b> next to it.</li></ol><p>This one is a plugin, so you get several marketing skills in one install.</p><div class=\"prompt\"><span class=\"tag\">Try it</span>Plan a two-week campaign for <span class=\"fill\">[offer or product]</span>. My customers are <span class=\"fill\">[who they are]</span>. I post on <span class=\"fill\">[channels]</span>. Give me the plan as a calendar, then write the first three posts.</div>"
+  },
+  {
+   "title": "Skill 3: Sales",
+   "body": "<p><b>What it does.</b> Preps you for calls, summarizes them, writes the follow-ups and helps you review your deals.</p><ol><li>Open <b>Settings</b>, then <b>Customize</b>, then <b>Skills</b>.</li><li>Type <b>Sales</b> in the search box at the top.</li><li>Find the one that says <b>Sales, Plugin, from Anthropic</b> and click the <b>+</b> next to it.</li></ol><p>Also a plugin: several sales skills in one install.</p><div class=\"prompt\"><span class=\"tag\">Try it</span>I have a call tomorrow with <span class=\"fill\">[name, company]</span> about <span class=\"fill\">[what you sell]</span>. Prep me: what to ask, what they probably care about, and the objections I should expect. Then draft the follow-up email I'll send after the call.</div>"
+  },
+  {
+   "title": "Skill 4: Finance",
+   "body": "<p><b>What it does.</b> Helps with finance and accounting work: journal entries, reconciliation, financial statements and explaining why the numbers moved.</p><ol><li>Open <b>Settings</b>, then <b>Customize</b>, then <b>Skills</b>.</li><li>Type <b>Finance</b> in the search box at the top.</li><li>Find the one that says <b>Finance, by Anthropic</b> and click the <b>+</b> next to it.</li></ol><p>It's the most installed skill in the directory right now.</p><div class=\"prompt\"><span class=\"tag\">Try it</span>Here is last month's profit and loss and the month before: [paste or attach both]. Tell me in plain words what changed, what's worth worrying about, and the three questions I should ask my bookkeeper.</div><p>It works from the numbers you give it, so check them, and have your accountant sign off on anything you file.</p>"
+  },
+  {
+   "title": "Skill 5: Skill Creator",
+   "body": "<p><b>What it does.</b> This is the one that makes the other four look small. You tell Claude how you do a job, and it builds the skill for you. After that, Claude does that job your way every time.</p><ol><li>Open <b>Settings</b>, then <b>Customize</b>, then <b>Skills</b>.</li><li>Look under <b>Yours</b> first. If <b>skill-creator</b> is already there, you have it.</li><li>If not, type <b>skill-creator</b> in the search box, find the one from Anthropic and click the <b>+</b>.</li></ol><div class=\"prompt\"><span class=\"tag\">Try it</span>Use the skill creator to build me a skill for <span class=\"fill\">[a job you repeat, for example: writing a quote for a new customer]</span>. Here's how I do it today: <span class=\"fill\">[describe the steps in your own words]</span>. Here are two examples of ones I've done: <span class=\"fill\">[paste them]</span>. Ask me whatever you need before you build it.</div><p><b>What to turn into a skill first.</b> Pick a job you do every week, that you do the same way each time, and that you've explained to Claude more than once. Quotes, weekly reports, replies to the same customer questions and meeting follow-ups are all good ones.</p>"
+  },
+  {
+   "title": "The five-minute check",
+   "body": "<p>Open a new chat and run these. Each one tells you whether a step worked.</p><div class=\"prompt\"><span class=\"tag\">Checks what's installed</span>Which skills do you have available right now? List them with one line on what each one is for.</div><div class=\"prompt\"><span class=\"tag\">Checks a skill in use</span>Draft a follow-up email to a customer who went quiet after I sent a quote for <span class=\"fill\">[what you quoted]</span>.</div><p>In the second one, watch for Claude naming the skill it used. If it didn't use one, say <b>use the Sales skill</b> once. You can also type <b>/</b> in the chat box to see your skills and pick one.</p>"
+  }
+ ],
+ "locked": [
+  "The skills I built for my own business, and the exact prompts I used to build them",
+  "Done-for-you skills that go with these guides, ready to install",
+  "How to chain skills and connectors so a whole job runs start to finish",
+  "Live sessions: we build your first skill together"
+ ]
+}

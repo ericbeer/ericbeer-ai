@@ -1,5 +1,28 @@
 [
   {
+    "slug": "claude-skills-starter-kit",
+    "title": "The Claude Skills Starter Kit: 5 skills to install first so Claude does the work you keep doing yourself",
+    "short": "The Claude Skills Starter Kit",
+    "blurb": "Using Claude without skills? Then you're still doing work it could do for you. Five to install first: Small Business, Marketing, Sales, Finance and Skill Creator. Exactly where to click, checked against today's app, with a prompt to try each one.",
+    "keyword": "SKILLS",
+    "topics": [
+      "getting-started"
+    ],
+    "tool": "Claude",
+    "cover": "/assets/guides/claude-skills-cover-1.png",
+    "inside": [
+      "What a skill is (30 seconds)",
+      "How to install any skill",
+      "Skill 1: Small Business",
+      "Skill 2: Marketing",
+      "Skill 3: Sales",
+      "Skill 4: Finance",
+      "Skill 5: Skill Creator",
+      "The five-minute check"
+    ],
+    "featured": true
+  },
+  {
     "slug": "claude-setup-checklist",
     "title": "The Claude Setup Checklist: 5 settings to fix first so Claude knows you and your business",
     "short": "The Claude Setup Checklist",
