@@ -1,0 +1,44 @@
+{
+ "key": "3e8b61f0a7",
+ "intro": "<p>You're a business owner and Claude still doesn't know who you are? That's why its answers sound like they were written for anyone. Out of the box, Claude starts every chat from zero: no memory of you, no access to your email or calendar, no idea what your business does.</p><p>These are the five things I set up first, in the order I'd do them, with exactly where to click. It takes about fifteen minutes. Claude moves its menus around often, so I checked every step against the app in November 2026. If something isn't where I say it is, use the search box at the top of Settings.</p>",
+ "free": [
+  {
+   "title": "Before you start",
+   "body": "<ul><li><b>A Claude account.</b> Sign in at claude.ai or in the Claude desktop app. The steps are the same in both.</li><li><b>Where Settings is.</b> Click your name in the bottom-left corner, then <b>Settings</b>.</li><li><b>If you don't see a setting.</b> Some of these depend on your plan, and Claude rolls features out in stages. Skip that one and keep going. The rest still work.</li></ul>"
+  },
+  {
+   "title": "Step 1: Turn on memory",
+   "body": "<p>This is the one that makes Claude feel like it knows you.</p><ol><li>Open <b>Settings</b>, then <b>Your Claude</b>.</li><li>Scroll to <b>Memory</b>.</li><li>Turn on <b>Search and reference chats</b>. Claude can now look back at your past chats for details.</li><li>Turn on <b>Generate memory from chats</b>. Claude now builds a running memory of who you are and what you're working on.</li></ol><p>Leave <b>Include sensitive topics in memory</b> off unless you want Claude to remember things like health details.</p><p>You stay in control: <b>Your memory</b>, then <b>Manage</b>, shows everything Claude has saved, and you can edit or delete any of it.</p><h3>Coming from ChatGPT? Bring your memory with you</h3><ol><li>On the same page, find <b>Import memory from other AI providers</b> and click <b>Start import</b>.</li><li>Claude gives you a prompt. Copy it.</li><li>Paste it into ChatGPT (or whichever AI you used before). It answers with what it knows about you.</li><li>Copy that answer and paste it back into Claude.</li></ol><p>Read what comes back before you paste it. If it's wrong or out of date, fix it first. Whatever you paste becomes what Claude believes about you.</p>"
+  },
+  {
+   "title": "Step 2: Connect the tools you already use",
+   "body": "<p>Connectors let Claude read and work inside your other apps, so you stop copying and pasting between them.</p><ol><li>Open <b>Settings</b>, then <b>Customize</b>.</li><li>Click <b>Connectors</b>, then <b>Discover</b>.</li><li>Find <b>Gmail</b>, <b>Google Calendar</b> and <b>Google Drive</b> and click the <b>+</b> on each. On Outlook? Use <b>Microsoft 365</b> instead.</li><li>Sign in when it asks and approve the access.</li><li>Back on <b>Yours</b>, each connected app shows a check mark.</li></ol><p>Start with those three. Add more only when you have a job for them. Then test it:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Look at my calendar for tomorrow and my email from the last three days. Tell me what I have tomorrow, and list the emails that still need a reply from me, most urgent first.</div><p>Claude asks before it sends or changes anything. Read what it's about to do before you approve it.</p>"
+  },
+  {
+   "title": "Step 3: Take the free courses (and let Claude pick them for you)",
+   "body": "<p>Anthropic, the company that makes Claude, has free courses at <a href=\"https://academy.claude.com/\" rel=\"noopener\" target=\"_blank\">academy.claude.com</a>. You may have seen an older address, anthropic.skilljar.com. That site says it closes in early December 2026, so use the new one.</p><p>You don't need all of them. Have Claude choose:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Here is Anthropic's free course catalog: https://academy.claude.com/ Based on what you know about me and my business, which three lessons should I take first, and which should I skip? Give me one sentence on why for each.</div><p>This works much better after Steps 1 and 4, because Claude has something to go on. If Claude says it can't open the link, copy the list of courses from the page and paste it in under the same prompt.</p>"
+  },
+  {
+   "title": "Step 4: Tell Claude who you are and how you want it to write",
+   "body": "<ol><li>Open <b>Settings</b>, then <b>Your Claude</b>. It's the same page as Step 1.</li><li>At the top is a box called <b>Instructions</b>. Whatever you put here applies to every chat.</li><li>Fill in the template below and paste it in.</li></ol><div class=\"prompt\"><span class=\"tag\">Fill this in, then paste it into Instructions</span>About me: I'm <span class=\"fill\">[your name]</span>, and I own <span class=\"fill\">[business name]</span>, a <span class=\"fill\">[what the business does]</span> for <span class=\"fill\">[who your customers are]</span>. We have <span class=\"fill\">[team size]</span> people.<br><br>What I use you for most: <span class=\"fill\">[for example: emails to customers, proposals, social posts, planning my week]</span>.<br><br>How I want you to write: short sentences, plain words, no jargon. Sound like a person, not a brochure. Get to the point in the first line.<br><br>How I want you to work: if you need something from me to do a good job, ask before you start. If you aren't sure something is true, say so. Give me one recommendation, not a list of options.</div><p>Keep it under a page. If you want Claude to stop doing something, such as long intros or bullet points everywhere, add one line saying so. Come back and adjust it after a week of real use.</p>"
+  },
+  {
+   "title": "Step 5: Create a Project for your business",
+   "body": "<p>A Project is a workspace that holds your documents and instructions. Every chat you start inside it already has that context, so you stop explaining your business from scratch.</p><ol><li>In the left sidebar, click <b>Projects</b>, then create a new project.</li><li>Under <b>What are you working on?</b>, name it after the business or the job, for example <span class=\"fill\">[Business name]</span> Marketing.</li><li>Under <b>What are you trying to achieve?</b>, write two or three sentences about the goal.</li><li>Click <b>Create project</b>.</li><li>Inside the project, add your files. Good ones to start with: your services and prices, your most common customer questions with your answers, two or three emails or posts that sound like you, and anything you hand a new hire on day one.</li><li>Start your chats from inside the project.</li></ol><p>Then test it:</p><div class=\"prompt\"><span class=\"tag\">Copy this in (inside the project)</span>Using the files in this project, write a reply to this customer email in my voice: <span class=\"fill\">[paste the email]</span>. Keep it under 120 words.</div><p>If the reply gets a price or a policy wrong, the fix is almost always a missing or outdated file, so add it.</p>"
+  },
+  {
+   "title": "The ten-minute check",
+   "body": "<p>Open a new chat and run these three. Each one tells you whether a step worked.</p><div class=\"prompt\"><span class=\"tag\">Checks memory and instructions</span>What do you know about me and my business so far? What's missing that would help you do better work for me?</div><div class=\"prompt\"><span class=\"tag\">Checks connectors</span>What's the next meeting on my calendar, and is there anything in my email I should read before it?</div><div class=\"prompt\"><span class=\"tag\">Checks your project (run it inside the project)</span>List the files you have in this project and tell me in one line what each one is for.</div><p>If Claude comes up empty on any of them, go back to that step. Memory takes a few chats to build, so the first answer may be thin.</p>"
+  },
+  {
+   "title": "Bonus: send Claude work from your phone (if you have it)",
+   "body": "<p>Claude has a feature called Dispatch that lets you message Claude from your phone and have it do the work on your computer. Anthropic's help page says it is a limited beta and isn't available to new users, which is why it's a bonus and not one of the five.</p><p>To check whether you have it: open Cowork in the Claude desktop app and look for <b>Dispatch</b> in the left side panel. If it's there, click it, choose <b>Get started</b>, turn on the two switches (file access and keeping your computer awake), and click <b>Finish setup</b>. Your computer has to be on, awake and running Claude for it to work.</p><p>If you don't see it, you haven't missed a setting. It isn't on your account yet.</p>"
+  }
+ ],
+ "locked": [
+  "The instructions I actually use, line by line, and why each line is there",
+  "How I set up Projects for each part of my business",
+  "Turning a task you repeat every week into a skill Claude runs for you",
+  "Live sessions: we set up your Claude together"
+ ]
+}

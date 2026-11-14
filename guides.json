@@ -1,5 +1,28 @@
 [
   {
+    "slug": "claude-setup-checklist",
+    "title": "The Claude Setup Checklist: 5 settings to fix first so Claude knows you and your business",
+    "short": "The Claude Setup Checklist",
+    "blurb": "Claude still doesn't know who you are? Five settings fix that in about fifteen minutes: memory, your tools, the free courses, your instructions, and a Project for your business. Exactly where to click, checked against today's app, with the prompts to test each one.",
+    "keyword": "SETUP",
+    "topics": [
+      "getting-started"
+    ],
+    "tool": "Claude",
+    "cover": "/assets/guides/claude-setup-cover-1.png",
+    "inside": [
+      "Before you start",
+      "Step 1: Turn on memory",
+      "Step 2: Connect the tools you already use",
+      "Step 3: Take the free courses (and let Claude pick them for you)",
+      "Step 4: Tell Claude who you are and how you want it to write",
+      "Step 5: Create a Project for your business",
+      "The ten-minute check",
+      "Bonus: send Claude work from your phone (if you have it)"
+    ],
+    "featured": true
+  },
+  {
     "slug": "no-camera-reel-kit",
     "title": "The No-Camera Reel Kit: make a reel with your face and voice from 3 photos and a voice memo",
     "short": "The No-Camera Reel Kit",
