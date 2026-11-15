@@ -1,5 +1,27 @@
 [
   {
+    "slug": "erase-yourself-kit",
+    "title": "The Erase Yourself Kit: find where your address, cell and business info are listed online, and get it taken down",
+    "short": "The Erase Yourself Kit",
+    "blurb": "Your home address, cell and family are probably on people-search sites right now, and your business info is on lead lists. One prompt finds every listing, agent mode works through the opt-out forms, and a weekly check keeps you off.",
+    "keyword": "ERASE",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "ChatGPT / Claude",
+    "cover": "/assets/guides/erase-yourself-cover-1.png",
+    "inside": [
+      "Step 1: Gather what they'd search for (5 minutes)",
+      "Step 2: The search prompt",
+      "Step 3: The sites to check first",
+      "Step 4: Let agent mode do the forms",
+      "Step 5: Make it weekly",
+      "Step 6: Close the business leaks"
+    ],
+    "featured": true
+  },
+  {
     "slug": "claude-skills-starter-kit",
     "title": "The Claude Skills Starter Kit: 5 skills to install first so Claude does the work you keep doing yourself",
     "short": "The Claude Skills Starter Kit",

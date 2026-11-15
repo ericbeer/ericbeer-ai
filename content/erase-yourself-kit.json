@@ -1,0 +1,36 @@
+{
+ "key": "e3b213eb3c",
+ "intro": "<p>You're a business owner whose home address is one search away? It probably is. People-search sites list your address, your cell and your family, and if you own a business, your LLC filing can tie your home to the company while lead-list sites scrape your direct line and your team's emails.</p><p>I asked ChatGPT to find all of it and help me take it down. This is the exact setup: the search prompt, the sites to check first, the agent-mode prompt that works through the opt-out forms, and the weekly check that keeps you off.</p>",
+ "free": [
+  {
+   "title": "Step 1: Gather what they'd search for (5 minutes)",
+   "body": "<p>Write down every version of you that might be listed. The AI can only find what you tell it to look for.</p><ul><li>Full name, plus nicknames and maiden or former names</li><li>Current home address and the last two or three you've had</li><li>Personal cell, plus any old numbers</li><li>Personal and business email addresses</li><li>Business name, LLC name and registered agent address</li><li>City, state and your approximate age (these sites group people by age)</li></ul><p>Before you start: opting out is free on most sites. Never pay a site to remove you. Use a separate email address for the opt-out confirmations, and don't send a photo of your ID to a site that only asks for it \"to verify\". Look for another way first.</p>"
+  },
+  {
+   "title": "Step 2: The search prompt",
+   "body": "<p>Paste this into ChatGPT or Claude with web search turned on.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Search the web for everything publicly listed about me.\nName: <span class=\"fill\">[full name, other names]</span>\nCity/state: <span class=\"fill\">[city, state]</span>   Age: <span class=\"fill\">[approx]</span>\nBusiness: <span class=\"fill\">[business / LLC name]</span>\n\nFind every people-search site, data broker and lead-list site that is selling, listing or sharing my personal or business information.\nMake a table with: site name | what it shows (address, phone, relatives, email, employer) | the official opt-out or removal page link | what the opt-out needs (email, form, phone call, ID).\nThen give me a recommended removal order, biggest sites first.\nOnly include links to the sites' own official opt-out pages.</div><p>Check every link it gives you before you use it. AI can get web addresses wrong, so make sure each one is on the site's own domain.</p>"
+  },
+  {
+   "title": "Step 3: The sites to check first",
+   "body": "<p>Most removal lists start with these. Each one runs its own opt-out.</p><ul><li><b>People-search sites:</b> Whitepages, Spokeo, TruePeopleSearch, FastPeopleSearch, BeenVerified, PeopleConnect (the Intelius family), Radaris</li><li><b>B2B lead lists:</b> ZoomInfo, Apollo, RocketReach, SignalHire</li></ul><p>The lead-list sites matter most for business owners. That's where your direct line and your team's emails end up in other people's cold-outreach tools.</p>"
+  },
+  {
+   "title": "Step 4: Let agent mode do the forms",
+   "body": "<p>In ChatGPT, turn on <b>agent mode</b> and give it the table from Step 2.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Go through this removal list one site at a time. For each site, open the official opt-out page, find my listing, and fill in the removal request using only the details I give you here: <span class=\"fill\">[name, city, the email for confirmations]</span>. Stop and ask me before you submit anything that asks for payment, an ID upload, or a phone verification code. Keep a log: site, date, status, anything I still need to do.</div><p>Stay nearby. Some sites send a confirmation email or show a CAPTCHA, and you'll need to do those yourself.</p>"
+  },
+  {
+   "title": "Step 5: Make it weekly",
+   "body": "<p>Listings come back, because data brokers keep re-scraping public records. Schedule this to run every week.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Every week: re-run my search from the removal log. Tell me which sites still show my information, which removals are confirmed, and anything new. Then request removal again wherever my listing reappeared.</div>"
+  },
+  {
+   "title": "Step 6: Close the business leaks",
+   "body": "<ul><li>Put a registered agent or virtual office address on your LLC filing instead of your home address, where your state allows it.</li><li>Have your team opt out of ZoomInfo, Apollo and RocketReach for their work emails, or do it for them.</li><li>Use a business line on your website and listings instead of your personal cell.</li><li>Make sure your domain's WHOIS privacy is turned on.</li></ul><p>Keep a simple removal log: site, date requested, confirmed or not, and when to check again.</p><p><small>Not legal advice. Opt-out rules differ by site and by state, and some states give you extra deletion rights. Check yours.</small></p>"
+  }
+ ],
+ "locked": [
+  "My filled-in removal list for business owners, with every opt-out page",
+  "The scheduled task I run weekly, ready to copy",
+  "How to clean up your team's work emails across lead-list sites",
+  "Live sessions: we run your removal list together"
+ ]
+}
