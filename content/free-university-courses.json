@@ -1,0 +1,32 @@
+{
+  "key": "634b6f62b1",
+  "intro": "<p>You can take real courses from Harvard, Yale and MIT online for free. Most are free to audit on edX or Coursera; a certificate usually costs extra. Check each course page for the current terms.</p>",
+  "free": [
+    {
+      "title": "The seven courses",
+      "body": "<ol><li>Harvard: CS50's Introduction to Artificial Intelligence with Python (edX)</li><li>Harvard: Managing Happiness (edX)</li><li>Harvard: Rhetoric, the Art of Persuasive Writing and Public Speaking (edX)</li><li>Yale: Introduction to Negotiation (Coursera)</li><li>Yale: The Science of Well-Being (Coursera)</li><li>MIT: Becoming an Entrepreneur (edX)</li><li>MIT: Understanding the World Through Data (edX)</li></ol><p>Search the course name on edX or Coursera and choose \"audit\" to take it free.</p>"
+    },
+    {
+      "title": "Which one first",
+      "body": "<ul><li>You want to understand AI properly: CS50 AI.</li><li>You sell or close deals: Negotiation, then Rhetoric.</li><li>You're starting something: Becoming an Entrepreneur.</li></ul>"
+    },
+    {
+      "title": "Your AI study partner",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>I'm taking <span class=\"fill\">[course]</span>. Here are my notes from this week's lesson: <span class=\"fill\">[paste]</span>. Explain the 3 most important ideas in plain English, give me one example from my business (<span class=\"fill\">[what you do]</span>), then quiz me with 5 questions, one at a time.</div>"
+    },
+    {
+      "title": "Turn it into action",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Based on what I learned in <span class=\"fill\">[lesson]</span>, give me one thing to try in my business this week, how to measure it, and what to look for.</div>"
+    },
+    {
+      "title": "Stay on track",
+      "body": "<p>Block two 45-minute sessions a week in your calendar. Finish one course before starting the next.</p><p><small>Use AI to explain and quiz you, not to do graded work for you.</small></p>"
+    }
+  ],
+  "locked": [
+    "20 more free courses by goal",
+    "My study system with AI, start to finish",
+    "Course-to-business action plans",
+    "Live sessions: learn AI with the community"
+  ]
+}

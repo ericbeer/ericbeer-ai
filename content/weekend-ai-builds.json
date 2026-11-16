@@ -1,0 +1,32 @@
+{
+  "key": "d9bf5e6c47",
+  "intro": "<p>Most people use Claude one chat at a time. The owners getting the most out of it build a few things once, then use them every day. Here are the five I'd build first, in the order I'd build them, each with the prompt that starts it.</p>",
+  "free": [
+    {
+      "title": "Build 1: A morning dashboard",
+      "body": "<p>One page that shows what matters today: key numbers, the emails that need you, and your top three tasks.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Build me a one-page morning dashboard as an artifact. Sections: today's top 3 tasks, the 5 numbers I check every day (<span class=\"fill\">[e.g. leads, sales, cash]</span>), emails waiting on me, and my calendar. Start with placeholder data, then tell me which tools to connect so it fills itself.</div>"
+    },
+    {
+      "title": "Build 2: A second brain",
+      "body": "<p>Create a Claude Project called \"Business Brain\" and add your offer, prices, FAQs, best emails and SOPs as files.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>You are my business brain. Answer only from the files in this Project. When something isn't in them, say so and tell me which document to add. First, list the 10 documents you'd want from me to know this business well.</div>"
+    },
+    {
+      "title": "Build 3: An executive assistant",
+      "body": "<p>Connect your email and calendar to Claude, then give it a standing brief.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Each morning: summarize my unread email in 5 lines, draft replies to anything a customer or partner sent (I'll review before sending), and plan my day around my calendar with 2 focus blocks. Never send anything without my OK.</div>"
+    },
+    {
+      "title": "Build 4: A marketing assistant",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Using my business brain: give me 10 post ideas for this week based on the questions customers ask most (<span class=\"fill\">[list 3]</span>), write the first 3 as ready-to-post captions in my voice, and tell me which of last month's posts did best and why. Here are their numbers: <span class=\"fill\">[paste]</span></div>"
+    },
+    {
+      "title": "Build 5: Your AI team",
+      "body": "<p>Turn the builds above into roles. One Project per role, each with its own instructions: Assistant, Marketer, Researcher, Analyst. Start every role from this:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>You are my <span class=\"fill\">[role]</span>. Your job: <span class=\"fill\">[one sentence]</span>. You report to me. Every day you deliver: <span class=\"fill\">[the output]</span>. Ask me before spending money, contacting anyone, or deleting anything.</div><p><small>Keep a person in the loop: review anything that goes to a customer before it's sent.</small></p>"
+    }
+  ],
+  "locked": [
+    "My dashboard template, ready to copy",
+    "The 10 documents for your business brain",
+    "Role cards for a 6-person AI team",
+    "Live build sessions every week"
+  ]
+}

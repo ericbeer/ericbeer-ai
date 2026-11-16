@@ -1,0 +1,32 @@
+{
+  "key": "0d639e39bb",
+  "intro": "<p>AI is useful for growing income only when it knows you. Run these five prompts in order in one conversation. The plan is a starting point to test, not a promise.</p>",
+  "free": [
+    {
+      "title": "Prompt 1: What you already have",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Interview me, one question at a time, about my skills, experience, the problems people already ask me to help with, my audience or network, my time and my budget. Then summarize what I have to work with.</div>"
+    },
+    {
+      "title": "Prompt 2: One offer, one channel",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Based on everything you know about me, what is the most realistic way for me to reach <span class=\"fill\">[income goal]</span> in the next 6 months? Limit it to one offer and one channel. Tell me why, and what would make it fail.</div>"
+    },
+    {
+      "title": "Prompt 3: Who to learn from",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Who are 3 people or businesses that have done something like this well? What did they do in their first 90 days that I can learn from? Tell me where I can verify each one.</div>"
+    },
+    {
+      "title": "Prompt 4: The 90-day plan",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Write a simple 90-day plan for this offer: what to do each week, the one number to track, and what \"working\" looks like at day 30, 60 and 90. Keep it under 5 hours a week.</div>"
+    },
+    {
+      "title": "Prompt 5: Find your blocker",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>I'm stuck at <span class=\"fill\">[where you're stuck]</span>. Ask me questions until you can name the one thing holding me back, then give me the smallest next step to get past it this week.</div><p><small>No plan guarantees income. Test small, track the numbers and adjust.</small></p>"
+    }
+  ],
+  "locked": [
+    "Offer templates for service businesses",
+    "The weekly check-in prompt",
+    "How to price your first offer",
+    "Live sessions: we build your plan together"
+  ]
+}

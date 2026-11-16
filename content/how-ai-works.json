@@ -1,0 +1,32 @@
+{
+  "key": "5ff0aa1d5e",
+  "intro": "<p>You don't need math to understand how tools like Claude and ChatGPT work. Here's the plain-English version, and the five prompting habits that come straight out of it.</p>",
+  "free": [
+    {
+      "title": "1. It reads and writes in tokens",
+      "body": "<p>The model breaks text into small pieces called tokens (about three quarters of a word each). Everything you type and everything it writes is tokens.</p>"
+    },
+    {
+      "title": "2. It predicts the next token",
+      "body": "<p>Given everything so far, the model scores every possible next token and picks one of the likely ones. Then it does it again, token by token. \"The cat sat on the...\" makes \"mat\" very likely and \"Dr. Seuss\" very unlikely.</p><p>That's why the same prompt can give a different answer each time: it's choosing among likely options, not looking up one answer.</p>"
+    },
+    {
+      "title": "3. Why context changes everything",
+      "body": "<p>Every word you give it shifts which next words are likely. Vague prompt, generic answer. Specific prompt with your business, audience and examples, specific answer.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Before you answer, ask me the 5 questions you'd need answered to do this really well: <span class=\"fill\">[your task]</span></div>"
+    },
+    {
+      "title": "4. Why it sometimes makes things up",
+      "body": "<p>The model writes what sounds likely, not what it has checked. Ask it to show its sources, and check anything that matters.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>For each fact in your answer, tell me how sure you are and where I can check it. Say \"I don't know\" rather than guess.</div>"
+    },
+    {
+      "title": "5. The five habits",
+      "body": "<ul><li>Give context first: who you are, who it's for, what good looks like.</li><li>Show an example of the output you want.</li><li>Ask for steps before the answer on anything hard.</li><li>Ask it to ask you questions.</li><li>Check facts, numbers and quotes yourself.</li></ul>"
+    }
+  ],
+  "locked": [
+    "The full series: how AI works, episode by episode",
+    "My context template for any business task",
+    "Why newer models are better, explained simply",
+    "Live sessions: ask me anything about AI"
+  ]
+}

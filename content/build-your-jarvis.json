@@ -1,0 +1,32 @@
+{
+  "key": "a6708efc8c",
+  "intro": "<p>\"Jarvis\" is a personal AI agent that works while you don't: it watches your inbox, does research, drafts the work and checks in with you. Here are the eight steps, in order, using tools you can set up yourself.</p>",
+  "free": [
+    {
+      "title": "Steps 1-2: A home and a harness",
+      "body": "<p><b>Home:</b> an always-on computer (a spare laptop or a small desktop like a Mac mini) or a cloud machine, so it can run 24/7.</p><p><b>Harness:</b> the program that lets a model use tools and work in steps. Claude Code is the easiest place to start; open-source agent harnesses work too.</p>"
+    },
+    {
+      "title": "Steps 3-4: The model and who you are",
+      "body": "<p>Pick a strong model (Claude, or another top model). Then write a file it reads every time:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Write me an \"about me\" file for my AI assistant. Ask me questions one at a time about: my business, my customers, my goals this quarter, how I like to work, my writing voice, and what it must never do without asking me. Then write the file.</div>"
+    },
+    {
+      "title": "Steps 5-6: Memory and skills",
+      "body": "<p>Give it a notes folder it updates after every task (what it learned, what you decided). Then add skills: saved instructions for jobs you repeat, like \"write my weekly newsletter\" or \"research a new lead\".</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Turn what we just did into a reusable skill: a short instruction file with the steps, the inputs you need from me, and what a great result looks like.</div>"
+    },
+    {
+      "title": "Steps 7-8: Tools and channels",
+      "body": "<p>Connect email, calendar, files and your business apps (connectors or MCP servers). Then add a way to reach it from your phone, such as a messaging integration, so you can ask for work and approve it on the go.</p>"
+    },
+    {
+      "title": "Step 9: The dashboard and the rules",
+      "body": "<p>Build one page that shows what Jarvis did today, what's waiting on you and what it plans next. And set the rules:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Never send, post, pay, delete or sign anything without my explicit OK. When you need a decision, ask me in one message with the options.</div><p><small>Keep secrets (passwords, card numbers) out of its notes, and review its access regularly.</small></p>"
+    }
+  ],
+  "locked": [
+    "My Jarvis \"about me\" template",
+    "12 starter skills for business owners",
+    "Phone and WhatsApp setup, step by step",
+    "Live build sessions: we set up your Jarvis together"
+  ]
+}

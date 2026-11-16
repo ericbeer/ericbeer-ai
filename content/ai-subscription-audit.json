@@ -1,0 +1,32 @@
+{
+  "key": "4cad9777dd",
+  "intro": "<p>AI tools add up fast: a writing tool, an image tool, a video tool, two chat apps, a note taker. Most overlap. Here's how to have AI audit your whole stack and tell you exactly what to cancel.</p>",
+  "free": [
+    {
+      "title": "Step 1: List what you pay for",
+      "body": "<p>Search your email for \"receipt\", \"subscription\" and \"renewal\", and check your card statement for the last 3 months. Write down each tool, its price and its renewal date.</p>"
+    },
+    {
+      "title": "Step 2: The audit prompt",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Here are the AI tools I pay for, with price and renewal date: <span class=\"fill\">[paste list]</span>. Here is what I actually use AI for each week: <span class=\"fill\">[e.g. emails, images, video, research]</span>. For each tool: what it does that none of my other tools do, what overlaps, and your call: keep, cancel or replace (with what). Then total what I'd save per month.</div>"
+    },
+    {
+      "title": "Step 3: Check the call before you cancel",
+      "body": "<p>Look at your last month in each tool you're cancelling. If you used a feature no other tool has, keep it. Ask:</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Before I cancel <span class=\"fill\">[tool]</span>: what would I lose? List the features I'd need to replace and where I'd get them in the tools I'm keeping.</div>"
+    },
+    {
+      "title": "Step 4: Build a renewal calendar",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Make a table of the tools I'm keeping: monthly cost, renewal date, and a reminder date 3 days before each renewal. Add the total per month and per year.</div>"
+    },
+    {
+      "title": "Step 5: Re-check every month",
+      "body": "<p>Set a monthly reminder (or a Claude scheduled task) to run the audit again with any new tools. New AI tools launch every week; your stack should stay lean.</p><p><small>Cancel through each tool's own account page, and keep the confirmation email.</small></p>"
+    }
+  ],
+  "locked": [
+    "My stack audit spreadsheet",
+    "The overlap map for 40 popular AI tools",
+    "A scheduled monthly audit you can copy",
+    "Live sessions: we audit your stack together"
+  ]
+}

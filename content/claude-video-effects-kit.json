@@ -1,0 +1,32 @@
+{
+  "key": "bc5fd646d0",
+  "intro": "<p>Editing is the slowest part of posting. Claude Code can do most of it from plain-English instructions: it writes the code that renders captions, zooms and overlays onto your clip, then you watch and ask for changes.</p>",
+  "free": [
+    {
+      "title": "Step 1: Set up Claude Code",
+      "body": "<p>If you haven't yet, install Claude Code in VS Code (see my Claude Code Starter Setup guide). Make a folder called \"reels\" and put one raw clip in it.</p>"
+    },
+    {
+      "title": "Step 2: Start the video project",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>In this folder, set up a video project using Remotion (or another code-based video tool you recommend) that renders vertical 1080x1920 videos from my clip <span class=\"fill\">[file name]</span>. Install only what's needed, explain each step in plain English, and render a 5-second test.</div>"
+    },
+    {
+      "title": "Step 3: Captions and zooms",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Transcribe my clip and add word-by-word captions, 2-4 words at a time, bold white with a dark outline, centered in the lower third. Add a quick punch-in zoom on these words: <span class=\"fill\">[3-5 key words]</span>. Render it.</div>"
+    },
+    {
+      "title": "Step 4: Overlays and title cards",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Add: a title card for the first 2 seconds saying <span class=\"fill\">[hook]</span>; the screenshot <span class=\"fill\">[file]</span> sliding in over the top half when I say <span class=\"fill\">[phrase]</span>; and an end card with my call to action <span class=\"fill\">[CTA]</span>. Keep my face visible.</div>"
+    },
+    {
+      "title": "Step 5: Save your effects library",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Turn each effect we made into a reusable component with a clear name (captions, punch-zoom, slide-in screenshot, title card, end card) and write a one-line README for each so I can say \"add a punch-zoom on X\" next time.</div><p><small>Use only clips, music and images you have the rights to.</small></p>"
+    }
+  ],
+  "locked": [
+    "All 20 effects with the prompt for each",
+    "My caption style file",
+    "A reel template you reuse every week",
+    "Live sessions: we edit your reel together"
+  ]
+}

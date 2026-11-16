@@ -1,0 +1,32 @@
+{
+  "key": "758b745b88",
+  "intro": "<p>Most people paste their resume into AI and say \"make it better\". You get generic. This chain works because each prompt builds on the last, in the same conversation, against one specific job.</p>",
+  "free": [
+    {
+      "title": "Prompt 1: The match score",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Act as a senior recruiter for this role. Here's the job description: <span class=\"fill\">[paste]</span> and my resume: <span class=\"fill\">[paste]</span>. Score how well I match out of 100, list the top 5 missing keywords or skills, and say which of my experiences is most relevant.</div>"
+    },
+    {
+      "title": "Prompt 2: Close the gaps honestly",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Rewrite my experience section to naturally include those keywords, but only where my experience truly supports them. If I don't have a skill, don't add it; list it separately as something to learn.</div>"
+    },
+    {
+      "title": "Prompt 3: Results bullets",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Rewrite each bullet using this formula: Accomplished [X], as measured by [Y], by doing [Z]. Ask me for any numbers you need; don't invent them.</div>"
+    },
+    {
+      "title": "Prompt 4: The scanner check",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Now act as an applicant tracking system. Scan my new resume: list what you'd read correctly, any sections or formatting you'd struggle with, and the final keyword match.</div><p>Then export with simple formatting: one column, standard headings, no tables or images.</p>"
+    },
+    {
+      "title": "Prompt 5: Interview prep",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Act as the hiring manager for this role. Ask me the 3 hardest questions you'd ask this candidate, one at a time. After each answer, give me a stronger version based on my real background.</div><p><small>Everything on your resume should be true. AI helps you say it well; it can't make it true.</small></p>"
+    }
+  ],
+  "locked": [
+    "The cover letter prompt that matches your voice",
+    "LinkedIn profile rewrite prompts",
+    "Salary negotiation scripts",
+    "Live sessions: we review your resume together"
+  ]
+}

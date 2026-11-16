@@ -1,0 +1,32 @@
+{
+  "key": "ac990875e2",
+  "intro": "<p>One creator lost an earbud in a bed of gravel, took a few photos, and asked ChatGPT to find it. It zoomed in, scanned each photo and pointed to it. Here's how to do the same, and the business uses that make it more than a party trick.</p>",
+  "free": [
+    {
+      "title": "Step 1: Take good photos",
+      "body": "<ul><li>Shoot close: 3-6 photos that overlap, rather than one wide shot.</li><li>Good light, no blur, phone held still.</li><li>Include something for scale (your shoe, a coin).</li></ul>"
+    },
+    {
+      "title": "Step 2: The search prompt",
+      "body": "<p>Use a model that can reason about images (ChatGPT with thinking on, or Claude).</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>I lost <span class=\"fill\">[item, with color and size]</span> somewhere in these photos. Zoom in and scan each photo section by section. Tell me which photo it's in and where (e.g. \"photo 3, left third, just above the middle\"), how sure you are, and what you're seeing that makes you think so. If you can't find it, say so.</div>"
+    },
+    {
+      "title": "Step 3: Check its answer",
+      "body": "<p>AI can be confidently wrong. Ask it to mark the spot, then look yourself.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Describe exactly what's at that spot and what's around it, so I can find it in person.</div>"
+    },
+    {
+      "title": "Step 4: Read the small print",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Read every word and number on the label in this photo: <span class=\"fill\">[e.g. model number, serial, expiry date]</span>. If any character is unclear, say which and give your best guess.</div>"
+    },
+    {
+      "title": "Step 5: Business uses",
+      "body": "<ul><li>Contractors: spot damage in roof or site photos and list it for the quote.</li><li>Inventory: count items on a shelf photo.</li><li>Receipts: pull totals and dates into a table.</li><li>Real estate: list what a listing photo shows that the description doesn't.</li></ul><p><small>Always double-check anything you'll rely on for money or safety.</small></p>"
+    }
+  ],
+  "locked": [
+    "10 photo prompts for service businesses",
+    "How to turn photos into a quote",
+    "The receipts-to-spreadsheet prompt",
+    "Live sessions: we try it on your photos"
+  ]
+}

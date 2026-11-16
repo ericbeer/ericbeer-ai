@@ -1,0 +1,32 @@
+{
+  "key": "bb0d4f87a2",
+  "intro": "<p>Videos promising \"unlimited free AI\" usually mean a shady workaround that breaks the tools' terms and can get your account banned. There's a better way: the official free tiers and model hubs. Here's where to go and what you get.</p>",
+  "free": [
+    {
+      "title": "Step 1: Use the official free tiers",
+      "body": "<p>Claude, ChatGPT and Gemini all have free plans with daily limits. Use all three: when one runs out, switch to another. Check each one's current limits on its pricing page.</p>"
+    },
+    {
+      "title": "Step 2: Google AI Studio",
+      "body": "<p>Google AI Studio gives free access to Gemini models for testing and building, with rate limits. Good for trying long documents and images.</p>"
+    },
+    {
+      "title": "Step 3: Model hubs",
+      "body": "<p>Hubs such as OpenRouter let you use many models from one account, and some models are free with limits. Read each model's terms and don't send private customer data to models you don't know.</p>"
+    },
+    {
+      "title": "Step 4: Run open models yourself",
+      "body": "<p>Apps like Ollama or LM Studio run open models on your own computer for free. They're slower and less capable than the top models, but private and unlimited.</p>"
+    },
+    {
+      "title": "Step 5: When paying is worth it",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Here's what I use AI for each week: <span class=\"fill\">[tasks]</span>, about <span class=\"fill\">[hours]</span> hours. Compare doing it on free tiers versus a paid plan of Claude, ChatGPT or Gemini: what limits would I hit, and how much time would a paid plan save? Recommend one.</div><p><small>Avoid any \"free unlimited\" tool that asks for your login to another AI service.</small></p>"
+    }
+  ],
+  "locked": [
+    "My comparison table of free limits, updated monthly",
+    "The model hub setup, step by step",
+    "Which local models run on which computers",
+    "Live sessions: we set up your free stack together"
+  ]
+}

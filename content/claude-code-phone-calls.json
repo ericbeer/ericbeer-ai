@@ -1,0 +1,32 @@
+{
+  "key": "5178813f3c",
+  "intro": "<p>The more you hand to Claude Code, the more often it stops to ask you something. If you're away, the work waits. Give Claude a way to reach you, and a clear rule for when to use it.</p>",
+  "free": [
+    {
+      "title": "Step 1: Pick a phone service for your agent",
+      "body": "<p>You need a service that can send texts or place calls for an AI agent and connect to Claude as a connector or MCP server. Some agent communication services do this; developer platforms like Twilio work too. Check each service's pricing and its rules on texting and calling.</p>"
+    },
+    {
+      "title": "Step 2: Connect it to Claude",
+      "body": "<p>Add the service as a connector in Claude (or an MCP server in Claude Code), and verify your own number. Only ever let it contact you.</p>"
+    },
+    {
+      "title": "Step 3: Set the rules",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>When you need a decision from me and I haven't replied in chat for 5 minutes, text me at my verified number. Say in one or two lines what you need and give me numbered options. Call me only if it's urgent. Never contact anyone else.</div>"
+    },
+    {
+      "title": "Step 4: Use Claude Code's notifications",
+      "body": "<p>Claude Code can run a command when it's waiting for input (hooks). Point that at your phone service so you're told every time it's blocked.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Set up a Claude Code hook that notifies me through <span class=\"fill\">[your phone service]</span> whenever you're waiting for my input. Explain each step and test it once.</div>"
+    },
+    {
+      "title": "Step 5: Answer and keep going",
+      "body": "<p>Reply with the option number. Claude picks it up and continues. Keep anything risky (payments, sending to customers, deleting) as a decision you make yourself.</p>"
+    }
+  ],
+  "locked": [
+    "My exact setup, step by step",
+    "Rule templates for different kinds of tasks",
+    "Daily summary calls from your AI",
+    "Live sessions: we set it up together"
+  ]
+}

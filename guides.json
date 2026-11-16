@@ -1,5 +1,257 @@
 [
   {
+    "slug": "weekend-ai-builds",
+    "title": "The Weekend AI Build List: five things to build in Claude this weekend that run your business all week",
+    "short": "The Weekend AI Build List",
+    "blurb": "Five builds a business owner can finish in a weekend: a morning dashboard, a second brain, an executive assistant, a marketing assistant and a small AI team. Each with the exact prompt to start.",
+    "keyword": "WEEKEND",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude",
+    "cover": "/assets/guides/weekend-ai-builds-cover-1.png",
+    "inside": [
+      "Build 1: A morning dashboard",
+      "Build 2: A second brain",
+      "Build 3: An executive assistant",
+      "Build 4: A marketing assistant",
+      "Build 5: Your AI team"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "claude-video-effects-kit",
+    "title": "The Claude Video Effects Kit: have Claude Code add captions, zooms, overlays and titles to your videos",
+    "short": "The Claude Video Effects Kit",
+    "blurb": "Claude Code can build video effects from plain English: captions, punch-in zooms, b-roll overlays, title cards and a phone mockup. Here's the setup and the prompts that turn a raw clip into a finished reel.",
+    "keyword": "EFFECTS",
+    "topics": [
+      "agents",
+      "prompts"
+    ],
+    "tool": "Claude Code",
+    "cover": "/assets/guides/claude-video-effects-kit-cover-1.png",
+    "inside": [
+      "Step 1: Set up Claude Code",
+      "Step 2: Start the video project",
+      "Step 3: Captions and zooms",
+      "Step 4: Overlays and title cards",
+      "Step 5: Save your effects library"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "ai-subscription-audit",
+    "title": "The AI Subscription Audit: have AI review every AI tool you pay for and tell you what to keep, cancel or replace",
+    "short": "The AI Subscription Audit",
+    "blurb": "Most business owners pay for AI tools that overlap. One prompt lists every subscription, what each one does that no other tool does, and what to cancel before the next renewal.",
+    "keyword": "STACK",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/ai-subscription-audit-cover-1.png",
+    "inside": [
+      "Step 1: List what you pay for",
+      "Step 2: The audit prompt",
+      "Step 3: Check the call before you cancel",
+      "Step 4: Build a renewal calendar",
+      "Step 5: Re-check every month"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "google-ai-builder-tools",
+    "title": "Google's Free AI Builder Tools: the Google tools that build apps, designs and videos, and when to use each",
+    "short": "Google's Free AI Builder Tools",
+    "blurb": "Google has quietly released a set of AI tools for building: apps from a sentence, app designs, coding agents, and image and video models. Here's what each one does, what it costs, and which to try first.",
+    "keyword": "GOOGLE",
+    "topics": [
+      "getting-started",
+      "agents"
+    ],
+    "tool": "Google AI tools",
+    "cover": "/assets/guides/google-ai-builder-tools-cover-1.png",
+    "inside": [
+      "Google AI Studio: build an app from a sentence",
+      "Stitch: design app screens",
+      "Coding agents: Antigravity and Jules",
+      "Images and video",
+      "Which one to use when"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "free-ai-models-guide",
+    "title": "The Free AI Models Guide: where to use top AI models for free, legally, and when it's worth paying",
+    "short": "The Free AI Models Guide",
+    "blurb": "You can try many of the best AI models for free through official free tiers and model hubs. Here's where, what the limits are, and when paying for a plan actually saves you money.",
+    "keyword": "MODELS",
+    "topics": [
+      "getting-started",
+      "prompts"
+    ],
+    "tool": "Many models",
+    "cover": "/assets/guides/free-ai-models-guide-cover-1.png",
+    "inside": [
+      "Step 1: Use the official free tiers",
+      "Step 2: Google AI Studio",
+      "Step 3: Model hubs",
+      "Step 4: Run open models yourself",
+      "Step 5: When paying is worth it"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "photo-search-prompt",
+    "title": "The Photo Search Prompt: have AI find a lost item, read a detail, or spot a problem in your photos",
+    "short": "The Photo Search Prompt",
+    "blurb": "AI can zoom in and scan a photo for you: a lost earbud in the gravel, a serial number on a label, a crack in a roof. Here are the prompts that make it look carefully, and how to check its answer.",
+    "keyword": "PHOTO",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "ChatGPT / Claude",
+    "cover": "/assets/guides/photo-search-prompt-cover-1.png",
+    "inside": [
+      "Step 1: Take good photos",
+      "Step 2: The search prompt",
+      "Step 3: Check its answer",
+      "Step 4: Read the small print",
+      "Step 5: Business uses"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "how-ai-works",
+    "title": "How AI Actually Works: what really happens when you type a prompt, and the five prompting habits that follow from it",
+    "short": "How AI Actually Works",
+    "blurb": "AI models write one small piece of a word at a time, picking from likely options. Once you see that, it's obvious why context, examples and step-by-step requests get better answers. Plain English, no math.",
+    "keyword": "TOKENS",
+    "topics": [
+      "getting-started",
+      "prompts"
+    ],
+    "tool": "Claude / ChatGPT",
+    "cover": "/assets/guides/how-ai-works-cover-1.png",
+    "inside": [
+      "1. It reads and writes in tokens",
+      "2. It predicts the next token",
+      "3. Why context changes everything",
+      "4. Why it sometimes makes things up",
+      "5. The five habits"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "build-your-jarvis",
+    "title": "Build Your Own Jarvis: an AI assistant that runs 24/7, knows your business and talks to you on WhatsApp",
+    "short": "Build Your Own Jarvis",
+    "blurb": "The eight steps to a personal AI agent: give it a home, install an agent harness, pick a model, teach it who you are, give it memory, add skills, connect your tools, and talk to it from your phone.",
+    "keyword": "JARVIS",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude",
+    "cover": "/assets/guides/build-your-jarvis-cover-1.png",
+    "inside": [
+      "Steps 1-2: A home and a harness",
+      "Steps 3-4: The model and who you are",
+      "Steps 5-6: Memory and skills",
+      "Steps 7-8: Tools and channels",
+      "Step 9: The dashboard and the rules"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "resume-prompt-chain",
+    "title": "The Resume Prompt Chain: five prompts that tailor your resume to the job, pass the scanner and prep your interview",
+    "short": "The Resume Prompt Chain",
+    "blurb": "Don't ask AI to \"write my resume\". Run this chain in one conversation: match against the job, fill the keyword gaps, rewrite your bullets with results, check it like an applicant tracking system, then prep for the interview.",
+    "keyword": "RESUME",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "ChatGPT / Claude",
+    "cover": "/assets/guides/resume-prompt-chain-cover-1.png",
+    "inside": [
+      "Prompt 1: The match score",
+      "Prompt 2: Close the gaps honestly",
+      "Prompt 3: Results bullets",
+      "Prompt 4: The scanner check",
+      "Prompt 5: Interview prep"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "free-university-courses",
+    "title": "Free Courses from Top Universities: seven Harvard, Yale and MIT courses you can take free, and how to learn twice as fast with AI",
+    "short": "Free Courses from Top Universities",
+    "blurb": "Harvard, Yale and MIT put real courses online that you can audit for free: AI with Python, negotiation, persuasive speaking, entrepreneurship, data and well-being. Here's the list, and an AI study partner prompt to get more from each.",
+    "keyword": "COURSES",
+    "topics": [
+      "getting-started",
+      "prompts"
+    ],
+    "tool": "edX / Coursera + AI",
+    "cover": "/assets/guides/free-university-courses-cover-1.png",
+    "inside": [
+      "The seven courses",
+      "Which one first",
+      "Your AI study partner",
+      "Turn it into action",
+      "Stay on track"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "income-prompt-chain",
+    "title": "The Income Prompt Chain: five prompts that turn what you're good at into one offer, one channel and a 90-day plan",
+    "short": "The Income Prompt Chain",
+    "blurb": "Ask AI \"how do I make more money\" and you get a list of side hustles. This chain is different: it starts with what you know, narrows to one offer and one channel, builds a 90-day plan and finds what's really holding you back.",
+    "keyword": "INCOME",
+    "topics": [
+      "prompts",
+      "getting-started"
+    ],
+    "tool": "ChatGPT / Claude",
+    "cover": "/assets/guides/income-prompt-chain-cover-1.png",
+    "inside": [
+      "Prompt 1: What you already have",
+      "Prompt 2: One offer, one channel",
+      "Prompt 3: Who to learn from",
+      "Prompt 4: The 90-day plan",
+      "Prompt 5: Find your blocker"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "claude-code-phone-calls",
+    "title": "Have Claude Call You: get a text or phone call when Claude Code needs a decision, so you can walk away from your desk",
+    "short": "Have Claude Call You",
+    "blurb": "Long Claude Code tasks stall when they need your OK and you're not at your desk. Here's how to have Claude notify you by text or phone call, tell you what it needs, and keep going once you answer.",
+    "keyword": "PHONE",
+    "topics": [
+      "agents",
+      "getting-started"
+    ],
+    "tool": "Claude Code",
+    "cover": "/assets/guides/claude-code-phone-calls-cover-1.png",
+    "inside": [
+      "Step 1: Pick a phone service for your agent",
+      "Step 2: Connect it to Claude",
+      "Step 3: Set the rules",
+      "Step 4: Use Claude Code's notifications",
+      "Step 5: Answer and keep going"
+    ],
+    "featured": true
+  },
+  {
     "slug": "instagram-skill-kit",
     "title": "The Instagram Skill Kit: five Claude skills for hooks, captions, comment replies, your weekly plan and a human check",
     "short": "The Instagram Skill Kit",

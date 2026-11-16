@@ -1,0 +1,32 @@
+{
+  "key": "88451abb02",
+  "intro": "<p>Google has released a whole set of AI tools for building, and most people have never heard of them. Here's what each one is for and which one a business owner should open first. Check each tool's current free limits before you rely on it; Google changes them often.</p>",
+  "free": [
+    {
+      "title": "Google AI Studio: build an app from a sentence",
+      "body": "<p>At aistudio.google.com you can describe an app and get a working version you can try in the browser.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Build a simple web app for my business: <span class=\"fill\">[e.g. a booking request form that emails me]</span>. Keep it to one page, mobile friendly, and explain how to put it on my website.</div>"
+    },
+    {
+      "title": "Stitch: design app screens",
+      "body": "<p>Describe the screens you want and get UI designs you can export to code or Figma. Good for showing a developer exactly what you mean.</p>"
+    },
+    {
+      "title": "Coding agents: Antigravity and Jules",
+      "body": "<p>Google's coding agents can work across a whole codebase: add features, fix bugs and explain code. Use them like Claude Code: describe the change in plain English and review what they do before you accept it.</p>"
+    },
+    {
+      "title": "Images and video",
+      "body": "<p>Google's image model (often called Nano Banana) edits and creates images from a description; Veo makes short video clips. Both are inside the Gemini app and AI Studio.</p>"
+    },
+    {
+      "title": "Which one to use when",
+      "body": "<ul><li>You want a quick tool for your team: AI Studio.</li><li>You want to show a developer a design: Stitch.</li><li>You already have code to change: a coding agent.</li><li>You need visuals for posts: the image and video models.</li></ul><p><small>Tool names, prices and limits change often. Check each tool's own page.</small></p>"
+    }
+  ],
+  "locked": [
+    "All 10 tools with a first project for each",
+    "My prompts for AI Studio apps",
+    "How to combine Google's tools with Claude",
+    "Live sessions: we build your first app together"
+  ]
+}
