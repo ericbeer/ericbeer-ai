@@ -1,5 +1,49 @@
 [
   {
+    "slug": "instagram-skill-kit",
+    "title": "The Instagram Skill Kit: five Claude skills for hooks, captions, comment replies, your weekly plan and a human check",
+    "short": "The Instagram Skill Kit",
+    "blurb": "Hand Claude the daily Instagram work: hooks, captions, comment replies and next week's plan, plus a check that strips out AI-sounding writing. You approve and post.",
+    "keyword": "INSTA",
+    "topics": [
+      "prompts",
+      "agents"
+    ],
+    "tool": "Claude",
+    "cover": "/assets/guides/instagram-skill-kit-cover-1.png",
+    "inside": [
+      "Step 1: Make a Claude Project for your Instagram (5 minutes)",
+      "Step 2: The hook writer",
+      "Step 3: The caption writer",
+      "Step 4: Comment replies, drafted for you to approve",
+      "Step 5: The weekly plan",
+      "Step 6: The human check"
+    ],
+    "featured": true
+  },
+  {
+    "slug": "claude-code-starter",
+    "title": "The Claude Code Starter Setup: set up Claude Code in 5 minutes, even if you've never coded",
+    "short": "The Claude Code Starter Setup",
+    "blurb": "Claude Code builds software from plain English. Get it running in about five minutes: the plan, the free editor, the official extension, your first project and your first skill.",
+    "keyword": "CODE",
+    "topics": [
+      "getting-started",
+      "agents"
+    ],
+    "tool": "Claude Code",
+    "cover": "/assets/guides/claude-code-starter-cover-1.png",
+    "inside": [
+      "Step 1: Get a Claude plan that includes Claude Code",
+      "Step 2: Download VS Code (free)",
+      "Step 3: Install the official Claude Code extension",
+      "Step 4: Your first project",
+      "Step 5: Add skills",
+      "What to build first"
+    ],
+    "featured": true
+  },
+  {
     "slug": "erase-yourself-kit",
     "title": "The Erase Yourself Kit: find where your address, cell and business info are listed online, and get it taken down",
     "short": "The Erase Yourself Kit",

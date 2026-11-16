@@ -1,0 +1,36 @@
+{
+ "key": "a99ca72e39",
+ "intro": "<p>Claude Code builds software from plain-English instructions. Most business owners never try it because the setup looks technical. It isn't. Five steps, about five minutes, no coding.</p>",
+ "free": [
+  {
+   "title": "Step 1: Get a Claude plan that includes Claude Code",
+   "body": "<p>Claude Code comes with the paid Claude plans (Pro and Max). Pro is enough to start. Check the current price at claude.com/pricing, sign up or upgrade, and keep the login handy.</p>"
+  },
+  {
+   "title": "Step 2: Download VS Code (free)",
+   "body": "<p>VS Code is a free code editor from Microsoft. Download it from code.visualstudio.com and install it like any app. You won't need to write code in it; it's just where Claude works.</p>"
+  },
+  {
+   "title": "Step 3: Install the official Claude Code extension",
+   "body": "<ul><li>Open VS Code and click the Extensions icon on the left (the four squares).</li><li>Search for <b>Claude Code</b> and install the one published by <b>Anthropic</b>. Check the publisher name before you click Install.</li><li>Click the Claude icon that appears and sign in with your Claude account.</li></ul>"
+  },
+  {
+   "title": "Step 4: Your first project",
+   "body": "<p>Make a new empty folder on your computer, for example \"my-first-tool\". In VS Code: File, then Open Folder, and pick it. Then tell Claude what you want in plain English.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Build me a simple web page my team can open in a browser: <span class=\"fill\">[e.g. a quote calculator for my services, with my prices]</span>. Keep it to one file. Explain each step in plain English and ask before you install anything.</div><p>Claude asks before it changes files or runs commands. Read what it asks and approve it.</p>"
+  },
+  {
+   "title": "Step 5: Add skills",
+   "body": "<p>Skills teach Claude how your business does things, so you don't explain it every time.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Create a skill called \"my-business\" that explains: what we sell <span class=\"fill\">[offer]</span>, who we sell to <span class=\"fill\">[customer]</span>, our prices <span class=\"fill\">[prices]</span>, and how we talk <span class=\"fill\">[tone]</span>. Use it in every tool you build for me.</div>"
+  },
+  {
+   "title": "What to build first",
+   "body": "<ul><li>A price or quote calculator for your website</li><li>A one-page lead form that emails you</li><li>A checklist your team ticks off for every new customer</li><li>A tool that turns your notes into a proposal</li></ul><p><small>Start small and keep a copy of anything important. Claude can make mistakes, so test what it builds before your customers use it.</small></p>"
+  }
+ ],
+ "locked": [
+  "10 first tools for a service business, with the exact prompts",
+  "My business skill file, ready to copy",
+  "How to put a tool on your website",
+  "Live sessions: we build your first tool together"
+ ]
+}

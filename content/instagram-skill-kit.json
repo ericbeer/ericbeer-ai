@@ -1,0 +1,36 @@
+{
+ "key": "bf2c1dcb1b",
+ "intro": "<p>Posting every day takes hours: the hook, the caption, the replies, the plan for next week. Here's how I hand all of that to Claude while keeping it sounding like me.</p><p>Five skills, one Project, and you stay in control: Claude drafts, you approve and post.</p>",
+ "free": [
+  {
+   "title": "Step 1: Make a Claude Project for your Instagram (5 minutes)",
+   "body": "<p>In Claude, create a Project called \"Instagram\". In its instructions, paste the brief below. Every skill in this kit reads it, so your posts sound like your business every time.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>My business: <span class=\"fill\">[what you sell, to whom]</span>\nMy offer and its price: <span class=\"fill\">[offer]</span>\nWho I want to reach: <span class=\"fill\">[ideal customer]</span>\nHow I talk: <span class=\"fill\">[3 words, e.g. direct, warm, funny]</span>\nWords I never use: <span class=\"fill\">[e.g. game-changer, unlock, elevate]</span>\nMy call to action: <span class=\"fill\">[e.g. comment GUIDE, book a call]</span></div>"
+  },
+  {
+   "title": "Step 2: The hook writer",
+   "body": "<p>The first line decides whether anyone watches. Ask for hooks in proven shapes, then pick one.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Write 10 hooks for a post about <span class=\"fill\">[topic]</span>. Use these shapes, two each: 1) \"I asked AI to ___\" 2) a number and a promise (\"3 ways to ___\") 3) a mistake (\"Stop ___\") 4) a before/after 5) a bold claim I can back up. Under 12 words each. No emojis, no hype words.</div>"
+  },
+  {
+   "title": "Step 3: The caption writer",
+   "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Write the caption for this post: <span class=\"fill\">[what the video shows]</span>. Start with the hook I picked: <span class=\"fill\">[hook]</span>. Then 3 short lines of value a business owner can use today. End with my call to action. Under 120 words, sounds like me.</div>"
+  },
+  {
+   "title": "Step 4: Comment replies, drafted for you to approve",
+   "body": "<p>Copy your new comments in (or a screenshot), and let Claude draft the replies. You read, tweak and post them yourself.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Here are the comments on my latest post: <span class=\"fill\">[paste]</span>. Draft a reply to each: friendly, specific to what they said, under 25 words. If someone asks about price or working together, invite them to DM me. Flag any comment I should answer personally.</div>"
+  },
+  {
+   "title": "Step 5: The weekly plan",
+   "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>Plan my next 7 posts. Mix: 3 teach (a how-to), 2 proof (a result or story), 1 behind the scenes, 1 offer. For each: the topic, the hook, the format (reel, carousel or photo) and the call to action. Base it on what my customers ask me most: <span class=\"fill\">[3 common questions]</span>.</div>"
+  },
+  {
+   "title": "Step 6: The human check",
+   "body": "<p>Run everything through this before you post. It catches the phrases that make writing sound like AI.</p><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Check this text for AI-sounding writing: <span class=\"fill\">[paste]</span>. Score it 0-100 for how human it sounds. List every phrase that gives it away (\"in today's fast-paced world\", \"unlock\", \"dive in\", em dashes everywhere, three-item lists in every line) and rewrite it the way I'd actually say it.</div><p>Turn each step into a reusable Claude skill: save the prompt as a skill in the Project so you can run it with one line next time.</p>"
+  }
+ ],
+ "locked": [
+  "My filled-in Instagram Project brief for a service business",
+  "All 21 hook patterns with real examples",
+  "The skill files, ready to import",
+  "Live sessions: we build your skills together"
+ ]
+}
