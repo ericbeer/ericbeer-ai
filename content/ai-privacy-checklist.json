@@ -1,0 +1,36 @@
+{
+  "key": "67ae3e8d04",
+  "intro": "<p>About a third of people have told an AI something they haven't told anyone close to them. That's fine, as long as you know where it goes. Here are the six places your chats can end up, and the three settings that fix most of it in five minutes.</p>",
+  "free": [
+    {
+      "title": "Where your chats can go",
+      "body": "<ol><li><b>Memory.</b> Your chatbot can look back at past chats to personalize answers.</li><li><b>Training.</b> Unless you switch it off, your chats can help train future models.</li><li><b>Human review.</b> Chats flagged by safety systems can be read by people.</li><li><b>Leaks.</b> In 2023 a bug showed some users other people's chat titles. In 2025, shared chat links showed up in search results.</li><li><b>Deleting isn't instant.</b> Deleted chats are normally removed within about 30 days, and for a few months in 2025 a court order made OpenAI keep them.</li><li><b>Ads.</b> Since 2026, free ChatGPT plans in the US can show ads matched to what you chat about. OpenAI says advertisers never see your chats.</li></ol>"
+    },
+    {
+      "title": "Fix 1: Stop training on your chats",
+      "body": "<p>In ChatGPT: <b>Settings &gt; Data controls &gt; Improve the model for everyone</b>, switch it off. In Claude: <b>Settings &gt; Privacy</b>, turn off the option that helps improve the models. It follows your account, so one switch covers every device.</p>"
+    },
+    {
+      "title": "Fix 2: Use Temporary Chat for private things",
+      "body": "<p>Start a <b>Temporary Chat</b> (top of a new chat in ChatGPT) or an <b>incognito chat</b> in Claude. It isn't saved to your history, isn't used for memory, and isn't used to train.</p>"
+    },
+    {
+      "title": "Fix 3: Never share a link with a secret in it",
+      "body": "<p>Anyone with a shared chat link can read the whole chat. Check what you've shared: <b>Settings &gt; Data controls &gt; Shared links &gt; Manage</b>, and delete anything private.</p>"
+    },
+    {
+      "title": "See what it already knows about you",
+      "body": "<div class=\"prompt\"><span class=\"tag\">Copy this in</span>What do you remember about me? List every detail you have saved, and which past chats you are drawing on.</div><p>Then open <b>Settings &gt; Personalization &gt; Memory</b> and delete anything you don't want kept.</p>"
+    },
+    {
+      "title": "Never paste these, even in Temporary Chat",
+      "body": "<ul><li>Passwords, PINs and one-time codes</li><li>Card, bank or Social Security numbers</li><li>Other people's private details</li><li>Your company's secret code, contracts or client data</li></ul><div class=\"prompt\"><span class=\"tag\">Copy this in</span>Before I paste this, check it for anything private: names, numbers, addresses, passwords or company secrets. Replace each with a placeholder like [NAME] and give me the clean version: <span class=\"fill\">[paste]</span></div>"
+    }
+  ],
+  "locked": [
+    "The same checklist for Gemini, Copilot and Meta AI",
+    "Business setup: keep client data out of training",
+    "How to ask for your data, and delete it for good",
+    "Live sessions: we lock down your AI tools together"
+  ]
+}

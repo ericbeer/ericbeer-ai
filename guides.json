@@ -1,5 +1,26 @@
 [
   {
+    "slug": "ai-privacy-checklist",
+    "title": "The AI Privacy Checklist: where your chatbot secrets go, and the 3 settings to change today",
+    "short": "The AI Privacy Checklist",
+    "blurb": "Six places your AI chats can end up (memory, training, human reviewers, leaks, delayed deletes, ads) and the three settings that keep private things private. Takes five minutes.",
+    "keyword": "SECRETS",
+    "topics": [
+      "getting-started"
+    ],
+    "tool": "ChatGPT / Claude",
+    "cover": "/assets/guides/ai-privacy-checklist-cover-1.png",
+    "inside": [
+      "Where your chats can go",
+      "Fix 1: Stop training on your chats",
+      "Fix 2: Use Temporary Chat for private things",
+      "Fix 3: Never share a link with a secret in it",
+      "See what it already knows about you",
+      "Never paste these, even in Temporary Chat"
+    ],
+    "featured": true
+  },
+  {
     "slug": "weekend-ai-builds",
     "title": "The Weekend AI Build List: five things to build in Claude this weekend that run your business all week",
     "short": "The Weekend AI Build List",
