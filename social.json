@@ -18,6 +18,14 @@
   ],
   "videos": [
     {
+      "title": "Set Up Claude Code in 5 Minutes (Even If You’ve Never Coded)",
+      "cover": "/assets/videos/yt-tEo7KFq9jFs.jpg",
+      "published": "2026-11-18",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/tEo7KFq9jFs"
+      }
+    },
+    {
       "title": "I Asked ChatGPT to Wipe My Digital Footprint",
       "cover": "/assets/videos/yt-IvAtxluVQbM.jpg",
       "published": "2026-11-15",
