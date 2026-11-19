@@ -343,6 +343,6 @@ write("/404.html", head("Not found | Eric Beer", "Page not found.", "/404") + f"
 # CNAME is written once ericbeer.ai DNS points at GitHub Pages
 if os.environ.get("EB_DOMAIN"): open(os.path.join(ROOT, "CNAME"), "w").write("ericbeer.ai\n")
 open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-urls = ["/", "/guides/", "/contact/", "/privacy/"] + [f"/guides/{g['slug']}/" for g in G]
+urls = ["/", "/guides/", "/contact/", "/privacy/", "/help/"] + [f"/guides/{g['slug']}/" for g in G]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{SITE}{u}</loc></url>" for u in urls) + "</urlset>\n")
 print("built", len(urls), "pages")
