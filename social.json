@@ -18,6 +18,14 @@
   ],
   "videos": [
     {
+      "title": "7 Free Courses from Harvard, Yale and MIT",
+      "cover": "/assets/videos/yt-QVk4mYgvhDQ.jpg",
+      "published": "2026-11-20",
+      "links": {
+        "YouTube": "https://www.youtube.com/shorts/QVk4mYgvhDQ"
+      }
+    },
+    {
       "title": "Set Up Claude Code in 5 Minutes (Even If You’ve Never Coded)",
       "cover": "/assets/videos/yt-tEo7KFq9jFs.jpg",
       "published": "2026-11-18",
