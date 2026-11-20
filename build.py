@@ -72,7 +72,7 @@ def waitlist_form():
 <div><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" autocomplete="email" required></div>
 <button class="btn btn-gold" type="submit">Join the waitlist</button>
 <div class="msg" role="status" aria-live="polite"></div>
-<p class="note">Founding members get their first month for $47. No spam, unsubscribe anytime.</p>
+<p class="note">$97/month when doors open. The waitlist gets in first. No spam, unsubscribe anytime.</p>
 </form>"""
 
 
@@ -99,7 +99,7 @@ CLUB = f"""<section class="block" id="waitlist"><div class="wrap"><div class="cl
 <li>Live calls to help you put your agents to work</li>
 <li>Business owners doing the same thing, sharing what works</li>
 </ul>
-<div class="price"><s>$97/month</s> Founding members: <b>$47 first month</b></div>
+<div class="price"><b>$97/month</b>. Cancel anytime.</div>
 {waitlist_form()}
 </div></div></section>"""
 
@@ -212,7 +212,7 @@ def full_access_card(g):
     line = ("Get the full guide, every other guide, the AI agents I use and live calls inside my community. "
             "Free for 7 days, then $97/month. Cancel anytime." if SKOOL_LIVE else
             "The full guide, every other guide, the AI agents I use and live calls are going inside my community. "
-            "Join the waitlist for the founding-member price.")
+            "$97/month. Join the waitlist to get in first.")
     return f"""<div class="full-card"><h2>Want the complete guide?</h2><p>{line}</p>
 <a class="btn btn-gold" href="{SKOOL_URL}">{SKOOL_CTA} &rarr;</a></div>"""
 
@@ -221,7 +221,7 @@ def unlock_block(g, c):
     locked = "".join(f"<li>{e(x)}</li>" for x in c["locked"])
     bars = "".join('<span class="bar" style="width:%d%%"></span>' % w for w in (96, 88, 92, 70, 95, 84, 60, 90, 78))
     price = ('7 days free, then <b>$97/month</b>. Cancel anytime.' if SKOOL_LIVE else
-             'Founding members: <b>$47 first month</b>, then $97/month.')
+             '<b>$97/month</b>. Cancel anytime.')
     return f"""<section class="locked"><div class="fade" aria-hidden="true">{bars}</div>
 <div class="lockbox">
 <div class="script">the rest of this guide is inside the community</div>
